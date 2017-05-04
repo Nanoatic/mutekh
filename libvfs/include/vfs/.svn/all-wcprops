@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs
+END
+vfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/vfs.h
+END
+file.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/file.h
+END
+defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/defs.h
+END
+ops.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/ops.h
+END
+helpers.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/helpers.h
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/globals.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/types.h
+END
+fs.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1590/trunk/mutekh/libvfs/include/vfs/fs.h
+END

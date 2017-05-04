@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1589/trunk/mutekh/drivers/input/8042
+END
+input-8042.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/input/8042/input-8042.h
+END
+8042.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/drivers/input/8042/8042.h
+END
+input-8042-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1589/trunk/mutekh/drivers/input/8042/input-8042-private.h
+END
+input-8042.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1589/trunk/mutekh/drivers/input/8042/input-8042.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/input/8042/Makefile
+END
+input-8042.config
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1440/trunk/mutekh/drivers/input/8042/input-8042.config
+END

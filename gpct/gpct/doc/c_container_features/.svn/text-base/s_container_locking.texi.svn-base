@@ -1,0 +1,268 @@
+@node Container locking mechanisms
+@section Container locking mechanisms
+@c filename container_locking
+@c parent chapter is Container features
+
+
+All container access function can perform @strong{container object
+locking} before reading from or writing to the container object
+object. The locking mechanisms must be specified by the programmer
+with a macro definition before @code{CONTAINER_TYPE},
+@code{CONTAINER_FUNC} and other template macros invocation.
+
+Default behavior is to perform no container locking on access.
+
+Container access functions perform @strong{distinct write and read
+lock operations} to take advantages of r/w capable locking
+mechanisms. if simpler mechanisms are used, read and write lock
+primitive are aliased.
+
+The locking mechanism is specified with the following definition:
+
+@code{#define CONTAINER_LOCK_}@emph{name} @emph{lock_name}
+
+@emph{name} is the name of the container as expected by the
+@code{CONTAINER_TYPE} and other macros. The @emph{lock_name} token is
+used to identify a particular locking mechanism. Some standard
+mechanisms are presented in this section.
+
+@subsubheading Alternative non-locked functions set
+
+A set of non locked container access functions can still be defined
+with the @code{CONTAINER_FUNC_NOLOCK} and
+@code{CONTAINER_KEY_FUNC_NOLOCK} macros. These macro expects the same
+arguments as the @code{CONTAINER_FUNC} and @code{CONTAINER_KEY_FUNC} macros,
+@pxref{Container functions definitions}.
+
+@code{CONTAINER_FOREACH} iteration macro family also contains some
+variant to request read, write or no locking behavior, @pxref{Locked iteration}.
+
+@subsubheading Alternative locking mechanisms
+
+The @code{CONTAINER_FUNC_LOCK} and @code{CONTAINER_KEY_FUNC_LOCK}
+macros are available to define an additional set of functions using a
+given locking mechanism. This is useful when multiple different
+locking functions can operate on the same lock type. They need an
+additional argument specifying an alternative locking mechanism which
+must be compatible with the one previously defined for the container:
+
+@example
+
+CONTAINER_FUNC_LOCK(@samp{name}, @samp{algorithm}, @samp{attributes},
+                    @samp{lockname}, @samp{prefix}, ...);
+
+CONTAINER_KEY_FUNC_LOCK(@samp{name}, @samp{algorithm}, @samp{attributes},
+                        @samp{lockname}, @samp{prefix}, @samp{keyfield}, ...);
+
+@end example
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_lock.c
+
+Container locking functions (@pxref{Container locking functions}) are
+useful here to lock the container directly while performing non-locked
+operations sequence.
+
+@menu
+* Features testing::
+* POSIX thread locking mechanisms::
+* Platform dependent locking mechanisms::
+* Gcc atomic builtins based locking mechanisms::
+@end menu
+
+@node Features testing
+@subsection Features testing
+@c filename features_testing
+@c parent section is Container locking mechanisms
+
+
+The @code{LOCK_FEATURE} macro can be used to test some features of a
+given locking mechanism:
+
+@example
+
+#if LOCK_FEATURE(@samp{lockname}, @samp{feature})
+...
+#endif
+
+@end example
+
+This following lock feature names exist:
+@itemize
+ @item @code{STATIC_INIT} test is true if locking mechanism support initialization of statically allocated locks.
+ @item @code{READ_WRITE} test is true if locking mechanism handle read and write locks separately.
+ @item @code{RECURSIVE} test is true if locking mechanism support multiple locking by the same thread.
+ @item @code{SPINNING} test is true if locking mechanism use an active spin wait loop.
+@end itemize
+
+@page
+@node POSIX thread locking mechanisms
+@subsection POSIX thread locking mechanisms
+@c filename posix_thread_locking_mechanisms
+@c parent section is Container locking mechanisms
+
+
+Features presented in this section rely on the @code{pthread} library.
+
+@menu
+* @code{mutex} locks::
+* recursive @code{mutex} locks::
+* @code{rwlock} locks::
+* @code{spinlock} locks::
+@end menu
+
+@node @code{mutex} locks
+@subsubsection @code{mutex} locks
+@c filename sss_mutex_locks
+@c parent subsection is POSIX thread locking mechanisms
+
+@subsubheading Usage
+
+@code{#include <gpct/lock_pthread_mutex.h>}
+
+Lock name: @code{PTHREAD_MUTEX}
+
+@subsubheading Description
+
+It provides locking mechanisms through @code{pthread_mutex} objects
+and functions.
+
+@code{pthread_mutex} attributes are left to defaults. See POSIX thread
+documentation for details.
+
+No distinct read and write locking operations are available with this mechanism.
+
+@node recursive @code{mutex} locks
+@subsubsection recursive @code{mutex} locks
+@c filename sss_recursive_mutex_locks
+@c parent subsection is POSIX thread locking mechanisms
+
+@subsubheading Usage
+
+@code{#include <gpct/lock_pthread_rmutex.h>}
+
+Requires @code{_XOPEN_SOURCE >= 500}.
+
+Lock name: @code{PTHREAD_RMUTEX}
+
+@subsubheading Description
+
+It provides locking mechanisms through @code{pthread_mutex} objects
+and functions.
+
+@code{pthread_mutex} attributes are set to recursive. See POSIX thread
+documentation for details.
+
+No distinct read and write locking operations are available with this mechanism.
+
+@node @code{rwlock} locks
+@subsubsection @code{rwlock} locks
+@c filename sss_rwlock_locks
+@c parent subsection is POSIX thread locking mechanisms
+
+@subsubheading Usage
+
+@code{#include <gpct/lock_pthread_rwlock.h>}
+
+Lock name: @code{PTHREAD_RWLOCK}
+
+@subsubheading Description
+
+It provides locking mechanisms through @code{pthread_rwlock} objects
+and functions.
+
+See POSIX thread documentation for details.
+
+@node @code{spinlock} locks
+@subsubsection @code{spinlock} locks
+@c filename sss_spinlock_locks
+@c parent subsection is POSIX thread locking mechanisms
+
+@subsubheading Usage
+
+@code{#include <gpct/lock_pthread_spin.h>}
+
+Requires @code{_XOPEN_SOURCE >= 600}.
+
+Lock name: @code{PTHREAD_SPIN}
+
+@subsubheading Description
+
+It provides locking mechanisms through @code{pthread_spinlock} objects
+and functions.
+
+Spin lock are a POSIX thread option and may not be available on your
+platform. This feature is available only if the standard
+@code{_XOPEN_SOURCE} macro is defined to @code{600}. Container static
+initializer may not work since POSIX does not defined a suitable
+static initializer macro for spin locks. However some implementation
+may provide a non portable @code{PTHREAD_SPINLOCK_INITIALIZER}
+macro. See POSIX thread documentation for details.
+
+No distinct read and write locking operations are available with this mechanism.
+
+@node Platform dependent locking mechanisms
+@subsection Platform dependent locking mechanisms
+@c filename platform_dependent_locking_mechanisms
+@c parent section is Container locking mechanisms
+
+
+GPCT can be extended with non standard locking mechanism defined in
+platform specific header file.
+
+@page
+@node Gcc atomic builtins based locking mechanisms
+@subsection Gcc atomic builtins based locking mechanisms
+@c filename gcc_atomic_builtins_based_locking_mechanisms
+@c parent section is Container locking mechanisms
+
+
+Features presented in this section require GNU C compiler extensions
+found in gcc version 4.1.0 or higher.
+
+@menu
+* spin locks::
+* read/write spin locks::
+@end menu
+
+@node spin locks
+@subsubsection spin locks
+@c filename sss_spin_locks
+@c parent subsection is Gcc atomic builtins based locking mechanisms
+
+@subsubheading Usage
+
+@code{#include <gpct/lock_gcc_spin.h>}
+
+Lock name: @code{GCC_SPIN}
+
+@subsubheading Description
+
+This feature relies on gcc atomic builtins to implement spin locks.
+
+No distinct read and write locking operations are available with this mechanism.
+
+@node read/write spin locks
+@subsubsection read/write spin locks
+@c filename sss_read_write_spin_locks
+@c parent subsection is Gcc atomic builtins based locking mechanisms
+
+@subsubheading Usage
+
+@code{#include <gpct/lock_gcc_rwspin.h>}
+
+Lock name: @code{GCC_RWSPIN}
+
+@subsubheading Description
+
+This feature relies on gcc atomic builtins to implement read/write spin locks.
+
+Multiple readers can acquire the lock but only one writer can hold the
+lock at the same time. A pending write lock prevent new readers to
+acquire the lock to avoid writer starvation.
+
+@setfilename s_embedded_item_counter.texi
+
+@setfilename s_embedded_item_counter.info
+

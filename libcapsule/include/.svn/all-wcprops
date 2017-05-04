@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1589/trunk/mutekh/libcapsule/include
+END
+capsule_mach_uns_itf.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1314/trunk/mutekh/libcapsule/include/capsule_mach_uns_itf.h
+END
+capsule_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1314/trunk/mutekh/libcapsule/include/capsule_types.h
+END
+capsule_mach_64bits_itf.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1314/trunk/mutekh/libcapsule/include/capsule_mach_64bits_itf.h
+END
+capsule_abs_itf.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1322/trunk/mutekh/libcapsule/include/capsule_abs_itf.h
+END
+capsule_api.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1589/trunk/mutekh/libcapsule/include/capsule_api.h
+END

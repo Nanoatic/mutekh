@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1458/trunk/mutekh/cpu/x86/libunix
+END
+syscall.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1458/trunk/mutekh/cpu/x86/libunix/syscall.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1458/trunk/mutekh/cpu/x86/libunix/Makefile
+END

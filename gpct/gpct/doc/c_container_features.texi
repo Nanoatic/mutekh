@@ -1,0 +1,24 @@
+@page
+@node Container features
+@chapter Container features
+@c filename container_features
+@c parent top is Top
+
+
+
+@setfilename s_container_locking.texi
+
+
+@setfilename s_container_locking.info
+
+@menu
+* Container locking mechanisms::
+* Embedded item counter::
+* Orphan checking::
+* Object managed container items::
+@end menu
+
+@include c_container_features/s_container_locking.texi
+@include c_container_features/s_embedded_item_counter.texi
+@include c_container_features/s_orphan_checking.texi
+@include c_container_features/s_object_managed.texi

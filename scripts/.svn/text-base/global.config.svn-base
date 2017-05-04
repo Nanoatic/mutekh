@@ -1,0 +1,63 @@
+
+%config CONFIG_COMPILE_SAVETEMPS
+  flags root
+  desc Keep all intermediate files generated during compilation.
+  desc Preprocesseced (.i) and assembler (.s) files may be usefull to solve compilation issues.
+%config end
+
+%config CONFIG_COMPILE_PIC
+  flags root
+  desc Generate position independant code
+  default defined
+%config end
+
+%config CONFIG_COMPILE_SOFTFLOAT
+  flags root
+  desc Use software only floating point
+  default defined
+%config end
+
+%config CONFIG_COMPILE_COLLECT
+  flags root
+  desc Enable symbols garbage collection to reduce binary size
+%config end
+
+%config CONFIG_COMPILE_DEBUG
+  flags root
+  desc Enable compiler debug switch
+%config end
+
+%config CONFIG_COMPILE_OPTIMIZE
+  desc Set compiler optimize switch value (0, 1, 2, 3, s)
+  default 2
+  range 0 1 2 3 s
+  flags value root
+%config end
+
+%config CONFIG_COMPILE_FRAMEPTR
+  flags root
+  when CONFIG_COMPILE_DEBUG
+  desc Compile with frame pointer register
+%config end
+
+%config CONFIG_COMPILE_INSTRUMENT
+  flags root
+  desc Add instrumentation calls for entry and exit to functions
+%config end
+
+%config CONFIG_DEBUG
+  flags root
+  desc Enable debug features globaly
+  suggest CONFIG_COMPILE_OPTIMIZE=0
+%config end
+
+%config CONFIG_HET_BUILD
+  flags root
+  desc Heterogeneous build: The currently build kernel is part of an heterogeneous platform
+  require CONFIG_HETROM_ADDR
+  require CONFIG_HETROM_SIZE
+%config end
+
+######################################################################
+# Provided token, not definable by user directly
+

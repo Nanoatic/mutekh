@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1566/trunk/mutekh/drivers/lcd/s1d15g00
+END
+s1d15g00-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1375/trunk/mutekh/drivers/lcd/s1d15g00/s1d15g00-private.h
+END
+s1d15g00.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1566/trunk/mutekh/drivers/lcd/s1d15g00/s1d15g00.c
+END
+s1d15g00.config
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1388/trunk/mutekh/drivers/lcd/s1d15g00/s1d15g00.config
+END
+s1d15g00.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/lcd/s1d15g00/s1d15g00.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/lcd/s1d15g00/Makefile
+END

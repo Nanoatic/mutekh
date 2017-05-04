@@ -1,0 +1,151 @@
+@page
+@node Iteration
+@section Iteration
+@c filename iteration
+@c parent chapter is Container operations
+
+
+There are two different ways to iterate over a container: the function
+based and the macro based methods. These two methods are presented
+here.
+
+@menu
+* @emph{prefix}@code{_foreach()}::
+* @emph{prefix}@code{_foreach_reverse()}::
+* @code{CONTAINER_FOREACH()} and friends::
+@end menu
+
+@node @emph{prefix}@code{_foreach()}
+@subsection @emph{prefix}@code{_foreach()}
+@c filename sss_prefix_foreach_
+@c parent section is Iteration
+
+Container iteration can be performed by defining an iterator function
+and processing with the @emph{prefix}@code{_foreach()} function
+call. This methods use several function calls and may be considered if
+code inside the loop should not be inlined.
+
+@subsubheading Function prototype
+
+@code{intptr_t} @emph{prefix}@code{_foreach(}@emph{name}@code{_root_t *root, }@emph{iterator function pointer}@code{, ...);}
+
+@code{intptr_t} @emph{user_iterator} @code{(}@emph{name}@code{_item_t item, va_list ap);}
+
+@subsubheading Description
+
+This function calls the user provided iterator function for each items
+present in the container @samp{root}. It stops processing immediately
+if the iterator function returns non @code{0} result.
+
+All extra arguments passed to @emph{prefix}@code{_foreach()} can be
+accessed in the user iterator function using the @code{ap} argument
+along with the @code{va_arg(ap, type)} macro provided by the
+@code{<stdarg.h>} standard header.
+
+The @emph{prefix}@code{_foreach()} function returns the last value
+returned by the user iterator function.
+
+The @code{CONTAINER_ITERATOR(}@emph{name}@code{,}@emph{myfunction}@code{)}
+macro can be used to define container iterator functions.
+
+@subsubheading Locking
+
+The container object is read locked while processing. The macro based
+container iteration method offers more locking options.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_iterate.c
+
+@node @emph{prefix}@code{_foreach_reverse()}
+@subsection @emph{prefix}@code{_foreach_reverse()}
+@c filename sss_prefix_foreach_reverse_
+@c parent section is Iteration
+
+This function acts the same way as @emph{prefix}@code{_foreach()} but
+starts with the last item in container if order is significant.
+
+@node @code{CONTAINER_FOREACH()} and friends
+@subsection @code{CONTAINER_FOREACH()} and friends
+@c filename sss_container_foreach_and_friends
+@c parent section is Iteration
+
+The other way to iterate through a container is to invoke the
+@code{CONTAINER_FOREACH} macro. The user code is passed as a macro
+parameter. This method provides inlined container iteration but needs
+more arguments including container algorithm identifier. Macro usage
+is shown here:
+
+@subsubheading Macro parameters
+
+@code{CONTAINER_FOREACH(@samp{name}, @samp{algo}, @samp{root}, @samp{code});}
+
+The following mandatory arguments must be present:
+
+@itemize @bullet
+@item
+@samp{name} must be the same value as the one passed to the type
+definition macro.
+
+@item
+@samp{algorithm} is the container algorithm identifier, its value must
+match the one passed to the type definition macro.
+
+@item
+@samp{root} is a pointer to the container object.
+
+@item
+@samp{code} is the code to execute for each item iteration.
+
+@end itemize
+
+@subsubheading Description
+
+This macro executes the user provided code for each items
+present in the container @samp{root}.
+
+Container order is respected. Alternative macros exists to deals with
+different iteration orders. The @code{CONTAINER_FOREACH_REVERSE}
+alternative macro may be used to iterate in reverse order. The
+@code{CONTAINER_FOREACH_UNORDERED} allows faster iteration with some
+container but ignore item order (trees for instance).
+
+The user code is put in a sub block with the variables @code{item} and
+@code{index} declared. These block local variables contain the current
+item value and index respectively. Their value can be modified by user
+code.
+
+The @code{break} and @code{continue} keywords may or may not work
+properly depending on container algorithm in use. The @code{goto}
+keyword may be used here. If the GNU local label compiler extension is
+available, the @code{CONTAINER_FOREACH_BREAK} and
+@code{CONTAINER_FOREACH_CONTINUE} macros can be used instead.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_iterate_macro.c
+
+@menu
+* Locked iteration::
+@end menu
+
+@node Locked iteration
+@subsubsection Locked iteration
+@c filename locked_iteration
+@c parent subsection is @code{CONTAINER_FOREACH()} and friends
+
+The container object is read locked by default during iteration when a
+locking mechanisms is defined for the container, @pxref{Container locking mechanisms}.
+
+The @code{CONTAINER_FOREACH_WRLOCK} or @code{CONTAINER_FOREACH_NOLOCK}
+macros can be used instead of @code{CONTAINER_FOREACH} to change
+locking policy. Alternative macros
+@code{CONTAINER_FOREACH_REVERSE_NOLOCK},
+@code{CONTAINER_FOREACH_UNORDERED_NOLOCK},
+@code{CONTAINER_FOREACH_REVERSE_WRLOCK} and
+@code{CONTAINER_FOREACH_UNORDERED_WRLOCK} are available too.
+
+@setfilename s_container_locking.texi
+
+@setfilename s_container_locking.info
+

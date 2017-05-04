@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/131/trunk/testsuite
+END
+testsuite.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/116/trunk/testsuite/testsuite.h
+END
+test_array.t
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/129/trunk/testsuite/test_array.t
+END
+test_counter.t
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/131/trunk/testsuite/test_counter.t
+END
+test_locks.mk
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/129/trunk/testsuite/test_locks.mk
+END
+test_bitmap.mk
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/129/trunk/testsuite/test_bitmap.mk
+END
+test_darray.t
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/129/trunk/testsuite/test_darray.t
+END
+test_array.mk
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/129/trunk/testsuite/test_array.mk
+END
+test_hash.t
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/131/trunk/testsuite/test_hash.t
+END
+test_counter.mk
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/115/trunk/testsuite/test_counter.mk
+END
+test_refcount.t
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/131/trunk/testsuite/test_refcount.t
+END
+test_darray.mk
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/129/trunk/testsuite/test_darray.mk
+END
+test_hash.mk
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/129/trunk/testsuite/test_hash.mk
+END
+test_refcount.mk
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/129/trunk/testsuite/test_refcount.mk
+END
+test_bitops.t
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/116/trunk/testsuite/test_bitops.t
+END
+test_bitops.mk
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/116/trunk/testsuite/test_bitops.mk
+END
+test_insert.t
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/131/trunk/testsuite/test_insert.t
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/131/trunk/testsuite/Makefile.am
+END
+test_insert.mk
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/129/trunk/testsuite/test_insert.mk
+END
+test_locks.t
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/129/trunk/testsuite/test_locks.t
+END
+test_bitmap.t
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/129/trunk/testsuite/test_bitmap.t
+END

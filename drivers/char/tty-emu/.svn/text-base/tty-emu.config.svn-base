@@ -1,0 +1,7 @@
+
+%config CONFIG_DRIVER_CHAR_EMUTTY
+  desc enable emulation TTY for Linux
+  depend CONFIG_ARCH_EMU
+  provide CONFIG_DRIVER_CHAR
+  parent CONFIG_DEVICE
+%config end

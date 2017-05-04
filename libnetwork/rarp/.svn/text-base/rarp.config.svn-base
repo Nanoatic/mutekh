@@ -1,0 +1,6 @@
+%config CONFIG_NETWORK_RARP
+  desc Enable RARP builtin client for address attribution
+  parent CONFIG_NETWORK
+  depend CONFIG_NETWORK_IPV4
+  depend CONFIG_NETWORK_SOCKET_PACKET
+%config end

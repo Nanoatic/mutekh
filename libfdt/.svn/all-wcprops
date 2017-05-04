@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1589/trunk/mutekh/libfdt
+END
+fdt_reader.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1589/trunk/mutekh/libfdt/fdt_reader.c
+END
+fdt.config
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1440/trunk/mutekh/libfdt/fdt.config
+END
+fdt_internals.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/874/trunk/mutekh/libfdt/fdt_internals.h
+END
+fdt_writer.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1098/trunk/mutekh/libfdt/fdt_writer.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/939/trunk/mutekh/libfdt/Makefile
+END

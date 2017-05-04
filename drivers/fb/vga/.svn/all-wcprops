@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1440/trunk/mutekh/drivers/fb/vga
+END
+fb-vga-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/fb/vga/fb-vga-private.h
+END
+fb-vga.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1375/trunk/mutekh/drivers/fb/vga/fb-vga.c
+END
+fb-vga.config
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1440/trunk/mutekh/drivers/fb/vga/fb-vga.config
+END
+fb-vga-modes.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1386/trunk/mutekh/drivers/fb/vga/fb-vga-modes.c
+END
+fb-vga.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1375/trunk/mutekh/drivers/fb/vga/fb-vga.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1375/trunk/mutekh/drivers/fb/vga/Makefile
+END

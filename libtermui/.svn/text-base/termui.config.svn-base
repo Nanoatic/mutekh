@@ -1,0 +1,72 @@
+
+%config CONFIG_LIBTERMUI
+  desc Enable libtermui
+  module libtermui Terminal driver library
+  provide CONFIG_LICENSE_USE_GPL
+  require CONFIG_LIBTERMUI_IOHEADER
+%config end
+
+%config CONFIG_LIBTERMUI_IOHEADER
+  desc libtermui io operations header file name
+  flags value internal
+  default "termio_dev_pv.h"
+  parent CONFIG_LIBTERMUI
+%config end
+
+%config CONFIG_LIBTERMUI_GETLINE
+  desc Enable the readline() like feature
+  default defined
+  parent CONFIG_LIBTERMUI
+%config end
+
+%config CONFIG_LIBTERMUI_CONSOLE
+  desc Enable libtermui console user interface feature
+  parent CONFIG_LIBTERMUI
+%config end
+
+%config CONFIG_LIBTERMUI_CON_ACL
+  desc Enable console access control
+  parent CONFIG_LIBTERMUI_CONSOLE
+  default defined
+%config end
+
+%config CONFIG_LIBTERMUI_CON_ALIAS
+  desc Enable console command aliases
+  parent CONFIG_LIBTERMUI_CONSOLE
+  default defined
+%config end
+
+%config CONFIG_LIBTERMUI_CON_COMPLETION
+  desc Enable console completion
+  parent CONFIG_LIBTERMUI_CONSOLE
+  default defined
+%config end
+
+%config CONFIG_LIBTERMUI_CON_LONG_HELP
+  desc Retains long help strings
+  suggest_when CONFIG_COMPILE_OPTIMIZE=s
+  parent CONFIG_LIBTERMUI_CONSOLE
+  default defined
+%config end
+
+%config CONFIG_LIBTERMUI_CON_MAXCMDLEN
+  desc Console max command token len
+  default 16
+  parent CONFIG_LIBTERMUI_CONSOLE
+  flags value
+%config end
+
+%config CONFIG_LIBTERMUI_CON_MAXCOMPLETE
+  desc Console completion max candidates count
+  default 512
+  parent CONFIG_LIBTERMUI_CONSOLE
+  flags value
+%config end
+
+%config CONFIG_LIBTERMUI_CON_MAXLINELEN
+  desc Console line buffer size
+  default 512
+  parent CONFIG_LIBTERMUI_CONSOLE
+  flags value
+%config end
+

@@ -1,0 +1,7 @@
+
+%config CONFIG_DRIVER_I2C_TWI6061A
+  desc Enable Atmel 6061a TWI device support (SAMx, ...)
+  provide CONFIG_DRIVER_I2C
+  parent CONFIG_DEVICE
+%config end
+

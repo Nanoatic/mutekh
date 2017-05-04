@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1388/trunk/mutekh/drivers/block/file-emu
+END
+block-file-emu.config
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1388/trunk/mutekh/drivers/block/file-emu/block-file-emu.config
+END
+block-file-emu.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/file-emu/block-file-emu.h
+END
+block-file-emu-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/file-emu/block-file-emu-private.h
+END
+block-file-emu.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/file-emu/block-file-emu.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/file-emu/Makefile
+END

@@ -1,0 +1,33 @@
+/* -*- c -*- */
+
+#define X(x)	x
+#define __SYSCALL_NAME(x,y) X(x##y)
+
+#if defined(CONFIG_ARCH_EMU_LINUX)
+# include <asm/unistd.h>
+# define SYSCALL_NAME(x) __SYSCALL_NAME(__NR_,x)
+#elif defined(CONFIG_ARCH_EMU_DARWIN)
+# include <sys/syscall.h>
+# define SYSCALL_NAME(x) __SYSCALL_NAME(SYS_,x)
+#endif
+
+X(#define) EMU_SYSCALL_GETPID   SYSCALL_NAME(getpid)
+X(#define) EMU_SYSCALL_MMAP     SYSCALL_NAME(mmap)
+X(#define) EMU_SYSCALL_FORK     SYSCALL_NAME(fork)
+X(#define) EMU_SYSCALL_READ     SYSCALL_NAME(read)
+X(#define) EMU_SYSCALL_WRITE    SYSCALL_NAME(write)
+X(#define) EMU_SYSCALL_EXIT     SYSCALL_NAME(exit)
+X(#define) EMU_SYSCALL_CLONE    SYSCALL_NAME(clone)
+X(#define) EMU_SYSCALL_OPEN     SYSCALL_NAME(open)
+X(#define) EMU_SYSCALL_READ     SYSCALL_NAME(read)
+X(#define) EMU_SYSCALL_WRITE    SYSCALL_NAME(write)
+X(#define) EMU_SYSCALL_CLOSE    SYSCALL_NAME(close)
+X(#define) EMU_SYSCALL_IOCTL    SYSCALL_NAME(ioctl)
+X(#define) EMU_SYSCALL_SOCKET   SYSCALL_NAME(socket)
+X(#define) EMU_SYSCALL_WAITPID  SYSCALL_NAME(waitpid)
+X(#define) EMU_SYSCALL_PTRACE   SYSCALL_NAME(ptrace)
+X(#define) EMU_SYSCALL_LSEEK    SYSCALL_NAME(lseek)
+X(#define) EMU_SYSCALL_KILL     SYSCALL_NAME(kill)
+X(#define) EMU_SYSCALL_PIPE     SYSCALL_NAME(pipe)
+X(#define) EMU_SYSCALL_SIGNAL   SYSCALL_NAME(signal)
+X(#define) EMU_SYSCALL_SCHED_YIELD    SYSCALL_NAME(sched_yield)

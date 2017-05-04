@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/arm
+END
+icu-arm.config
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1388/trunk/mutekh/drivers/icu/arm/icu-arm.config
+END
+icu-arm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/arm/icu-arm.h
+END
+icu-arm-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/arm/icu-arm-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/arm/Makefile
+END
+icu-arm.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/arm/icu-arm.c
+END

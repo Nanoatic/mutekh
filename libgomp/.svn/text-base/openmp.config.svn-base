@@ -1,0 +1,108 @@
+
+%config CONFIG_OPENMP
+  desc Enable GNU OpenMP runtime library (libgomp)
+  module libgomp OpenMP runtime library
+  provide CONFIG_LICENSE_USE_GPL3
+  depend CONFIG_OPENMP_USE_POSIX
+         #CONFIG_OPENMP_USE_SCHED
+%config end
+
+%config CONFIG_OPENMP_USE_POSIX
+  desc libgomp use pthread and libc semaphore
+  parent CONFIG_OPENMP
+  depend CONFIG_PTHREAD
+  depend CONFIG_LIBC_SEMAPHORE
+  default defined
+%config end
+
+# TODO
+# %config CONFIG_OPENMP_USE_SCHED
+#   desc libgomp use mutek scheduler primitives directly
+#   parent CONFIG_OPENMP
+#   depend CONFIG_MUTEK_SCHEDULER
+# %config end
+
+# FIXME use hexo spinlock/atomic ops instead ?
+%config CONFIG_OPENMP_GCC_SYNC
+  desc Enable use of GCC sync builtins functions
+  parent CONFIG_OPENMP
+%config end
+
+######################################################################
+#       OpenMP environement options
+
+%config CONFIG_OPENMP_OMP_SCHEDULE
+  desc Allows to specify schedule type and chunk size (string)
+  desc OpenMP specifications v3.0, sections 2.5.1 and 4.1
+  default NULL
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_OMP_WAIT_POLICY
+  desc Specifies whether waiting threads should be active or passive. (string)
+  desc OpenMP specifications v3.0, sections 4.6
+  default NULL
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_GOMP_CPU_AFFINITY
+  desc Binds threads to specific CPUs. (string)
+  default NULL
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_OMP_MAX_ACTIVE_LEVELS
+  desc Specifies the initial value for the maximal number of nested parallel regions. (number)
+  desc OpenMP specifications v3.0, section 4.7
+  default INT_MAX
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_OMP_THREAD_LIMIT
+  desc Specifies the number of threads to use for the whole program. (number)
+  desc OpenMP specifications v3.0, section 4.8
+  default ULONG_MAX
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_OMP_NUM_THREADS
+  desc Specifies the default number of threads to use in parallel regions (number)
+  desc OpenMP specifications v3.0, section 4.2
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_OMP_STACKSIZE
+  desc Set the default thread stack size (number)
+  desc OpenMP specifications v3.0, sections 4.5
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_GOMP_SPINCOUNT
+  desc Spin count limit (number)
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_OMP_DYNAMIC
+  desc Enable or disable the dynamic adjustment of the number of threads within a team. (bool)
+  desc OpenMP specifications v3.0, section 4.3
+  default false
+  parent CONFIG_OPENMP
+  flags value
+%config end
+
+%config CONFIG_OPENMP_OMP_NESTED
+  desc Enable or disable nested parallel regions, i.e., whether team members are allowed to create new teams. (bool)
+  desc OpenMP specifications v3.0, section 4.4
+  default false
+  parent CONFIG_OPENMP
+  flags value
+%config end
+

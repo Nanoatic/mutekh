@@ -1,0 +1,37 @@
+
+%config CONFIG_SRL
+  desc MutekS API
+  module libsrl
+  depend CONFIG_MUTEK_SCHEDULER
+  depend CONFIG_MWMR
+  single CONFIG_SRL_SOCLIB CONFIG_SRL_STD
+%config end
+
+%config CONFIG_SRL_SOCLIB
+  desc MutekS API for SoCLib
+  parent CONFIG_SRL
+  depend CONFIG_MUTEK_SCHEDULER
+  depend CONFIG_ARCH_SOCLIB
+  depend CONFIG_MWMR_SOCLIB
+  exclude CONFIG_MUTEK_MAIN
+%config end
+
+%config CONFIG_SRL_STD
+  desc MutekS API for standard architectures
+  parent CONFIG_SRL
+  depend CONFIG_MUTEK_MAIN
+  depend CONFIG_PTHREAD
+  depend CONFIG_MWMR_PTHREAD
+%config end
+
+%config CONFIG_SRL_MULTI_TTY
+  desc Whether we can support multiple TTYs for the application
+  parent CONFIG_SRL_SOCLIB
+%config end
+
+%config CONFIG_SRL_VERBOSITY
+  desc Minimal verbosity level for SRL messages
+  parent CONFIG_SRL
+  flags value
+  default NONE
+%config end

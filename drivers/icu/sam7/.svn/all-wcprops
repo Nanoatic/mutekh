@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1535/trunk/mutekh/drivers/icu/sam7
+END
+icu-sam7-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/sam7/icu-sam7-private.h
+END
+icu-sam7.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1535/trunk/mutekh/drivers/icu/sam7/icu-sam7.c
+END
+icu-sam7.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/sam7/icu-sam7.config
+END
+icu-sam7.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1535/trunk/mutekh/drivers/icu/sam7/icu-sam7.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/sam7/Makefile
+END

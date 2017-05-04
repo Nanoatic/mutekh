@@ -1,0 +1,35 @@
+
+######################################################################
+# User definable tokens
+
+%config CONFIG_CPU_PPC_SOCLIB
+  desc SoCLib PowerPc 405
+  parent CONFIG_CPU_PPC
+  depend CONFIG_ARCH_SOCLIB
+  provide CONFIG_CPU_CACHE
+  provide CONFIG_CPU_CACHE_LINE=4
+  provide CONFIG_CPU_SMP_CAPABLE
+  depend CONFIG_COMPILE_SOFTFLOAT
+%config end
+
+
+######################################################################
+# Provided tokens, not definable by user directly
+
+%config CONFIG_CPU_PPC
+  desc PowerPC processors support
+  parent CONFIG_CPU_META
+  flags internal private
+
+  when CONFIG_CPU_PPC_SOCLIB
+
+  module cpu Hexo
+  depend CONFIG_ARCH_SOCLIB
+  provide CONFIG_CPU_NAME=ppc
+  provide CONFIG_CPU_RESET_ADDR=0xffffff80
+  provide CONFIG_CPU_RESET_SIZE=0x80
+  provide CONFIG_CPU_ENDIAN_BIG
+  provide CONFIG_CPU_EXCEPTION_ALIGN=0x00010000
+  provide CONFIG_HEXO_STACK_ALIGN=16
+%config end
+

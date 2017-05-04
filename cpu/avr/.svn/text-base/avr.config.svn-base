@@ -1,0 +1,55 @@
+
+######################################################################
+# User definable tokens
+
+%config CONFIG_CPU_AVR_ATMEGA128
+  desc Provide all configuration tokens suitable for the Atmega128 device.
+  parent CONFIG_CPU_AVR
+  provide CONFIG_RAM_ADDR=0x0100
+  provide CONFIG_RAM_SIZE=0xf00
+  provide CONFIG_ROM_ADDR=0x0000
+  provide CONFIG_ROM_SIZE=0x20000
+  provide CONFIG_CPU_AVR_IRQ_COUNT=28
+  provide CONFIG_CPU_AVR_GCCMCU=atmega128
+  provide CONFIG_CPU_AVR_ENHANCED
+  provide CONFIG_CPU_WAIT_IRQ
+%config end
+
+######################################################################
+# Provided tokens, not definable by user directly
+
+%config CONFIG_CPU_AVR
+  desc AVR microcontroller support
+  module cpu Hexo
+  flags internal private
+
+  when CONFIG_CPU_AVR_ATMEGA128
+
+  provide CONFIG_CPU_NAME=avr
+  provide CONFIG_CPU_RESET_ADDR=0x00000000
+  require CONFIG_CPU_AVR_IRQ_COUNT
+  require CONFIG_CPU_AVR_GCCMCU
+  provide CONFIG_CPU_ENDIAN_LITTLE
+  provide CONFIG_LIBC_STRING_ASM
+  suggest CONFIG_MUTEK_MEMALLOC_ALIGN=1
+  parent CONFIG_CPU_META
+%config end
+
+%config CONFIG_CPU_AVR_IRQ_COUNT
+  desc Set avr microcontroller interrupts table slot count
+  flags internal value
+  parent CONFIG_CPU_AVR
+%config end
+
+%config CONFIG_CPU_AVR_GCCMCU
+  desc Avr core instruction set version as defined in the gcc manual
+  flags internal value
+  parent CONFIG_CPU_AVR
+%config end
+
+%config CONFIG_CPU_AVR_ENHANCED
+  desc Enable use of instructions from enhanced avr core
+  flags internal value
+  parent CONFIG_CPU_AVR
+%config end
+

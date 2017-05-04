@@ -1,0 +1,4 @@
+.text c
+.data d
+.contextdata d
+.cpudata d

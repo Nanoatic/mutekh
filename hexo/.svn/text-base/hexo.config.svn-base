@@ -1,0 +1,102 @@
+
+%config CONFIG_HEXO
+  desc Hardware abstraction layer
+  flags mandatory
+  provide CONFIG_LICENSE_USE_LGPL
+  module hexo Hexo
+%config end
+
+%config CONFIG_HEXO_IRQ
+  desc Hardware interrupts support
+  flags auto
+  parent CONFIG_HEXO
+%config end
+
+%config CONFIG_HEXO_IPI
+  desc Inter processor interrupts support
+  flags auto
+  depend CONFIG_ARCH_SMP
+  depend CONFIG_CPU_WAIT_IRQ
+  depend CONFIG_DRIVER_ICU_IPI
+  depend CONFIG_HEXO_IRQ
+  suggest_when CONFIG_ARCH_SMP
+  parent CONFIG_HEXO
+%config end
+
+%config CONFIG_HEXO_FPU                                                  
+  desc Enables hardware floating points support                          
+  flags auto                                                             
+  parent CONFIG_HEXO                                                     
+  exclude CONFIG_COMPILE_SOFTFLOAT                                       
+%config end                                                              
+
+%config CONFIG_HEXO_USERMODE
+  parent CONFIG_HEXO
+  flags auto
+  desc Enable processor user privilege level support
+%config end
+
+%config CONFIG_HEXO_MMU
+  desc Enable MMU driver
+  flags auto
+  parent CONFIG_HEXO
+  single CONFIG_HEXO_CPU_MMU CONFIG_HEXO_ARCH_MMU
+%config end
+
+%config CONFIG_HEXO_CPU_MMU
+  desc Use processor MMU driver implementation
+  parent CONFIG_HEXO_MMU
+%config end
+
+%config CONFIG_HEXO_ARCH_MMU
+  desc Use platform MMU driver implementation
+  parent CONFIG_HEXO_MMU
+%config end
+
+%config CONFIG_HEXO_MMU_PADDR
+  desc Physical address size used by MMU
+  flags value
+  parent CONFIG_HEXO_MMU
+%config end
+
+%config CONFIG_HEXO_MMU_VADDR
+  desc Virtual address size used by MMU
+  flags value
+  parent CONFIG_HEXO_MMU
+%config end
+
+%config CONFIG_HEXO_INTTYPES_DEPRECATED
+  desc Mark short, int and long compiler types has deprecated because their size may vary between architectures
+  default defined
+  parent CONFIG_HEXO
+%config end
+
+%config CONFIG_HEXO_INTTYPES_SMALL
+  desc Use shortest possible integer types for int_fast*_t and uint_fast*_t types instead of optimal ones
+  when CONFIG_COMPILE_OPTIMIZE=s
+  parent CONFIG_HEXO
+%config end
+
+%config CONFIG_HEXO_RESET_STACK_SIZE
+  desc Temporary processor boot stack size (log2)
+  flags value
+  default 12
+  parent CONFIG_HEXO
+%config end
+
+%config CONFIG_HEXO_STACK_ALIGN
+  desc Stack alignment constraint
+  flags value maxval
+  default 1
+  parent CONFIG_HEXO
+%config end
+
+######################################################################
+# Provided token, not definable by user directly
+
+%config CONFIG_HEXO_MMU_PAGESIZE
+  desc Virtual memory physical page size
+  flags internal value
+  parent CONFIG_HEXO_MMU
+%config end
+

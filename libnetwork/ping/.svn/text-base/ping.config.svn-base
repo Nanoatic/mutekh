@@ -1,0 +1,7 @@
+%config CONFIG_NETWORK_PING
+  desc Enable PING builtin for host probing
+  parent CONFIG_NETWORK
+  depend CONFIG_MUTEK_TIMERMS
+  depend CONFIG_NETWORK_IPV4
+  depend CONFIG_NETWORK_SOCKET_RAW
+%config end

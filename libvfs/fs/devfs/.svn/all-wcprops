@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1440/trunk/mutekh/libvfs/fs/devfs
+END
+devfs-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/devfs/devfs-private.h
+END
+devfs_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/devfs/devfs_file.c
+END
+devfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/devfs/devfs.c
+END
+devfs.config
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1440/trunk/mutekh/libvfs/fs/devfs/devfs.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/devfs/Makefile
+END
+devfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/devfs/devfs.h
+END

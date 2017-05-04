@@ -1,0 +1,40 @@
+
+%config CONFIG_LIBELF
+  desc Enable ability to load (static) elf executables
+  module libelf Elf loader library
+  provide CONFIG_LICENSE_USE_GPL
+  depend CONFIG_VFS
+%config end
+
+%config CONFIG_LIBELF_DYNAMIC
+  desc Support for dynamic elf executables
+  parent CONFIG_LIBELF
+%config end
+
+%config CONFIG_LIBELF_DEBUG
+  desc Debbugging verbosity (0=nothing, 1=trace, 2=debug)
+  flags value
+  parent CONFIG_LIBELF
+  default 0
+%config end
+
+%config CONFIG_LIBELF_RTLD
+  desc Support for relocatable dynamic elf executables
+  parent CONFIG_LIBELF
+  depend CONFIG_LIBELF_DYNAMIC
+%config end
+
+%config CONFIG_LIBELF_RTLD_TLS
+  desc Provide Thread Local Storage support for relocatable dynamic elf executables
+  parent CONFIG_LIBELF_RTLD
+  default defined
+%config end
+
+%config CONFIG_LIBELF_RTLD_KERNEL
+  desc Allows to load kernel modules (not implemented yet)
+  parent CONFIG_LIBELF_RTLD
+# TLS is non-sense for kernel module
+  exclude CONFIG_LIBELF_RTLD_TLS
+%config end
+
+# vim: filetype=conf

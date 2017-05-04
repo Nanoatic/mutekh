@@ -1,0 +1,7 @@
+
+%config CONFIG_DRIVER_CHAR_US6089C_UART
+  desc Enable Atmel US_6089c UART device support (SAMx, ...)
+  provide CONFIG_DRIVER_CHAR
+  parent CONFIG_DEVICE
+%config end
+

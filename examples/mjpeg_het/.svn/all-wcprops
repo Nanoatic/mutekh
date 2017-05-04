@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1451/trunk/mutekh/examples/mjpeg_het
+END
+jpeg_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/jpeg_data.c
+END
+dsx_hw_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/dsx_hw_init.c
+END
+mwmr.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/mwmr.c
+END
+huff_tables.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/huff_tables.c
+END
+srl_private_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/srl_private_types.h
+END
+jpeg_data.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/jpeg_data.h
+END
+vld.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/vld.c
+END
+endianness.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/endianness.c
+END
+huff_tables.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/huff_tables.h
+END
+lock.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/lock.c
+END
+jpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/jpeg.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1342/trunk/mutekh/examples/mjpeg_het/Makefile
+END
+srl.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/srl.h
+END
+srl_mwmr.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/srl_mwmr.h
+END
+bit_reading.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/bit_reading.c
+END
+tg.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/tg.c
+END
+bit_reading.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/bit_reading.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/README
+END
+mjpeg_tasks.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/mjpeg_tasks.h
+END
+srl_endianness.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/srl_endianness.h
+END
+platform-mips+arm.dts
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/platform-mips+arm.dts
+END
+block_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/block_io.c
+END
+demux.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/demux.c
+END
+idct.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/idct.c
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1451/trunk/mutekh/examples/mjpeg_het/config
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1451/trunk/mutekh/examples/mjpeg_het/main.c
+END
+block_io.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/block_io.h
+END
+ramdac.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/ramdac.c
+END
+srl_public_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/srl_public_types.h
+END
+libu.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/libu.c
+END
+iqzz.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1299/trunk/mutekh/examples/mjpeg_het/iqzz.c
+END

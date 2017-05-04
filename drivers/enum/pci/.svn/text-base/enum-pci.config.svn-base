@@ -1,0 +1,9 @@
+
+%config CONFIG_DRIVER_ENUM_PCI
+  desc enable PCI bus enumeration
+  depend CONFIG_ARCH_IBMPC
+  depend CONFIG_DEVICE_TREE
+  provide CONFIG_DRIVER_ENUM
+  parent CONFIG_DEVICE
+%config end
+

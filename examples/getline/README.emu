@@ -1,0 +1,5 @@
+When executing the kernel comiled with arch emu from a unix shell, you
+must set the terminal in raw mode just before starting the kernel:
+
+stty -icanon -echo -brkint -icrnl ixoff -imaxbel iutf8 ; ./kernel-emu-x86-emu.out
+

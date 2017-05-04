@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1440/trunk/mutekh/libvfs/fs/fat
+END
+fat-defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-defs.h
+END
+fat-83.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-83.c
+END
+fatfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fatfs.c
+END
+fat-sector-cache.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-sector-cache.c
+END
+fatfs-types.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fatfs-types.h
+END
+fat.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat.c
+END
+fat-sector-cache.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-sector-cache.h
+END
+fat-access.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-access.h
+END
+fat32.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat32.c
+END
+fat.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat.h
+END
+fat16.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat16.c
+END
+fat-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-private.h
+END
+fat-lfn.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-lfn.c
+END
+fat-file.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-file.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/Makefile
+END
+fat.config
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1440/trunk/mutekh/libvfs/fs/fat/fat.config
+END
+fat-dirent.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/fat/fat-dirent.c
+END

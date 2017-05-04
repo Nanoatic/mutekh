@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/135/trunk/doc/c_container_algorithms
+END
+s_bitmap.texi
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/135/trunk/doc/c_container_algorithms/s_bitmap.texi
+END
+s_array_based.texi
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/135/trunk/doc/c_container_algorithms/s_array_based.texi
+END
+s_hashed.texi
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/135/trunk/doc/c_container_algorithms/s_hashed.texi
+END
+s_trees.texi
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/135/trunk/doc/c_container_algorithms/s_trees.texi
+END
+s_linked_lists.texi
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/135/trunk/doc/c_container_algorithms/s_linked_lists.texi
+END

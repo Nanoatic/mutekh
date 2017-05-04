@@ -1,0 +1,9 @@
+
+%config CONFIG_DRIVER_ICU_ARM
+  desc enable ARM interrupt controller unit support
+  when CONFIG_CPU_ARM
+  provide CONFIG_DRIVER_ICU
+  depend CONFIG_HEXO_IRQ
+  parent CONFIG_DEVICE
+%config end
+

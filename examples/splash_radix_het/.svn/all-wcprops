@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1403/trunk/mutekh/examples/splash_radix_het
+END
+radix_pthread.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1403/trunk/mutekh/examples/splash_radix_het/radix_pthread.c
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/examples/splash_radix_het/config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1342/trunk/mutekh/examples/splash_radix_het/Makefile
+END
+platform-mips+arm.dts
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1291/trunk/mutekh/examples/splash_radix_het/platform-mips+arm.dts
+END

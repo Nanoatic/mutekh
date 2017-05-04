@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1594/trunk/mutekh/examples/common
+END
+platforms-emu.conf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1473/trunk/mutekh/examples/common/platforms-emu.conf
+END
+pf_soclib_tutorial_mips32eb.dts
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1375/trunk/mutekh/examples/common/pf_soclib_tutorial_mips32eb.dts
+END
+platforms-simple.conf
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1594/trunk/mutekh/examples/common/platforms-simple.conf
+END
+platforms-ibmpc.conf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1449/trunk/mutekh/examples/common/platforms-ibmpc.conf
+END
+platforms-soclib.conf
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1549/trunk/mutekh/examples/common/platforms-soclib.conf
+END
+pf_soclib_tutorial_mips32el.dts
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1375/trunk/mutekh/examples/common/pf_soclib_tutorial_mips32el.dts
+END
+pf_soclib_tutorial_arm.dts
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1335/trunk/mutekh/examples/common/pf_soclib_tutorial_arm.dts
+END
+platforms.conf
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1342/trunk/mutekh/examples/common/platforms.conf
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1183/trunk/mutekh/examples/common/Makefile
+END
+vfs_options.conf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1399/trunk/mutekh/examples/common/vfs_options.conf
+END
+build_options.conf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1412/trunk/mutekh/examples/common/build_options.conf
+END
+pf_soclib_tutorial_ppc.dts
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1335/trunk/mutekh/examples/common/pf_soclib_tutorial_ppc.dts
+END

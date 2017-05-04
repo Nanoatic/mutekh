@@ -1,0 +1,8 @@
+
+%config CONFIG_DRIVER_CHAR_SAM7DBGU
+  desc enable Sam7 DBGU device support
+  depend CONFIG_ARCH_SIMPLE_SAM7
+  provide CONFIG_DRIVER_CHAR
+  parent CONFIG_DEVICE
+%config end
+

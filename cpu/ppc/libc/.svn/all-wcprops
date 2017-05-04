@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/740/trunk/mutekh/cpu/ppc/libc
+END
+setjmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/740/trunk/mutekh/cpu/ppc/libc/setjmp.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/740/trunk/mutekh/cpu/ppc/libc/Makefile
+END

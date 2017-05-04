@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1388/trunk/mutekh/arch/ibmpc/include/arch/hexo
+END
+atomic.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/380/trunk/mutekh/arch/ibmpc/include/arch/hexo/atomic.h
+END
+segment.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1388/trunk/mutekh/arch/ibmpc/include/arch/hexo/segment.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/380/trunk/mutekh/arch/ibmpc/include/arch/hexo/types.h
+END
+lock.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/380/trunk/mutekh/arch/ibmpc/include/arch/hexo/lock.h
+END

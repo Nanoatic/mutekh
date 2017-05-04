@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1388/trunk/mutekh/libnetwork/lwnfs
+END
+nfs_stream_ops.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/679/trunk/mutekh/libnetwork/lwnfs/nfs_stream_ops.c
+END
+nfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1308/trunk/mutekh/libnetwork/lwnfs/nfs.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/318/trunk/mutekh/libnetwork/lwnfs/Makefile
+END
+lwnfs.config
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1388/trunk/mutekh/libnetwork/lwnfs/lwnfs.config
+END

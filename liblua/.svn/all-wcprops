@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1589/trunk/mutekh/liblua
+END
+ldebug.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/676/trunk/mutekh/liblua/ldebug.c
+END
+ldebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/612/trunk/mutekh/liblua/ldebug.h
+END
+ldo.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/676/trunk/mutekh/liblua/ldo.c
+END
+HISTORY
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/612/trunk/mutekh/liblua/HISTORY
+END
+ldump.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/676/trunk/mutekh/liblua/ldump.c
+END
+ldo.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/612/trunk/mutekh/liblua/ldo.h
+END
+lundump.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/676/trunk/mutekh/liblua/lundump.c
+END
+COPYRIGHT
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/612/trunk/mutekh/liblua/COPYRIGHT
+END
+lundump.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/612/trunk/mutekh/liblua/lundump.h
+END
+lmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/676/trunk/mutekh/liblua/lmem.c
+END
+liblua.config
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1440/trunk/mutekh/liblua/liblua.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/676/trunk/mutekh/liblua/Makefile
+END
+lstate.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/676/trunk/mutekh/liblua/lstate.c
+END
+ltm.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/676/trunk/mutekh/liblua/ltm.c
+END
+lvm.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/676/trunk/mutekh/liblua/lvm.c
+END
+lmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/676/trunk/mutekh/liblua/lmem.h
+END
+ltm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/612/trunk/mutekh/liblua/ltm.h
+END
+lstate.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/676/trunk/mutekh/liblua/lstate.h
+END
+lvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/612/trunk/mutekh/liblua/lvm.h
+END
+ltable.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/676/trunk/mutekh/liblua/ltable.c
+END
+llex.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/676/trunk/mutekh/liblua/llex.c
+END
+lgc.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/676/trunk/mutekh/liblua/lgc.c
+END
+lfunc.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/676/trunk/mutekh/liblua/lfunc.c
+END
+ltable.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/612/trunk/mutekh/liblua/ltable.h
+END
+lopcodes.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/612/trunk/mutekh/liblua/lopcodes.c
+END
+lparser.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/676/trunk/mutekh/liblua/lparser.c
+END
+llex.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/612/trunk/mutekh/liblua/llex.h
+END
+lgc.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/612/trunk/mutekh/liblua/lgc.h
+END
+Makefile.lua
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/612/trunk/mutekh/liblua/Makefile.lua
+END
+lfunc.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/612/trunk/mutekh/liblua/lfunc.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/612/trunk/mutekh/liblua/README
+END
+lparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/612/trunk/mutekh/liblua/lparser.h
+END
+lopcodes.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/612/trunk/mutekh/liblua/lopcodes.h
+END
+lzio.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/676/trunk/mutekh/liblua/lzio.c
+END
+lobject.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/676/trunk/mutekh/liblua/lobject.c
+END
+llimits.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/676/trunk/mutekh/liblua/llimits.h
+END
+lstring.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/676/trunk/mutekh/liblua/lstring.c
+END
+lzio.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/676/trunk/mutekh/liblua/lzio.h
+END
+lapi.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/676/trunk/mutekh/liblua/lapi.c
+END
+lcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/676/trunk/mutekh/liblua/lcode.c
+END
+lobject.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/676/trunk/mutekh/liblua/lobject.h
+END
+lstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/612/trunk/mutekh/liblua/lstring.h
+END
+lapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/612/trunk/mutekh/liblua/lapi.h
+END
+lcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/612/trunk/mutekh/liblua/lcode.h
+END

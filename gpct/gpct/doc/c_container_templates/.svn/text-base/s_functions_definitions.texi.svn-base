@@ -1,0 +1,79 @@
+@page
+@node Container functions definitions
+@section Container functions definitions
+@c filename functions_definitions
+@c parent chapter is Container templates
+
+
+Once types are defined, container functions can be defined by using
+macros described in this section.
+
+The @code{CONTAINER_FUNC} macro defines general container access
+functions:
+
+@example
+
+CONTAINER_FUNC(@samp{name}, @samp{algorithm}, @samp{attributes}, @samp{prefix}, ...);
+
+@end example
+
+Here is a description of mandatory parameters:
+
+@itemize @bullet
+
+@item
+@samp{attributes} is the C function attributes to use for functions
+definition. This parameter can be empty. Common values are
+@code{static}, @code{static inline}, ...
+
+@item
+@samp{name} must be the same value as the one passed to the type
+definition macro.
+
+@item
+@samp{algorithm} must be the same value as the one passed to the type
+definition macro.
+
+@item
+@samp{prefix} is the function name prefix to use. All container access
+functions are named after this prefix.
+
+@end itemize
+
+More parameters may be needed depending on container algorithm
+used. For optional parameters details @pxref{Container algorithms}.
+
+@subheading Function prototypes
+
+Container functions prototypes can be declared with macros shown here:
+
+@example
+
+CONTAINER_PROTOTYPE(@samp{name}, @samp{attributes}, @samp{prefix});
+
+@end example
+
+Parameters meaning are the same as for functions definition macros.
+
+@subsubheading Example
+
+This example illustrates function definition and usage for linked list container.
+
+@verbatiminclude ../examples/example_funcdef.c
+
+All container access functions must be declared and defined before
+use. Optional function prototypes declaration is shown in this example.
+
+Access functions related to the @code{mylist} container are then
+defined in place with the @code{static} attribute. Defined functions
+names are prefixed by @code{myfunc}.
+
+The freshly defined functions can then be used to access any
+@code{mylist} container as shown in the example where
+@code{myfunc_init()}, @code{myfunc_push()} and @code{myfunc_pop()}
+calls are used to access the @code{list} container.
+
+@setfilename s_key_values.texi
+
+@setfilename s_key_values.info
+

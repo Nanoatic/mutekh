@@ -1,0 +1,5 @@
+%config CONFIG_DRIVER_FS_DEVFS
+  parent CONFIG_VFS
+  desc Device File System support
+  depend CONFIG_DEVICE_TREE
+%config end

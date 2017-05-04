@@ -1,0 +1,69 @@
+@page
+@node Container locking functions
+@section Container locking functions
+@c filename container_locking
+@c parent chapter is Container operations
+
+
+All container access function may perform container locking operations
+before accessing the container object. In some case you may want to lock
+the container object directly to take advantage of recursive
+locks or when using both locked and non-locked access functions on the
+same container.
+
+Function presented in this section allow you to perform container object
+locking directly, using the locking mechanism specified with the
+@code{CONTAINER_FUNC} macro, @pxref{Container locking mechanisms} for
+more details.
+
+@menu
+* @emph{prefix}@code{_wrlock()}::
+* @emph{prefix}@code{_rdlock()}::
+* @emph{prefix}@code{_unlock()}::
+@end menu
+
+@node @emph{prefix}@code{_wrlock()}
+@subsection @emph{prefix}@code{_wrlock()}
+@c filename sss_prefix_wrlock_
+@c parent section is Container locking functions
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_wrlock(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function locks the container @samp{root} object for writing.
+
+@node @emph{prefix}@code{_rdlock()}
+@subsection @emph{prefix}@code{_rdlock()}
+@c filename sss_prefix_rdlock_
+@c parent section is Container locking functions
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_rdlock(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function locks the container @samp{root} object for reading. It
+may be the same as @emph{prefix}@code{_wrlock()} depending on locking
+mechanism.
+
+@node @emph{prefix}@code{_unlock()}
+@subsection @emph{prefix}@code{_unlock()}
+@c filename sss_prefix_unlock_
+@c parent section is Container locking functions
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_unlock(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function unlock the container @samp{root} object.
+
+@setfilename s_lookup_and_sorting.texi
+
+@setfilename s_lookup_and_sorting.info
+

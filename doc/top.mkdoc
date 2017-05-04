@@ -1,0 +1,154 @@
+
+@insert title
+
+@section TP {Copying this document} 
+ Copyright (c) Alexandre Becoulet 2009. Permission is granted to copy,
+ distribute and/or modify this document under the terms of the GNU Free
+ Documentation License, Version 1.3 or any later version published by
+ the Free Software Foundation; with no Invariant Sections, no
+ Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is
+ included in the section entitled @xref{GNU Free Documentation License}.
+@end section
+
+@ifopt doc_format {html}
+ @section HP {Table of contents}
+  @insert toc
+ @end section
+@end ifopt
+
+@c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+@c Modules definitions
+@c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+@moduledef{Hexo}
+ @short Processor and platform hardware abstraction layer
+ @order 100
+@end group
+
+@moduledef{Mutek}
+ @short Non hardware specific kernel code
+ @order 99
+@end group
+
+@moduledef{Devices}
+ @short Hardware device driver classes API
+ @order 98
+@end group
+
+@moduledef{C library}
+ @short Standard C library
+ @order 90
+@end group
+
+@moduledef{Math library}
+ @short Standard math library
+ @order 89
+@end group
+
+@moduledef{Virtual File System}
+ @short Virtual file system library and file system drivers
+ @order 88
+
+ @section{Virtual File System design}
+
+ Virtual File System (VFS) abstract low-level file system in an
+ uniform manner. It also caches open files and directories for
+ faster access.
+
+ VFS represents any file or directory as a node. This is the @ref
+ vfs_node_s type.
+
+ All nodes are reference-counted. All functions returning a node give
+ a reference to caller. No function except @ref vfs_node_refdrop steals
+ a reference. This is caller's responsibility to @ref vfs_node_refdrop
+ nodes when not needed any more.
+
+ VFS is made of two separate layers. One is operating on a path-string
+ level, closer to the user's habits (@ref @vfs/helpers.h); the other
+ is operating on a node level, closer to the VFS internal structure
+ (@ref @vfs/ops.h). The former is using null-terminated strings, the
+ latter is using explicit-length strings. This avoids most of the
+ copies of user-passed read-only string.
+
+ VFS also implement root directory and current-working-directory
+ through @ref vfs_get_cwd and @ref vfs_get_root (@ref
+ @vfs/globals.h). Configuration can make them system-wise or
+ thread-local (@ref CONFIG_VFS_GLOBAL_CWD and @ref
+ CONFIG_VFS_GLOBAL_ROOT).
+
+ File handles are also reference-counted. On most filesystems, nodes
+ may be opened more than once at the same time, each instance of an
+ open file is a @ref vfs_file_s.
+
+ @end section
+
+@end group
+
+@moduledef{Pthread library}
+ @short POSIX threads library
+ @order 87
+@end group
+
+@moduledef{Cryptographic algorithms}
+ @short Ciphers, random generators and hash functions library
+@end group
+
+@moduledef{SRL}
+ @short MutekS API
+ This module implements the MutekS API,
+ mainly used by the DSX software.
+
+ See @url https://www-asim.lip6.fr/trac/dsx/
+@end group
+
+@moduledef{Capsule}
+ @short Capsule threading library
+
+ Environment aiming at easing parallel programming, see
+ @url https://alchemy.futurs.inria.fr/capsule/
+@end group
+
+@moduledef{FDT access library}
+ @short Flattened device tree access library
+ This library offers a mid-level access to Flattened Device Tree blobs
+ without the need of dynamic memory allocation. This is mostly intended
+ for system initialization stage.
+
+ See @url https://www.mutek.fr/trac/mutekh/wiki/FlattenedDeviceTree
+@end group
+
+@moduledef{Elf loader library}
+ @short dynamic Elf object files loader
+@end group
+
+@c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+@c Plain Documentation
+@c cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+@section TP {Modules documentation}
+ @section TH {Modules list}
+  @insert modules_table
+ @end section
+ @insert all_modules_sections
+@end section
+
+@section TP {Headers documentation}
+ @section T {Headers list}
+  @insert headers_table
+ @end section
+  @insert {NP} all_headers_sections
+@end section
+
+@section THP {Configuration tokens}
+ @insert {@doc/config.h} members_list
+ @section {Configuration tokens detail}
+  @insert {@doc/config.h} member_sections
+ @end section
+@end section
+
+@insert global_scope_section
+
+@section TP {GNU Free Documentation License}
+ @include fdl-1.3.mkdoc
+@end section
+

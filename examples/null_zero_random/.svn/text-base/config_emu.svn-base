@@ -1,0 +1,26 @@
+
+# Program license
+  CONFIG_LICENSE_APP_GPL
+
+# Platform types
+  CONFIG_ARCH_EMU
+  CONFIG_ARCH_EMU_LINUX
+
+# Processor
+  CONFIG_CPU_X86_EMU
+
+# Code generation
+  CONFIG_DEBUG undefined
+  CONFIG_COMPILE_DEBUG undefined
+
+# Mutek features
+  CONFIG_MUTEK_CONSOLE
+
+# Device drivers
+  CONFIG_DRIVER_CHAR_EMUTTY
+  CONFIG_DRIVER_CHAR_RANDOM
+  CONFIG_DRIVER_CHAR_ZERO
+  CONFIG_DRIVER_CHAR_NULL
+
+# New source code module to be compiled
+  %append MODULES examples/test_random:$(CONFIGPATH)

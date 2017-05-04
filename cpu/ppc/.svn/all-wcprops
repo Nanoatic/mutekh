@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1586/trunk/mutekh/cpu/ppc
+END
+exception.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1421/trunk/mutekh/cpu/ppc/exception.c
+END
+notes.rst
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1334/trunk/mutekh/cpu/ppc/notes.rst
+END
+boot.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1526/trunk/mutekh/cpu/ppc/boot.c
+END
+ldscript
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/466/trunk/mutekh/cpu/ppc/ldscript
+END
+ppc.config
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1524/trunk/mutekh/cpu/ppc/ppc.config
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1364/trunk/mutekh/cpu/ppc/config.mk
+END
+cpu_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1449/trunk/mutekh/cpu/ppc/cpu_init.c
+END
+cpu_context.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1526/trunk/mutekh/cpu/ppc/cpu_context.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/877/trunk/mutekh/cpu/ppc/Makefile
+END

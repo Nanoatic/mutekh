@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1440/trunk/mutekh/drivers/enum/root
+END
+enum-root.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/root/enum-root.c
+END
+enum-root.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1440/trunk/mutekh/drivers/enum/root/enum-root.config
+END
+enum-root.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/root/enum-root.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/root/Makefile
+END

@@ -1,0 +1,18 @@
+
+  %set OUTPUT_NAME hello_het
+
+# New source code module to be compiled
+  %append MODULES $(OUTPUT_NAME):$(CONFIGPATH)
+
+# Application license
+  CONFIG_LICENSE_APP_LGPL
+
+# Mutek features
+  CONFIG_MUTEK_SMP_APP_START
+
+# Libs
+  CONFIG_PTHREAD
+
+%include ../common/build_options.conf
+%include ../common/platforms.conf
+

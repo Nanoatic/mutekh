@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/135/trunk/doc/c_container_templates
+END
+s_categories.texi
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/135/trunk/doc/c_container_templates/s_categories.texi
+END
+s_key_values.texi
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/135/trunk/doc/c_container_templates/s_key_values.texi
+END
+s_preprocessor_tests.texi
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/135/trunk/doc/c_container_templates/s_preprocessor_tests.texi
+END
+s_types_definition.texi
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/135/trunk/doc/c_container_templates/s_types_definition.texi
+END
+s_algorithms_interchangeability.texi
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/135/trunk/doc/c_container_templates/s_algorithms_interchangeability.texi
+END
+s_functions_definitions.texi
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/135/trunk/doc/c_container_templates/s_functions_definitions.texi
+END

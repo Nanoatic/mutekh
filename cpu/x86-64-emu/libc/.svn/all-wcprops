@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1147/trunk/mutekh/cpu/x86-64-emu/libc
+END
+setjmp.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/690/trunk/mutekh/cpu/x86-64-emu/libc/setjmp.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1147/trunk/mutekh/cpu/x86-64-emu/libc/Makefile
+END

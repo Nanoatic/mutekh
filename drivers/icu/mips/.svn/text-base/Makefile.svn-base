@@ -1,0 +1,4 @@
+
+objs = icu-mips.o
+
+

@@ -1,0 +1,7 @@
+%config CONFIG_NETWORK_DHCLIENT
+  desc Enable DHCP builtin client for address attribution
+  parent CONFIG_NETWORK
+  depend CONFIG_NETWORK_IPV4
+  depend CONFIG_NETWORK_SOCKET
+  depend CONFIG_NETWORK_UDP
+%config end

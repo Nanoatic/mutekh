@@ -1,0 +1,124 @@
+@page
+@node Bitmap containers
+@section Bitmap containers
+@c filename bitmap
+@c parent chapter is Container algorithms
+
+
+GPCT provides two bit oriented containers. These containers are designed to
+store and perform common operations on bitmap.
+
+@menu
+* Fixed size bitmap::
+* Dynamic bitmap::
+@end menu
+
+@node Fixed size bitmap
+@subsection Fixed size bitmap
+@c filename fixed_size_bitmap
+@c parent section is Bitmap containers
+
+
+Bitmap container is a simple array of user defined integer type used
+to store bits. The container object contains the fixed size bits array.
+
+The following functions are available with this algorithm:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isvalid()}, @emph{prefix}@code{_isempty()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_prev()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()}, @emph{prefix}@code{_size()},
+@item @emph{prefix}@code{_foreach()},
+@item @emph{prefix}@code{_clear()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_next()},
+@item @code{CONTAINER_FOREACH()} macro
+@end itemize
+
+When using the @emph{prefix}@code{_foreach()} function and
+@code{CONTAINER_FOREACH()} macro, user code is executed for bits set to
+one only.
+
+@emph{prefix}@code{_isempty()} function returns true if all bits are set zero.
+
+Iteration and lookup features are optimized for speed by using
+@code{ffs()} like bit scanning functions.
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_bitmap.h>}
+
+Bitmap container token name is @code{BITMAP}. The
+@code{CONTAINER_TYPE} macro requires an unsigned integer type and the
+bit count as extra parameter. Container size may be rounded
+up to the nearest integer type size.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_bitmap.c
+
+@page
+@node Dynamic bitmap
+@subsection Dynamic bitmap
+@c filename dynamic_bitmap
+@c parent section is Bitmap containers
+
+
+Dynamic bitmap container is a reallocatable array of user defined
+integer type used to store bits. The container object contains a pointer
+to a dynamically allocated bitmap and the current size of the bitmap.
+
+The following functions are available with this algorithm:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isvalid()}, @emph{prefix}@code{_isempty()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_prev()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()}, @emph{prefix}@code{_size()}, @emph{prefix}@code{_resize()},
+@item @emph{prefix}@code{_foreach()},
+@item @emph{prefix}@code{_clear()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_next()},
+@item @code{CONTAINER_FOREACH()} macro
+@end itemize
+
+When using the @emph{prefix}@code{_foreach()} function and
+@code{CONTAINER_FOREACH()} macro, user code is executed for bits set to
+one only.
+
+Iteration and lookup features are optimized for speed by using
+@code{ffs()} like bit scanning functions.
+
+The bitmap is allocated on container initialization with the initial
+user defined bit count. The size of the bitmap may be changed later
+using the @emph{prefix}@code{_resize()} function. Size may be set to
+@code{0} if no bitmap storage must be allocated.
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_dbitmap.h>}
+
+Bitmap container token name is @code{DBITMAP}. The
+@code{CONTAINER_TYPE} macro requires an unsigned integer type and the
+initial bit count as extra parameter. Container size may be rounded
+up to the nearest integer type size.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_dbitmap.c
+
+@page
+
+
+
+
+@page
+
+
+@unnumbered Index
+
+@printindex cp
+
+@setfilename c_fdl.texi
+
+@setfilename c_fdl.info
+

@@ -1,0 +1,31 @@
+@node Functions definition
+@section Functions definition
+@c filename functions_definition
+@c parent chapter is Using GPCT
+
+Template @strong{core functions definition} comes next, all types must
+be defined before. Functions are defined using a macro with the
+@code{_FUNC} name suffix. Here is an example of functions definition
+for a container template:
+
+@example
+
+CONTAINER_FUNC(static, mylist, DLIST, myfunc);
+
+@end example
+
+@noindent
+As for type definitions, some parameters are mandatory while others are
+extra parameters which depends on template. Parameters meaning are
+template specific, they are discussed later.
+
+Some @strong{parameters values must match} those used on type
+definition. It is a good practice to use a dedicated macro to change
+the whole thing easily if template macro invocations are spread
+through different project files. This will allow you to change a
+container algorithm with a single line change.
+
+@setfilename s_functions_prototypes.texi
+
+@setfilename s_functions_prototypes.info
+

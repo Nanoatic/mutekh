@@ -1,0 +1,134 @@
+/* -*- c -*- */
+
+#define EMU_CPP(x) x
+
+/*
+ * mmap syscalls arguments
+ */
+
+#if defined(CONFIG_ARCH_EMU_LINUX)
+# include <asm/mman.h>
+# include <signal.h>
+#elif defined(CONFIG_ARCH_EMU_DARWIN)
+# include <sys/mman.h>
+#endif
+
+EMU_CPP(#define) EMU_PROT_READ		PROT_READ
+EMU_CPP(#define) EMU_PROT_WRITE		PROT_WRITE
+EMU_CPP(#define) EMU_PROT_EXEC		PROT_EXEC
+EMU_CPP(#define) EMU_PROT_NONE		PROT_NONE
+
+EMU_CPP(#define) EMU_MAP_SHARED		MAP_SHARED
+EMU_CPP(#define) EMU_MAP_PRIVATE	MAP_PRIVATE
+EMU_CPP(#define) EMU_MAP_FIXED		MAP_FIXED
+#if defined(CONFIG_ARCH_EMU_LINUX)
+EMU_CPP(#define) EMU_MAP_ANONYMOUS	MAP_ANONYMOUS
+#elif defined(CONFIG_ARCH_EMU_DARWIN)
+EMU_CPP(#define) EMU_MAP_ANONYMOUS	MAP_ANON
+#endif
+EMU_CPP(#define) EMU_MAP_FILE		MAP_FILE
+
+/*
+ * open syscalls arguments
+ */
+
+#if defined(CONFIG_ARCH_EMU_LINUX)
+# include <asm/fcntl.h>
+#elif defined(CONFIG_ARCH_EMU_DARWIN)
+# include <sys/fcntl.h>
+#endif
+
+EMU_CPP(#define) EMU_O_RDONLY		O_RDONLY
+EMU_CPP(#define) EMU_O_WRONLY		O_WRONLY
+EMU_CPP(#define) EMU_O_RDWR		O_RDWR
+
+/*
+ * lseek syscalls arguments
+ */
+
+#if defined(CONFIG_ARCH_EMU_LINUX)
+# include <sys/types.h>
+# include <unistd.h>
+#elif defined(CONFIG_ARCH_EMU_DARWIN)
+/* fcntl defined them... */
+#endif
+
+EMU_CPP(#define) EMU_SEEK_SET		SEEK_SET
+EMU_CPP(#define) EMU_SEEK_CUR		SEEK_CUR
+EMU_CPP(#define) EMU_SEEK_END		SEEK_END
+
+/*
+ * signal
+ */
+
+EMU_CPP(#define) EMU_SIG_IGN		SIG_IGN
+EMU_CPP(#define) EMU_SIG_USR1		SIGUSR1
+EMU_CPP(#define) EMU_SIG_TERM		SIGTERM
+
+/*
+ * ioctl/tuntap syscalls arguments
+ */
+
+#if defined(CONFIG_ARCH_EMU_LINUX)
+#include <linux/if_tun.h>
+#endif
+
+/*
+ * clone syscall arguments
+ */
+
+#if defined(CONFIG_ARCH_EMU_LINUX)
+
+# include <sched.h>
+
+EMU_CPP(#define) EMU_CLONE_PARENT		CLONE_PARENT
+EMU_CPP(#define) EMU_CLONE_FS			CLONE_FS
+EMU_CPP(#define) EMU_CLONE_FILES		CLONE_FILES
+EMU_CPP(#define) EMU_CLONE_NEWNS		CLONE_NEWNS
+EMU_CPP(#define) EMU_CLONE_SIGHAND		CLONE_SIGHAND
+EMU_CPP(#define) EMU_CLONE_PTRACE		CLONE_PTRACE
+EMU_CPP(#define) EMU_CLONE_VFORK		CLONE_VFORK
+EMU_CPP(#define) EMU_CLONE_VM			CLONE_VM
+EMU_CPP(#define) EMU_CLONE_THREAD		CLONE_THREAD
+EMU_CPP(#define) EMU_CLONE_SETTL		CLONE_SETTL
+EMU_CPP(#define) EMU_CLONE_PARENT_SETTID	CLONE_PARENT_SETTID
+EMU_CPP(#define) EMU_CLONE_CHILD_SETTID		CLONE_CHILD_SETTID
+EMU_CPP(#define) EMU_CLONE_CHILD_CLEARTID	CLONE_CHILD_CLEARTID
+
+#endif
+
+/*
+ * ptrace syscall arguments
+ */
+
+#if defined(CONFIG_ARCH_EMU_LINUX)
+
+# include <linux/ptrace.h>
+
+EMU_CPP(#define) EMU_PTRACE_ATTACH		PTRACE_ATTACH
+EMU_CPP(#define) EMU_PTRACE_CONT		PTRACE_CONT
+EMU_CPP(#define) EMU_PTRACE_GETREGS		PTRACE_GETREGS
+EMU_CPP(#define) EMU_PTRACE_SETREGS		PTRACE_SETREGS
+
+/* ptrace registers */
+
+EMU_CPP(#define) EMU_PTRACE_EBX		EBX 
+EMU_CPP(#define) EMU_PTRACE_ECX		ECX 
+EMU_CPP(#define) EMU_PTRACE_EDX		EDX 
+EMU_CPP(#define) EMU_PTRACE_ESI		ESI 
+EMU_CPP(#define) EMU_PTRACE_EDI		EDI 
+EMU_CPP(#define) EMU_PTRACE_EBP		EBP 
+EMU_CPP(#define) EMU_PTRACE_EAX		EAX 
+EMU_CPP(#define) EMU_PTRACE_DS		DS 
+EMU_CPP(#define) EMU_PTRACE_ES		ES 
+EMU_CPP(#define) EMU_PTRACE_FS		FS 
+EMU_CPP(#define) EMU_PTRACE_GS		GS 
+EMU_CPP(#define) EMU_PTRACE_ORIG_EAX	ORIG_EAX 
+EMU_CPP(#define) EMU_PTRACE_EIP		EIP 
+EMU_CPP(#define) EMU_PTRACE_CS		CS  
+EMU_CPP(#define) EMU_PTRACE_EFL		EFL 
+EMU_CPP(#define) EMU_PTRACE_UESP	UESP 
+EMU_CPP(#define) EMU_PTRACE_SS		SS   
+EMU_CPP(#define) EMU_PTRACE_FRAME_SIZE	FRAME_SIZE 
+
+#endif

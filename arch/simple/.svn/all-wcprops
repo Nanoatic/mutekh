@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1600/trunk/mutekh/arch/simple
+END
+arch_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/990/trunk/mutekh/arch/simple/arch_init.c
+END
+hw_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/828/trunk/mutekh/arch/simple/hw_init.c
+END
+mem_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1600/trunk/mutekh/arch/simple/mem_init.c
+END
+ldscript.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/908/trunk/mutekh/arch/simple/ldscript.cpp
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/845/trunk/mutekh/arch/simple/config.mk
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/963/trunk/mutekh/arch/simple/Makefile
+END
+simple.config
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1440/trunk/mutekh/arch/simple/simple.config
+END

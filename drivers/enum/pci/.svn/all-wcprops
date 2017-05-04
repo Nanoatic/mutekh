@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1440/trunk/mutekh/drivers/enum/pci
+END
+enum-pci.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1440/trunk/mutekh/drivers/enum/pci/enum-pci.config
+END
+enum-pci.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/pci/enum-pci.h
+END
+enum-pci-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/pci/enum-pci-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/pci/Makefile
+END
+enum-pci.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/pci/enum-pci.c
+END

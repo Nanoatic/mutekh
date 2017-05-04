@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1440/trunk/mutekh/libdsrl
+END
+dsrl-lua.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1004/trunk/mutekh/libdsrl/dsrl-lua.c
+END
+dsrl.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/935/trunk/mutekh/libdsrl/dsrl.c
+END
+dsrl.config
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1440/trunk/mutekh/libdsrl/dsrl.config
+END
+syscall.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1058/trunk/mutekh/libdsrl/syscall.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/777/trunk/mutekh/libdsrl/Makefile
+END

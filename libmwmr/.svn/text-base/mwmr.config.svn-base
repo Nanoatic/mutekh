@@ -1,0 +1,38 @@
+
+%config CONFIG_MWMR
+  desc Mwmr middleware support
+  module libmwmr
+  single CONFIG_MWMR_SOCLIB CONFIG_MWMR_PTHREAD
+%config end
+
+%config CONFIG_MWMR_SOCLIB
+  desc Mwmr on SOCLIB, with hardware protocol compatibility
+  parent CONFIG_MWMR
+  depend CONFIG_MUTEK_SCHEDULER
+  depend CONFIG_ARCH_SOCLIB
+%config end
+
+%config CONFIG_MWMR_PTHREAD
+  desc Mwmr on Pthreads, with no hardware protocol compatibility
+  parent CONFIG_MWMR
+  depend CONFIG_PTHREAD
+%config end
+
+%config CONFIG_MWMR_INSTRUMENTATION
+  desc Mwmr timing observation, only under SRL
+  parent CONFIG_MWMR
+  depend CONFIG_MWMR_SOCLIB
+  depend CONFIG_SRL
+%config end
+
+%config CONFIG_MWMR_USE_RAMLOCKS
+  desc Mwmr is ramlocks based, only under SRL, does not change platform s lock backend
+  parent CONFIG_MWMR
+  depend CONFIG_SRL
+%config end
+
+%config CONFIG_MWMR_LOCKFREE
+  desc Mwmr is completely using atomic operations, only under SRL, does not change platform s lock backend
+  parent CONFIG_MWMR_SOCLIB
+  depend CONFIG_SRL
+%config end

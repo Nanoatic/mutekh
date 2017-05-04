@@ -1,0 +1,37 @@
+
+%config CONFIG_DRIVER_FS_FAT
+  parent CONFIG_VFS
+  desc FAT support
+  depend CONFIG_DRIVER_FS_FAT16 CONFIG_DRIVER_FS_FAT32
+%config end
+
+%config CONFIG_DRIVER_FS_FAT16
+  desc FAT16 support
+  parent CONFIG_DRIVER_FS_FAT
+  default defined
+%config end
+
+%config CONFIG_DRIVER_FS_FAT32
+  desc FAT32 support
+  parent CONFIG_DRIVER_FS_FAT
+  default defined
+%config end
+
+%config CONFIG_DRIVER_FS_FAT_LFN
+  desc FAT Long File Names support
+  default defined
+  parent CONFIG_DRIVER_FS_FAT
+%config end
+
+%config CONFIG_DRIVER_FS_FAT_RW
+  desc FAT read/write support
+  default defined
+  parent CONFIG_DRIVER_FS_FAT
+%config end
+
+%config CONFIG_DRIVER_FS_FAT_TYPE_FROM_STRING
+  desc Determine FAT type from string in header,
+  desc not from data cluster count (as defined in spec)
+  default defined
+  parent CONFIG_DRIVER_FS_FAT
+%config end

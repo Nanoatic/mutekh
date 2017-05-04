@@ -1,0 +1,21 @@
+@node Functions prototypes
+@section Functions prototypes
+@c filename functions_prototypes
+@c parent chapter is Using GPCT
+
+An optional macro can be used to declare @strong{C functions
+prototypes} which will be defined later with the corresponding
+function definition macro. This macro as a @code{_PROTOTYPE} name
+suffix. Here is an example of template function prototype declaration
+for a container template:
+
+@example
+
+CONTAINER_PROTOTYPE(static, mylist, myfunc);
+
+@end example
+
+@setfilename s_gpct_configuration.texi
+
+@setfilename s_gpct_configuration.info
+

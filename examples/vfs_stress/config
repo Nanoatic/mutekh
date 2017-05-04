@@ -1,0 +1,32 @@
+
+# Application license
+CONFIG_LICENSE_APP_GPL
+
+# Mutek features
+CONFIG_MUTEK_MEMALLOC_SMART
+CONFIG_MUTEK_MEMALLOC_STATS
+# CONFIG_MUTEK_MEMALLOC_DEBUG
+
+# Scheduler
+CONFIG_PTHREAD
+CONFIG_PTHREAD_STACK_SIZE 8192
+
+# FS drivers
+CONFIG_VFS
+CONFIG_VFS_STATS
+CONFIG_VFS_GLOBAL_ROOT
+CONFIG_VFS_GLOBAL_CWD undefined
+CONFIG_DRIVER_FS_RAMFS
+
+# Libc
+CONFIG_LIBC_STREAM
+CONFIG_LIBC_ASSERT
+#  CONFIG_VFS_LIBC_STREAM
+
+# New source code module to be compiled
+%append MODULES app:$(CONFIGPATH)
+
+CONFIG_COMPILE_SAVETEMPS
+
+%include ../common/platforms.conf
+%include ../common/build_options.conf

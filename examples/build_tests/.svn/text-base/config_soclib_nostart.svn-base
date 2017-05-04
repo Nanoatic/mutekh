@@ -1,0 +1,40 @@
+
+# New source code module to be compiled
+  %append MODULES examples/hello:$(CONFIGPATH)
+
+# Application license
+  CONFIG_LICENSE_APP_LGPL
+
+# Compiler options
+  CONFIG_COMPILE_DEBUG
+
+# Platform types
+  CONFIG_ARCH_SOCLIB
+
+# Processor types, PPC with multiprocessor support up to 4 cpus
+  CONFIG_CPU_PPC_SOCLIB
+  CONFIG_ARCH_SMP undefined
+
+# Mutek features
+  CONFIG_MUTEK_MAIN undefined
+  CONFIG_MUTEK_SCHEDULER undefined
+  CONFIG_LIBC_SEMAPHORE undefined
+  CONFIG_MUTEK_RWLOCK undefined
+  CONFIG_LIBC_STREAM_STD undefined
+  CONFIG_MUTEK_MEMALLOC_SMART
+
+# Device and drivers
+  CONFIG_ARCH_HW_INIT_USER
+
+  CONFIG_DRIVER_CHAR_SOCLIBTTY
+  CONFIG_DRIVER_ICU_SOCLIB
+  CONFIG_DRIVER_TIMER_SOCLIB
+
+# Memory layout
+  CONFIG_ROM_ADDR 0x61300000
+  CONFIG_ROM_SIZE 0x00100000
+  
+  CONFIG_RAM_ADDR 0x71600000
+  CONFIG_RAM_SIZE 0x00100000
+  
+  CONFIG_CPU_RESET_HANDLER

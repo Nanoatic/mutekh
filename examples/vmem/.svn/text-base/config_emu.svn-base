@@ -1,0 +1,23 @@
+
+# Application license
+  CONFIG_LICENSE_APP_LGPL
+
+# Platform types
+  CONFIG_ARCH_EMU
+
+# Processor types
+  CONFIG_CPU_X86_EMU
+
+# Mutek features
+  CONFIG_PTHREAD
+  CONFIG_MUTEK_CONSOLE
+
+# Device drivers
+  CONFIG_DRIVER_CHAR_EMUTTY
+
+# Code compilation options
+  CONFIG_COMPILE_DEBUG
+
+# New source code module to be compiled
+  %append MODULES examples/hello:$(CONFIGPATH)
+

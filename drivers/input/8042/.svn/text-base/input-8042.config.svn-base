@@ -1,0 +1,9 @@
+
+%config CONFIG_DRIVER_INPUT_8042
+  desc enable intel 8042 keyboard controller device support
+  depend CONFIG_ARCH_IBMPC
+  depend CONFIG_HEXO_IRQ
+  provide CONFIG_DRIVER_INPUT
+  parent CONFIG_DEVICE
+%config end
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1589/trunk/mutekh/drivers/gpio/sam7
+END
+gpio-sam7-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1589/trunk/mutekh/drivers/gpio/sam7/gpio-sam7-private.h
+END
+gpio-sam7.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1589/trunk/mutekh/drivers/gpio/sam7/gpio-sam7.c
+END
+gpio-sam7.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1440/trunk/mutekh/drivers/gpio/sam7/gpio-sam7.config
+END
+gpio-sam7.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/gpio/sam7/gpio-sam7.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/drivers/gpio/sam7/Makefile
+END

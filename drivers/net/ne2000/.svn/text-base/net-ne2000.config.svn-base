@@ -1,0 +1,16 @@
+
+%config CONFIG_DRIVER_NET_NE2000
+  desc enable NE2000 network device support
+  depend CONFIG_ARCH_IBMPC
+  depend CONFIG_NETWORK
+  depend CONFIG_HEXO_IRQ
+  provide CONFIG_DRIVER_NET
+  parent CONFIG_DEVICE
+%config end
+
+%config CONFIG_DRIVER_NET_NE2000_FRAGMENT
+  desc NE2000 driver option: use fragmenation
+  parent CONFIG_DRIVER_NET_NE2000
+  default defined
+%config end
+

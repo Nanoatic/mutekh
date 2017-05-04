@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1630/trunk/mutekh/libvfs/fs/iso9660
+END
+iso9660_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/iso9660/iso9660_file.c
+END
+iso9660.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/iso9660/iso9660.c
+END
+iso9660_direntry.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/iso9660/iso9660_direntry.c
+END
+iso9660.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1630/trunk/mutekh/libvfs/fs/iso9660/iso9660.config
+END
+iso9660-bits.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/iso9660/iso9660-bits.h
+END
+iso9660.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/iso9660/iso9660.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/iso9660/Makefile
+END
+iso9660-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/fs/iso9660/iso9660-private.h
+END

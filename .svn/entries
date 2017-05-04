@@ -1,0 +1,177 @@
+10
+
+dir
+1630
+https://www.mutekh.org/svn/trunk/mutekh
+https://www.mutekh.org/svn
+
+
+
+2010-06-07T12:34:54.442446Z
+1630
+nipo
+has-props
+
+
+svn:externals
+
+
+
+
+
+
+
+
+
+
+dc202132-5327-0410-a00c-f554aaf2e61a
+
+libnetwork
+dir
+
+libm
+dir
+
+libcapsule
+dir
+
+mutek
+dir
+
+libvfs
+dir
+
+scripts
+dir
+
+libsrl
+dir
+
+cpu
+dir
+
+libgomp
+dir
+
+libdsrl
+dir
+
+libtermui
+dir
+
+librtld
+dir
+
+gpct
+dir
+
+libelf
+dir
+
+tools
+dir
+
+hexo
+dir
+
+libfdt
+dir
+
+doc
+dir
+
+.dir-locals.el
+file
+
+
+
+
+2010-03-14T21:09:12.000000Z
+fe1c5370bff6c01a70bcfbb0229ad4e4
+2010-03-13T01:23:20.730279Z
+1445
+becoulet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+37
+
+libcrypto
+dir
+
+liblua
+dir
+
+libc
+dir
+
+libmwmr
+dir
+
+libunix
+dir
+
+arch
+dir
+
+Makefile
+file
+
+
+
+
+2010-05-12T12:14:43.000000Z
+a12755b37338ead33fe17e177d32ec2a
+2010-04-01T15:57:30.682559Z
+1571
+nipo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2543
+
+examples
+dir
+
+drivers
+dir
+
+libpthread
+dir
+

@@ -1,0 +1,25 @@
+@node Introduction
+@chapter Introduction
+@c filename introduction
+@c parent top is Top
+
+
+GPCT is a set of @strong{general purpose templates} for C programming
+language implemented using C preprocessor meta-programming.
+
+It provides @strong{container data structures}, @strong{object
+allocation management}, bitmaps and other features.
+
+Container templates are able to store user structure based objects and
+raw data with @strong{different algorithms and behaviors}.  Containers
+can use different @strong{locking mechanisms} to run on threaded environments.
+
+@strong{Object management templates} can be used to add
+constructor/destructor and @strong{reference counting capabilities} to
+a structure based object. Reference counting can be handled by
+associated containers used to store objects.
+
+@setfilename c_using_gpct.texi
+
+@setfilename c_using_gpct.info
+

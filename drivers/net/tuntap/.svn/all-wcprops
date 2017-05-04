@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1556/trunk/mutekh/drivers/net/tuntap
+END
+net-tuntap.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1556/trunk/mutekh/drivers/net/tuntap/net-tuntap.c
+END
+net-tuntap.config
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1388/trunk/mutekh/drivers/net/tuntap/net-tuntap.config
+END
+net-tuntap.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/tuntap/net-tuntap.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/tuntap/Makefile
+END
+net-tuntap-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/tuntap/net-tuntap-private.h
+END

@@ -1,0 +1,28 @@
+(dans l'ordre)
+
+* TCP
+  - a finir de tester
+  - sockets TCP
+
+* lo
+
+* general
+  - verifier l'alignement des acces memoire
+  - voir les locks un peu partout
+  - taille de packet > taille max
+
+* libsocket
+  - sockopt sur socket IP
+
+* route
+  - faire avec un arbre comme a dit Alex
+
+* filter
+  - a coder integralement
+
+* ARP
+  - gestion des doublons
+
+* refaire un RARP lightweight integre a la stack
+
+* refaire marcher tuntap sur l'archi EMU

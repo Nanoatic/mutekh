@@ -1,0 +1,17 @@
+Pipelined Mjpeg decoder using posix threads running on heterogeneous platform
+
+Run caba-vgmn-mutekh_kernel_tutorial SoCLib simulation with:
+SOCLIB_GDB_SLEEPMS=0 ./system.x mips32el:2 kernel-mipsel.het.out arm:2 kernel-arm.het.out
+
+Excepted result:
+
+Starting idct task on arm processor 3
+Starting demux task on mips32 processor 0
+Starting vld task on mips32 processor 1
+Starting iqzz task on mips32 processor 0
+Starting libu task on mips32 processor 1
+Starting ramdac task on arm processor 3
+Starting tg task on arm processor 2
+Image sum: 236bff01
+Image sum: 98aba42b
+Image sum: fc3550da

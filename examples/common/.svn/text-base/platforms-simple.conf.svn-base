@@ -1,0 +1,92 @@
+
+%section simple-*
+  %types architecture
+
+  # Platform types
+  CONFIG_CPU_RESET_HANDLER
+  CONFIG_ARCH_HW_INIT
+
+  CONFIG_COMPILE_OPTIMIZE s
+
+  #################################################
+  # ARM
+
+  %subsection simple-arm
+    %types cpu
+
+    %subsection pf-sam7ex256
+      %types platform
+
+      CONFIG_ARCH_SIMPLE_SAM7
+      # CONFIG_ARCH_SIMPLE_SAM7X256
+      # Provide all configuration tokens suitable for the AT91SAM7X256 device
+      CONFIG_RAM_ADDR 0x200000
+      CONFIG_RAM_SIZE 0x10000
+      CONFIG_ROM_ADDR 0x0000
+      CONFIG_ROM_SIZE 0x40000
+      
+      # CONFIG_ARCH_SIMPLE_OLIMEX_SAM7_EX256
+      # All-in-one configuration for Olimex SAM7-EX256 dev board
+      CONFIG_DRIVER_CHAR_US6089C_UART
+      CONFIG_DRIVER_SPI_SPI6088D
+      CONFIG_DRIVER_I2C_TWI6061A
+      
+      CONFIG_DRIVER_CHAR_SAM7DBGU
+      CONFIG_DRIVER_BLOCK_SD_MMC
+      CONFIG_DRIVER_ICU_SAM7
+      CONFIG_DRIVER_GPIO_SAM7
+      CONFIG_DRIVER_INPUT_MT5F
+      CONFIG_DRIVER_TIMER_PITC_6079A
+    
+      CONFIG_ARCH_SIMPLE_SAM7
+      CONFIG_CPU_ARM_7TDMI
+    
+      CONFIG_DRIVER_ICU_ARM undefined
+    
+      CONFIG_DRIVER_BLOCK_SD_MMC
+      CONFIG_DRIVER_ICU_SAM7
+      CONFIG_DRIVER_GPIO_SAM7
+      CONFIG_DRIVER_INPUT_MT5F
+      CONFIG_DRIVER_TIMER_PITC_6079A
+    
+      CONFIG_DRIVER_CHAR_US6089C_UART
+      CONFIG_DRIVER_SPI_SPI6088D
+      # CONFIG_DRIVER_I2C_TWI6061A
+  
+      %subsection jtag
+        CONFIG_DRIVER_CHAR_SAM7DBGU
+      %end
+  
+      %subsection lcd-pcf8833
+        provide CONFIG_DRIVER_LCD_PCF8833
+      %end
+  
+      %subsection lcd-s1d1g00
+        provide CONFIG_DRIVER_LCD_S1D15G00
+      %end
+  
+      %set BUILD_NAME sam7ex256
+  
+    %end
+
+    %requiretypes platform
+
+  %end
+
+  #################################################
+  # AVR
+
+  %subsection simple-avr-*
+    %types cpu
+    CONFIG_CPU_AVR
+
+    %subsection simple-avr-atmega128
+
+    CONFIG_CPU_AVR_ATMEGA128
+
+    %end
+
+  %end
+
+  %requiretypes cpu
+

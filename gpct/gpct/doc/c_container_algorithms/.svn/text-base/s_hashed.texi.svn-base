@@ -1,0 +1,82 @@
+@page
+@node Hashed containers
+@section Hashed containers
+@c filename hashed
+@c parent chapter is Container algorithms
+
+
+@menu
+* Chained hash table::
+@end menu
+
+@node Chained hash table
+@subsection Chained hash table
+@c filename chained_hash_table
+@c parent section is Hashed containers
+
+
+The chained hash table container is a fixed size hash table of linked
+list heads. Item structure must contains a key field used for item
+hash operation. Each item inserted in the container is hashed to
+determine in which linked list it must be inserted.
+
+Linked lists implementation is singly linked list with deletion back
+pointer, @pxref{Singly linked list with deletion back pointer}.
+
+Due to the use of linked lists to solve hash collisions, this containers
+is pointer based, @pxref{Container categories}.
+
+The following operations are available:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_orphan()}, @emph{prefix}@code{_isorphan()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isempty()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()},
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_head()},
+@item @emph{prefix}@code{_count()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pushback()} (aliased to push), @emph{prefix}@code{_pop()}, @emph{prefix}@code{_popback()} (aliased to pop), @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()} (aliased to foreach),
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()} (aliased to lookup), @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()} (aliased to lookup_next),
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+The following operations are suboptimal and deprecated:
+@itemize
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_head()},
+@item @emph{prefix}@code{_pop()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_popback_array()},
+@end itemize
+
+Forward iteration with @code{CONTAINER_FOREACH} macro and friends
+allows deletion of current item.
+
+This algorithm supports embedded item counter, @pxref{Embedded item counter}.
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_hashlist.h>}
+
+Related algorithm token name is @code{HASHLIST}.
+
+The following extra parameters are required for the
+@code{CONTAINER_TYPE} macro:
+@itemize
+@item The anchor field name in item structure, @pxref{Item entry field}.
+@item The hash table slot count
+@end itemize
+
+The @code{CONTAINER_FUNC} macro requires the key field name as extra
+parameter.
+
+The @code{CONTAINER_KEY_TYPE} and @code{CONTAINER_KEY_FUNC} macros
+must be used to specify how and which field in the item structure is
+used as key field, @pxref{Container key values}.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_hashlist.c
+
+@setfilename s_trees.texi
+
+@setfilename s_trees.info
+

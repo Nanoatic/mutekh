@@ -1,0 +1,29 @@
+@node Type declaration
+@section Type declaration
+@c filename type_declaration
+@c parent chapter is Using GPCT
+
+The first C macro used must be a @strong{type definition macro} which
+defines all the @strong{C types} needed by the template algorithms and
+its associated code. This macro has the @code{_TYPE} suffix. It can be
+invoked in user header files if the container is to be used in several
+C files of a program. Here is an example of C types definition for a
+container template:
+
+@example
+
+CONTAINER_TYPE(mylist, DLIST, struct myitem, list_entry);
+
+@end example
+
+@noindent
+The first parameters only depend on the kind of template. For instance
+a container template will always have the same number of mandatory
+parameters. A few extra parameters may be needed depending on the
+values of the mandatory one. Parameters meaning are template specific,
+they will be discussed later.
+
+@setfilename s_functions_definition.texi
+
+@setfilename s_functions_definition.info
+

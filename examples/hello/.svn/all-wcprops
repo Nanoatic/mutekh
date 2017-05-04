@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1412/trunk/mutekh/examples/hello
+END
+hello.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1025/trunk/mutekh/examples/hello/hello.c
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1412/trunk/mutekh/examples/hello/config
+END
+config_emu
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/examples/hello/config_emu
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1183/trunk/mutekh/examples/hello/Makefile
+END

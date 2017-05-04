@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1624/trunk/mutekh/scripts
+END
+global.m4
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/399/trunk/mutekh/scripts/global.m4
+END
+config.pl
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1547/trunk/mutekh/scripts/config.pl
+END
+hetlink.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1286/trunk/mutekh/scripts/hetlink.conf
+END
+heterogeneous.mk
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1356/trunk/mutekh/scripts/heterogeneous.mk
+END
+discover.mk
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1613/trunk/mutekh/scripts/discover.mk
+END
+license.config
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1476/trunk/mutekh/scripts/license.config
+END
+blob2c.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1348/trunk/mutekh/scripts/blob2c.py
+END
+addr2names.pl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/717/trunk/mutekh/scripts/addr2names.pl
+END
+local.mk
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1599/trunk/mutekh/scripts/local.mk
+END
+rules_main.mk
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1624/trunk/mutekh/scripts/rules_main.mk
+END
+global.config
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1440/trunk/mutekh/scripts/global.config
+END
+cflags.mk
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1584/trunk/mutekh/scripts/cflags.mk
+END
+doc.mk
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1351/trunk/mutekh/scripts/doc.mk
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1440/trunk/mutekh/scripts/config.mk
+END
+compute_m4_deps.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/861/trunk/mutekh/scripts/compute_m4_deps.py
+END

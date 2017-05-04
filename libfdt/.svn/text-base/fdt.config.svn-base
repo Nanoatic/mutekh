@@ -1,0 +1,7 @@
+
+%config CONFIG_FDT
+  desc Provide support for Flattened-device-trees, blobs representing the
+  desc architecture memory map and devices.
+  flags auto
+  module libfdt
+%config end

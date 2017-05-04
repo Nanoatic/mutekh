@@ -1,0 +1,3 @@
+.text c
+.bss d
+.data d

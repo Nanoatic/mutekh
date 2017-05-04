@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/676/trunk/mutekh/liblua/include/lua
+END
+lauxlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/676/trunk/mutekh/liblua/include/lua/lauxlib.h
+END
+lua.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/676/trunk/mutekh/liblua/include/lua/lua.h
+END
+luaconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/676/trunk/mutekh/liblua/include/lua/luaconf.h
+END
+lualib.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/676/trunk/mutekh/liblua/include/lua/lualib.h
+END

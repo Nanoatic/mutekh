@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1589/trunk/mutekh/liblua/libs
+END
+linit.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/676/trunk/mutekh/liblua/libs/linit.c
+END
+lauxlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1026/trunk/mutekh/liblua/libs/lauxlib.c
+END
+ldblib.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/676/trunk/mutekh/liblua/libs/ldblib.c
+END
+ltablib.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/676/trunk/mutekh/liblua/libs/ltablib.c
+END
+lstrlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/676/trunk/mutekh/liblua/libs/lstrlib.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/676/trunk/mutekh/liblua/libs/Makefile
+END
+libtermui.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1589/trunk/mutekh/liblua/libs/libtermui.c
+END
+lbaselib.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/679/trunk/mutekh/liblua/libs/lbaselib.c
+END

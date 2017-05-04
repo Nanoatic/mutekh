@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1589/trunk/mutekh/drivers/timer/8253
+END
+timer-8253.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1589/trunk/mutekh/drivers/timer/8253/timer-8253.c
+END
+timer-8253.config
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1440/trunk/mutekh/drivers/timer/8253/timer-8253.config
+END
+timer-8253.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/timer/8253/timer-8253.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/timer/8253/Makefile
+END
+timer-8253-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1375/trunk/mutekh/drivers/timer/8253/timer-8253-private.h
+END

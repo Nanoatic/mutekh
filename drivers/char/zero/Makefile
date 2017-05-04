@@ -1,0 +1,3 @@
+
+objs = zero.o
+

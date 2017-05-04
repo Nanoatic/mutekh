@@ -1,0 +1,49 @@
+
+  %set OUTPUT_NAME malloc_stress
+
+  # New source code module to be compiled
+  %append MODULES $(OUTPUT_NAME):$(CONFIGPATH)
+
+  # Application license
+  CONFIG_LICENSE_APP_LGPL
+
+%section alloc-simple
+  %types stressed_allocator
+  %set OUTPUT_NAME $(OUTPUT_NAME)_simple
+  CONFIG_MUTEK_MEMALLOC_SIMPLE
+
+%section alloc-smart
+  %types stressed_allocator
+  %set OUTPUT_NAME $(OUTPUT_NAME)_smart
+  CONFIG_MUTEK_MEMALLOC_SMART
+
+%section alloc-exp
+  %types stressed_allocator
+  %set OUTPUT_NAME $(OUTPUT_NAME)_exp
+  CONFIG_MUTEK_MEMALLOC_EXPERIMENTAL
+
+%section mem-guard
+  %set OUTPUT_NAME $(OUTPUT_NAME)_guard
+  CONFIG_MUTEK_MEMALLOC_GUARD
+
+%section mem-crc
+  %set OUTPUT_NAME $(OUTPUT_NAME)_crc
+  CONFIG_MUTEK_MEMALLOC_CRC
+
+%section mem-scramble
+  %set OUTPUT_NAME $(OUTPUT_NAME)_scramble
+  CONFIG_MUTEK_MEMALLOC_SCRAMBLE
+
+%section mem-scramble-init
+  CONFIG_MUTEK_MEMALLOC_SCRAMBLE_INIT
+
+%common
+  %requiretypes stressed_allocator
+
+  # Libs
+  CONFIG_PTHREAD
+  CONFIG_LIBCRYPTO
+  CONFIG_LIBCRYPTO_CRC32
+
+%include ../common/build_options.conf
+%include ../common/platforms.conf

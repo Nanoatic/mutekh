@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/tty-soclib
+END
+tty-soclib.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-soclib/tty-soclib.h
+END
+tty-soclib-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-soclib/tty-soclib-private.h
+END
+tty-soclib.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1443/trunk/mutekh/drivers/char/tty-soclib/tty-soclib.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-soclib/Makefile
+END
+tty-soclib.config
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/tty-soclib/tty-soclib.config
+END

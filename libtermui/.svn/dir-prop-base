@@ -1,0 +1,12 @@
+K 13
+svn:externals
+V 63
+src -r 22 http://svn.savannah.gnu.org/svn/libtermui/trunk/src
+
+
+K 13
+svn:mergeinfo
+V 64
+/branches/200911-vfs/libtermui:1144
+/trunk/mutekh/libtermui:1408
+END

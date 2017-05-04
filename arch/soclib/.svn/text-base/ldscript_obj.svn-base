@@ -1,0 +1,24 @@
+
+FORCE_COMMON_ALLOCATION
+
+SECTIONS
+{
+     .boot           0 :  { *(.boot*) }/* : boot*/
+     .excep          0 :  { *(.excep*) }/* : excep*/
+     .text           0 :  { *(.text*) }/* : mem*/
+     .data           0 :
+     {
+        *(.data*)
+ 	    *(.sbss*)
+ 	    *(COMMON)
+ 	    *(COMMON*)
+ 	    *(.common*)
+ 	    *(.scommon*)
+ 	    *(.bss*)
+     }
+     .rodata         0 :  { *(.rodata*) }
+     .cpudata        0 :  { *(.cpudata*) }
+     .cpuarchdata    0 :  { *(.cpuarchdata*) }
+     .contextdata    0 :  { *(.cputextdata*) }
+     .drivers        0 :  { *(.drivers*) }
+}

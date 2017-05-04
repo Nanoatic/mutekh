@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/135/trunk/doc
+END
+c_fdl.texi
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/134/trunk/doc/c_fdl.texi
+END
+c_container_operations.texi
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/135/trunk/doc/c_container_operations.texi
+END
+gpct.texi
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/135/trunk/doc/gpct.texi
+END
+c_container_algorithms.texi
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/135/trunk/doc/c_container_algorithms.texi
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/135/trunk/doc/Makefile.am
+END
+c_container_templates.texi
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/135/trunk/doc/c_container_templates.texi
+END
+c_container_features.texi
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/135/trunk/doc/c_container_features.texi
+END
+c_introduction.texi
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/135/trunk/doc/c_introduction.texi
+END
+c_using_gpct.texi
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/135/trunk/doc/c_using_gpct.texi
+END

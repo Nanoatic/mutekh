@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/tty-emu
+END
+tty-emu.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-emu/tty-emu.c
+END
+tty-emu.config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/tty-emu/tty-emu.config
+END
+tty-emu.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-emu/tty-emu.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-emu/Makefile
+END

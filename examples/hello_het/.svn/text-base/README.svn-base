@@ -1,0 +1,7 @@
+
+Compile with:
+make kernel-het CONF=examples/hello_het/config BUILD=pf-het EACH=soclib-mips32el:soclib-arm
+
+Run with:
+SOCLIB_GDB_SLEEPMS=0 ./system.x mips32el:2 mutekh/kernel-soclib-mips32el.het.out arm:2 mutekh/kernel-soclib-arm.het.out
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1567/trunk/mutekh/drivers/i2c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1567/trunk/mutekh/drivers/i2c/Makefile
+END
+device_i2c.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1566/trunk/mutekh/drivers/i2c/device_i2c.c
+END

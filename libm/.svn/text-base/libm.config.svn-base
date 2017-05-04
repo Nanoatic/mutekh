@@ -1,0 +1,8 @@
+
+%config CONFIG_LIBM
+  desc Enable Math library
+  module libm Math library
+  provide CONFIG_LICENSE_USE_BSD
+  depend CONFIG_HEXO_FPU CONFIG_COMPILE_SOFTFLOAT
+%config end
+

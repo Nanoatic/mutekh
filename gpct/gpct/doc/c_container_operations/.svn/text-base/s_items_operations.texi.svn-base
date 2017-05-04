@@ -1,0 +1,794 @@
+@node Basic item operations
+@section Basic item operations
+@c filename items_operations
+@c parent chapter is Container operations
+
+
+@menu
+* @emph{prefix}@code{_orphan()}::
+* @emph{prefix}@code{_isorphan()}::
+* @emph{prefix}@code{_isnull()}::
+* @emph{prefix}@code{_isvalid()}::
+* @emph{prefix}@code{_next()}::
+* @emph{prefix}@code{_prev()}::
+* @emph{prefix}@code{_head()}::
+* @emph{prefix}@code{_tail()}::
+* @emph{prefix}@code{_get()}::
+* @emph{prefix}@code{_getptr()}::
+* @emph{prefix}@code{_getindex()}::
+* @emph{prefix}@code{_alloc()}::
+* @emph{prefix}@code{_set()}::
+* @emph{prefix}@code{_insert_pre()}::
+* @emph{prefix}@code{_insert_post()}::
+* @emph{prefix}@code{_remove()}::
+* @emph{prefix}@code{_push()}::
+* @emph{prefix}@code{_pushback()}::
+* @emph{prefix}@code{_push_array()}::
+* @emph{prefix}@code{_pushback_array()}::
+* @emph{prefix}@code{_pop()}::
+* @emph{prefix}@code{_popback()}::
+* @emph{prefix}@code{_pop_array()}::
+* @emph{prefix}@code{_popback_array()}::
+@end menu
+
+@node @emph{prefix}@code{_orphan()}
+@subsection @emph{prefix}@code{_orphan()}
+@c filename sss_prefix_orphan_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_orphan(}@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+This function mark @samp{item} as not being part of any container. It
+can be used to initialize item orphan state. Insertion and removal
+operations will automaticaly update the orphan mark when
+performed. The orphan checking feature must be enabled, @pxref{Orphan checking}
+for details.
+
+@subsubheading Locking
+
+The container object may be write locked while processing.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_isorphan()}
+@subsection @emph{prefix}@code{_isorphan()}
+@c filename sss_prefix_isorphan_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{gpct_bool_t} @emph{prefix}@code{_isorphan(}@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+This function returns true if @samp{item} is marked as not being part
+of any container. The orphan checking feature must be
+enabled, @pxref{Orphan checking} for details.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_isnull()}
+@subsection @emph{prefix}@code{_isnull()}
+@c filename sss_prefix_isnull_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{gpct_bool_t} @emph{prefix}@code{_isnull(}@emph{name}@code{_index_t index);}
+
+@subsubheading Description
+
+This function returns true if the @samp{index} value points to the
+invalid item. This function is provided for container
+interchangeability, it is equivalent to @code{NULL} pointer check for
+pointer based containers.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_isvalid()}
+@subsection @emph{prefix}@code{_isvalid()}
+@c filename sss_prefix_isvalid_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{gpct_bool_t} @emph{prefix}@code{_isvalid(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index);}
+
+@subsubheading Description
+
+This function returns true if the @samp{index} value is in the current
+valid index range of the container. This function is not available for
+pointer based containers.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_next()}
+@subsection @emph{prefix}@code{_next()}
+@c filename sss_prefix_next_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_next(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index);}
+
+@subsubheading Description
+
+This function returns the index of the next item in the container.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@subsubheading Reference counting
+
+If the returned value is an item pointer (for pointer based
+containers), this function gets a new reference to the returned item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_prev()}
+@subsection @emph{prefix}@code{_prev()}
+@c filename sss_prefix_prev_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_prev(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index);}
+
+@subsubheading Description
+
+This function returns the index of the previous item in the container.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@subsubheading Reference counting
+
+If the returned value is an item pointer (for pointer based
+containers), this function gets a new reference to the returned item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_head()}
+@subsection @emph{prefix}@code{_head()}
+@c filename sss_prefix_head_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_head(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function returns the index of the first item stored in the container.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@subsubheading Reference counting
+
+If the returned value is an item pointer (for pointer based
+containers), this function gets a new reference to the returned item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_tail()}
+@subsection @emph{prefix}@code{_tail()}
+@c filename sss_prefix_tail_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_tail(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function returns the index of the last item stored in the container.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@subsubheading Reference counting
+
+If the returned value is an item pointer (for pointer based
+containers), this function gets a new reference to the returned item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_get()}
+@subsection @emph{prefix}@code{_get()}
+@c filename sss_prefix_get_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_item_t} @emph{prefix}@code{_get(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index);}
+
+@subsubheading Description
+
+This function returns the item present in the container @samp{root}
+pointed to by the @samp{index} value.
+
+This function is useful for non-pointer based containers. If the
+container is pointer based, this function does nothing expect returning
+the @samp{index} value.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the returned item for array
+based containers.
+
+It does @strong{not} change reference count when the container is
+pointer based.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_getptr()}
+@subsection @emph{prefix}@code{_getptr()}
+@c filename sss_prefix_getptr_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_itembase_t *} @emph{prefix}@code{_getptr(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index);}
+
+@subsubheading Description
+
+This function returns a pointer to the item present in the container
+@samp{root} pointed to by the @samp{index} value.
+
+This function is useful for array based containers. If the
+container is pointer based, this function does nothing expect returning
+the @samp{index} value.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@subsubheading Reference counting
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_getindex()}
+@subsection @emph{prefix}@code{_getindex()}
+@c filename sss_prefix_getindex_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_getindex(}@emph{name}@code{_root_t *root, }@emph{name}@code{_itembase_t *ptr);}
+
+@subsubheading Description
+
+This function returns the index of the item pointed to by
+@samp{ptr}. The pointer must be valid and point to an item present
+in the container.
+
+This function is useful for array based containers. If the
+container is pointer based, this function does nothing expect
+returning the @samp{index} value.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@subsubheading Reference counting
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_alloc()}
+@subsection @emph{prefix}@code{_alloc()}
+@c filename sss_prefix_alloc_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_alloc(}@emph{name}@code{_root_t *root, ...);}
+
+@subsubheading Description
+
+This function allocate a new item in the container and returns its
+index.
+
+When container is pointer based, the item is allocated with the gpct
+default malloc() function. When container is array based, the item is
+allocated on container internal space.
+
+If the container is associated with an object manager, the object
+constructor function will be called.
+
+An index to the newly allocated item is returned.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_set()}
+@subsection @emph{prefix}@code{_set()}
+@c filename sss_prefix_set_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{gpct_error_t} @emph{prefix}@code{_set(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index, }@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+This function replaces the item pointed to by @samp{index} in the
+container @samp{root} by the @samp{item} passed as argument.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the replacement item and drops
+the reference to the replaced item.
+
+@subsubheading Orphan checking
+
+This function fails if the replacement item pointed to by @samp{index}
+is marked as being orphan. The replaced item is marked as being orphan.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_insert_pre()}
+@subsection @emph{prefix}@code{_insert_pre()}
+@c filename sss_prefix_insert_pre_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_insert_pre(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index, }@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+This function inserts an @samp{item} before the item pointed to by
+@samp{index}. It's not available for sorted containers and containers
+where order is not significant.
+
+The function returns the pushed item count. It should return @code{1} on success or
+@code{0} if the operation failed.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the inserted item.
+
+@subsubheading Orphan checking
+
+This function fails if the reference item pointed to by @samp{index}
+is marked as being orphan.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_insert_post()}
+@subsection @emph{prefix}@code{_insert_post()}
+@c filename sss_prefix_insert_post_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_insert_post(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index, }@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+This function inserts an @samp{item} after the item pointed to by
+@samp{index}. It's not available for sorted containers and
+containers where order is not significant.
+
+The function returns the pushed item count. It should return @code{1} on success or
+@code{0} if the operation failed.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the inserted item.
+
+@subsubheading Orphan checking
+
+This function fails if the reference item pointed to by @samp{index}
+is marked as being orphan.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_remove()}
+@subsection @emph{prefix}@code{_remove()}
+@c filename sss_prefix_remove_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{gpct_error_t} @emph{prefix}@code{_remove(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index);}
+
+@subsubheading Description
+
+This function removes the item pointed to by @samp{index} from the
+container @samp{root}.
+
+The function returns @code{0} on success.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function drops the reference to the removed item.
+
+@subsubheading Orphan checking
+
+This function fails if the item is not part of the container object. The
+removed item is marked as being orphan.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_push()}
+@subsection @emph{prefix}@code{_push()}
+@c filename sss_prefix_push_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_push(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+This function inserts an @samp{item} into the container
+@samp{root}. The new item is inserted before the current first item if
+order is significant.
+
+This is the prefered function to insert items in sorted and associated
+containers which relies on an item key field value (hash and tree
+based containers). Value of the key field must be set properly before
+inserting an item in such a container.
+
+The function returns the pushed item count. It should return @code{1} or
+@code{0} if the operation failed.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the pushed item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_pushback()}
+@subsection @emph{prefix}@code{_pushback()}
+@c filename sss_prefix_pushback_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_pushback(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+This function inserts an @samp{item} into the container
+@samp{root}. The new item is inserted next to the current last item if
+order is significant, if not this function may act as the
+@emph{prefix}@code{_push()} function.
+
+This function can be used to insert items in sorted and associated
+containers which relies on an item key field value (hash and tree
+based containers). Value of the key field must be set properly before
+inserting an item in such a container.
+
+The function returns the pushed item count. It should return @code{1} or
+@code{0} if the operation failed.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the pushed item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_push_array()}
+@subsection @emph{prefix}@code{_push_array()}
+@c filename sss_prefix_push_array_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_push_array(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t *items, size_t size);}
+
+@subsubheading Description
+
+This function inserts several items to the container @samp{root}. The
+item count is given by the @samp{size} argument.
+
+It is equivalent to multiple calls to the @emph{prefix}@code{_push()}
+function while iterating through the @samp{items} array.
+
+This function may be optimized and faster than multiple calls to the
+@emph{prefix}@code{_push()} function.
+
+This function can be used to insert items in sorted and associated
+containers which relies on an item key field value (hash and tree
+based containers). Value of the key field must be set properly before
+inserting an item in such a container.
+
+The function returns the pushed item count. This value may be less
+than the @samp{size} argument.
+
+@subsubheading Locking
+
+The container object is write locked while processing. It may perform
+multiple or single lock/unlock operations depending on container.
+
+@subsubheading Reference counting
+
+This function gets a new reference for each pushed item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_pushback_array()}
+@subsection @emph{prefix}@code{_pushback_array()}
+@c filename sss_prefix_pushback_array_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_pushback_array(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t *items, size_t size);}
+
+@subsubheading Description
+
+This function inserts several items to the container @samp{root}. The
+item count is given by the @samp{size} argument.
+
+It is equivalent to multiple calls to the
+@emph{prefix}@code{_pushback()} function while iterating through the
+@samp{items} array.
+
+This function may be optimized and faster than multiple calls to the
+@emph{prefix}@code{_pushback()} function.
+
+This function can be used to insert items in sorted and associated
+containers which relies on an item key field value (hash and tree
+based containers). Value of the key field must be set properly before
+inserting an item in such a container.
+
+The function returns the pushed item count. This value may be less than
+the @samp{size} argument.
+
+@subsubheading Locking
+
+The container object is write locked while processing. It may perform
+multiple or single lock/unlock operations depending on container.
+
+@subsubheading Reference counting
+
+This function gets a new reference for each pushed item.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_pop()}
+@subsection @emph{prefix}@code{_pop()}
+@c filename sss_prefix_pop_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_item_t} @emph{prefix}@code{_pop(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function removes the first item present in the container
+@samp{root}.
+
+The removed item is returned. @code{0} will be returned if the
+container object is empty.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function does @strong{not} change the reference count of the
+popped item, reference ownership is transfered from the container to
+the caller.
+
+@subsubheading Orphan checking
+
+The removed item is marked as being orphan.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_popback()}
+@subsection @emph{prefix}@code{_popback()}
+@c filename sss_prefix_popback_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@emph{name}@code{_item_t} @emph{prefix}@code{_popback(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function removes the last item present in the container
+@samp{root}. This function may act as the @emph{prefix}@code{_pop()}
+function if the container algorithm discard order.
+
+The removed item is returned. @code{0} will be returned if the
+container object is empty.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function does @strong{not} change the reference count of the
+popped item, reference ownership is transfered from the container to
+the caller.
+
+@subsubheading Orphan checking
+
+The removed item is marked as being orphan.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_pop_array()}
+@subsection @emph{prefix}@code{_pop_array()}
+@c filename sss_prefix_pop_array_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_pop_array(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t *items, size_t size);}
+
+@subsubheading Description
+
+This function removes several items from the container @samp{root}
+head. Removed items are stored in the @samp{items} array. The maximum
+item count to remove is given by the @samp{size} argument.
+
+It is equivalent to multiple calls to the @emph{prefix}@code{_pop()}
+function while filling the @samp{items} array.
+
+This function may be optimized and faster than multiple calls to the
+@emph{prefix}@code{_pop()} function.
+
+The function returns the popped item count. This value may be less than
+the @samp{size} argument.
+
+@subsubheading Locking
+
+The container object is write locked while processing. It may perform
+multiple or single lock/unlock operations depending on container.
+
+@subsubheading Reference counting
+
+This function does @strong{not} change the reference count of popped
+items, references ownership are transfered from the container to the
+caller.
+
+@subsubheading Orphan checking
+
+All removed items are marked as being orphan.
+
+
+@c **********************************************************************
+
+@page
+@node @emph{prefix}@code{_popback_array()}
+@subsection @emph{prefix}@code{_popback_array()}
+@c filename sss_prefix_popback_array_
+@c parent section is Basic item operations
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_popback_array(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t *items, size_t size);}
+
+@subsubheading Description
+
+This function removes several items from the container @samp{root}
+tail. Removed items are stored in the @samp{items} array. The maximum
+item count to remove is given by the @samp{size} argument.
+
+It is equivalent to multiple calls to the @emph{prefix}@code{_popback()}
+function while filling the @samp{items} array. 
+
+This function may be optimized and faster than multiple calls to the
+@emph{prefix}@code{_popback()} function.
+
+The function returns the popped item count. This value may be less than
+the @samp{size} argument.
+
+@subsubheading Locking
+
+The container object is write locked while processing. It may perform
+multiple or single lock/unlock operations depending on container.
+
+@subsubheading Reference counting
+
+This function does @strong{not} change the reference count of popped
+items, references ownership are transfered from the container to the
+caller.
+
+@subsubheading Orphan checking
+
+All removed items are marked as being orphan.
+
+@setfilename s_iteration.texi
+
+@setfilename s_iteration.info
+

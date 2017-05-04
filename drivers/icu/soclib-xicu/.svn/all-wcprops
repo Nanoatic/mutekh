@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1589/trunk/mutekh/drivers/icu/soclib-xicu
+END
+xicu-soclib-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/soclib-xicu/xicu-soclib-private.h
+END
+xicu-soclib.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1589/trunk/mutekh/drivers/icu/soclib-xicu/xicu-soclib.c
+END
+xicu-soclib-filter.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/soclib-xicu/xicu-soclib-filter.c
+END
+xicu-soclib.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1443/trunk/mutekh/drivers/icu/soclib-xicu/xicu-soclib.h
+END
+xicu.config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/soclib-xicu/xicu.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/soclib-xicu/Makefile
+END

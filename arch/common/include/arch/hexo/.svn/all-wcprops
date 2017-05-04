@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1586/trunk/mutekh/arch/common/include/arch/hexo
+END
+lock_cpuatomic.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/1557/trunk/mutekh/arch/common/include/arch/hexo/lock_cpuatomic.h
+END
+segment_nosmp.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/1004/trunk/mutekh/arch/common/include/arch/hexo/segment_nosmp.h
+END
+alloc_simple.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1004/trunk/mutekh/arch/common/include/arch/hexo/alloc_simple.h
+END
+atomic_cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1586/trunk/mutekh/arch/common/include/arch/hexo/atomic_cpu.h
+END
+atomic_lockbased.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1586/trunk/mutekh/arch/common/include/arch/hexo/atomic_lockbased.h
+END
+lock_na.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/471/trunk/mutekh/arch/common/include/arch/hexo/lock_na.h
+END
+types_arch32.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/748/trunk/mutekh/arch/common/include/arch/hexo/types_arch32.h
+END

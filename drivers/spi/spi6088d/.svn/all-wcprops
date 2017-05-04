@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1535/trunk/mutekh/drivers/spi/spi6088d
+END
+spi-spi6088d.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1535/trunk/mutekh/drivers/spi/spi6088d/spi-spi6088d.c
+END
+spi-spi6088d.config
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1388/trunk/mutekh/drivers/spi/spi6088d/spi-spi6088d.config
+END
+spi-spi6088d.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/spi/spi6088d/spi-spi6088d.h
+END
+spi-spi6088d-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1535/trunk/mutekh/drivers/spi/spi6088d/spi-spi6088d-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/spi/spi6088d/Makefile
+END

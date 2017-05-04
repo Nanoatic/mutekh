@@ -1,0 +1,9 @@
+
+%config CONFIG_DRIVER_CHAR_UART8250
+  desc enable intel 8250 uart device support
+  depend CONFIG_ARCH_IBMPC
+  depend CONFIG_HEXO_IRQ
+  provide CONFIG_DRIVER_CHAR
+  parent CONFIG_DEVICE
+%config end
+

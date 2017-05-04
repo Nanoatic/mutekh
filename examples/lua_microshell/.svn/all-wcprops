@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1593/trunk/mutekh/examples/lua_microshell
+END
+mem.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1337/trunk/mutekh/examples/lua_microshell/mem.c
+END
+timer.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1308/trunk/mutekh/examples/lua_microshell/timer.c
+END
+lcd.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1276/trunk/mutekh/examples/lua_microshell/lcd.c
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1593/trunk/mutekh/examples/lua_microshell/config
+END
+vfs_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1375/trunk/mutekh/examples/lua_microshell/vfs_functions.c
+END
+crypto_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1269/trunk/mutekh/examples/lua_microshell/crypto_functions.c
+END
+getline_lua.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1435/trunk/mutekh/examples/lua_microshell/getline_lua.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1435/trunk/mutekh/examples/lua_microshell/Makefile
+END
+rtld_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1254/trunk/mutekh/examples/lua_microshell/rtld_functions.c
+END

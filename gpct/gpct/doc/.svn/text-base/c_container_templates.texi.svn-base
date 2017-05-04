@@ -1,0 +1,46 @@
+@node Container templates
+@chapter Container templates
+@c filename container_templates
+@c parent top is Top
+
+
+This chapter presents the way GPCT can help the programmer to
+@strong{store program objects} in easy to use containers.
+
+Container templates provide a set of containers to store program
+objects like integer values and pointers to structures. Different
+@strong{data storing algorithms} can be used to store these
+@strong{items}.
+
+Items are stored in a container @strong{root object}, they can be
+added, removed, searched, sorted... All these operation can be performed
+through @strong{access functions} and @strong{key field based
+functions} provided by the chosen container.
+
+@subsubheading Example
+
+This simple example shows how GPCT linked list container can be used to store user data.
+
+@verbatiminclude ../examples/example_intro.c
+
+
+@setfilename s_algorithms_interchangeability.texi
+
+
+@setfilename s_algorithms_interchangeability.info
+
+@menu
+* Algorithms interchangeability::
+* Container categories::
+* Preprocessor tests and configuration::
+* Container types definition::
+* Container functions definitions::
+* Container key values::
+@end menu
+
+@include c_container_templates/s_algorithms_interchangeability.texi
+@include c_container_templates/s_categories.texi
+@include c_container_templates/s_preprocessor_tests.texi
+@include c_container_templates/s_types_definition.texi
+@include c_container_templates/s_functions_definitions.texi
+@include c_container_templates/s_key_values.texi

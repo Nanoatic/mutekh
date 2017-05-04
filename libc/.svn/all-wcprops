@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/1603/trunk/mutekh/libc
+END
+assert.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/721/trunk/mutekh/libc/assert.c
+END
+printf.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1487/trunk/mutekh/libc/printf.c
+END
+formatter.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1499/trunk/mutekh/libc/formatter.c
+END
+unistd.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1419/trunk/mutekh/libc/unistd.c
+END
+string.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1377/trunk/mutekh/libc/string.c
+END
+qsort.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1313/trunk/mutekh/libc/qsort.c
+END
+intconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1418/trunk/mutekh/libc/intconv.c
+END
+stdlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1602/trunk/mutekh/libc/stdlib.c
+END
+stdio.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1602/trunk/mutekh/libc/stdio.c
+END
+rand.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/144/trunk/mutekh/libc/rand.c
+END
+formatter_float.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1499/trunk/mutekh/libc/formatter_float.c
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1415/trunk/mutekh/libc/error.c
+END
+alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1603/trunk/mutekh/libc/alloc.c
+END
+libc.config
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1499/trunk/mutekh/libc/libc.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1499/trunk/mutekh/libc/Makefile
+END

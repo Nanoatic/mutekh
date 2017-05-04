@@ -1,0 +1,90 @@
+
+  %set OUTPUT_NAME lua_microshell
+
+  # Application license
+  CONFIG_LICENSE_APP_GPL
+  
+  # Scheduler
+  CONFIG_PTHREAD
+  CONFIG_PTHREAD_STACK_SIZE 8192
+  CONFIG_MUTEK_SCHEDULER_STATIC
+  CONFIG_MUTEK_SEMAPHORE
+  
+  # Libs
+  CONFIG_LIBTERMUI
+  CONFIG_LIBLUA
+  
+  # Libc
+  CONFIG_LIBC_STREAM
+  CONFIG_LIBC_ASSERT
+  CONFIG_MUTEK_PRINTK_HEXDUMP
+  #  CONFIG_VFS_LIBC_STREAM
+  
+  # New source code module to be compiled
+  %append MODULES app:$(CONFIGPATH)
+  
+  CONFIG_COMPILE_SAVETEMPS
+  
+%include ../common/platforms.conf
+%include ../common/build_options.conf
+
+%section emu-*-*
+
+  CONFIG_DRIVER_BLOCK_EMU
+  CONFIG_DRIVER_BLOCK_EMU_BLOCKSIZE 2048
+
+%section rtld
+
+  CONFIG_LIBELF_RTLD
+
+%section dsrl
+
+  CONFIG_LIBDSRL
+
+%section crypto
+
+  CONFIG_LIBCRYPTO_MD5
+
+%section devfs
+
+  CONFIG_DRIVER_FS_DEVFS
+
+%section timer
+
+  CONFIG_MUTEK_TIMERMS
+
+%section vfs
+
+  # FS drivers
+  CONFIG_VFS
+  CONFIG_VFS_GLOBAL_ROOT
+  CONFIG_VFS_GLOBAL_CWD
+
+%section vfs-stats
+
+  #CONFIG_VFS_STATS
+
+%section vfs-verbose
+
+  #CONFIG_VFS_VERBOSE
+
+%section ramfs
+
+  CONFIG_DRIVER_FS_RAMFS
+
+%section iso9660
+
+  CONFIG_DRIVER_FS_ISO9660
+
+%section fat-*
+
+  CONFIG_DRIVER_FS_FAT
+
+%section fat-16
+
+  CONFIG_DRIVER_FS_FAT16
+
+%section fat-32
+
+  CONFIG_DRIVER_FS_FAT32
+

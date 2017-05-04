@@ -1,0 +1,41 @@
+@page
+@node Algorithms interchangeability
+@section Algorithms interchangeability
+@c filename algorithms_interchangeability
+@c parent chapter is Container templates
+
+
+All containers share the same function prototypes set and C types
+name.
+
+Effort have been made to obtain interchangeable container algorithms
+but due to algorithms specificity, minor behavior or feature
+differences exist.
+
+A few functions are missing for some container algorithms because they
+are nonsense. These functions are not implemented and will raise an
+explicit false assertion when used. A good example is the
+@emph{prefix}@code{_insert_pre()} function which deals with item
+insertion order, it is not available for hash based containers where
+order is not significant.
+
+In the same way, some functions may be aliased instead of being marked
+non implemented to keep container interchangeability. For instance, the
+@emph{prefix}@code{_push()} and @emph{prefix}@code{_push_back()}
+functions are the same for a hash based container.
+
+Depending on the algorithm in use, container access functions may
+behave differently. These differences are obvious and addressed in the
+algorithms specific sections (@pxref{Container algorithms}).
+
+Some function may be marked deprecated if their use indicates a bad
+container choice (for instance functions which rely on access to the
+previous item in a single linked list). These functions will be
+extremely slow compared to the equivalent functions for an other list
+containers. This behavior may be disabled by defining the
+@code{GPCT_CONFIG_NODEPRECATED} macro before GPCT header inclusion.
+
+@setfilename s_categories.texi
+
+@setfilename s_categories.info
+

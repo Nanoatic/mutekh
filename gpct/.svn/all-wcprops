@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/1440/trunk/mutekh/gpct
+END
+gpct.config
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1440/trunk/mutekh/gpct/gpct.config
+END
+include
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1080/trunk/mutekh/gpct/include
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1080/trunk/mutekh/gpct/Makefile
+END

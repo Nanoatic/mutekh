@@ -1,0 +1,23 @@
+
+%config CONFIG_DRIVER_CHAR_VGATTY
+  desc Enable vga TTY device support
+  depend CONFIG_ARCH_IBMPC
+  provide CONFIG_DRIVER_CHAR
+  exclude CONFIG_DRIVER_FB_VGA
+  parent CONFIG_DEVICE
+%config end
+
+%config CONFIG_DRIVER_CHAR_VGATTY_ANSI
+  desc Enable ansi codes support
+  parent CONFIG_DRIVER_CHAR_VGATTY
+  default defined
+%config end
+
+%config CONFIG_DRIVER_CHAR_VGATTY_KEYBOARD
+  desc Enable keyboard support. TTY will be output only if this token is disabled.
+  default defined
+  depend CONFIG_HEXO_IRQ
+  exclude CONFIG_DRIVER_INPUT_8042
+  parent CONFIG_DRIVER_CHAR_VGATTY
+%config end
+

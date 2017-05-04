@@ -1,0 +1,32 @@
+@page
+@node Container operations
+@chapter Container operations
+@c filename container_operations
+@c parent top is Top
+
+
+
+
+This section describes functions defined with the
+@code{CONTAINER_FUNC} macro. More detailed informations can be found
+in the container specific section if special behavior exists.
+
+
+@setfilename s_container_object.texi
+
+
+@setfilename s_container_object.info
+
+@menu
+* Container object access::
+* Basic item operations::
+* Iteration::
+* Container locking functions::
+* Lookup and sorting::
+@end menu
+
+@include c_container_operations/s_container_object.texi
+@include c_container_operations/s_items_operations.texi
+@include c_container_operations/s_iteration.texi
+@include c_container_operations/s_container_locking.texi
+@include c_container_operations/s_lookup_and_sorting.texi

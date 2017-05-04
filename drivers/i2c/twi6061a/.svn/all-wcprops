@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1535/trunk/mutekh/drivers/i2c/twi6061a
+END
+i2c-twi6061a.config
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1388/trunk/mutekh/drivers/i2c/twi6061a/i2c-twi6061a.config
+END
+i2c-twi6061a.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/i2c/twi6061a/i2c-twi6061a.h
+END
+i2c-twi6061a-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1535/trunk/mutekh/drivers/i2c/twi6061a/i2c-twi6061a-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/i2c/twi6061a/Makefile
+END
+i2c-twi6061a.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1535/trunk/mutekh/drivers/i2c/twi6061a/i2c-twi6061a.c
+END

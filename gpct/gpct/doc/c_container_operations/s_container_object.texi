@@ -1,0 +1,207 @@
+@node Container object access
+@section Container object access
+@c filename container_object
+@c parent chapter is Container operations
+
+
+@menu
+* @emph{prefix}@code{_init()}::
+* @emph{prefix}@code{_destroy()}::
+* @emph{prefix}@code{_clear()}::
+* @emph{prefix}@code{_count()}::
+* @emph{prefix}@code{_size()}::
+* @emph{prefix}@code{_resize()}::
+* @emph{prefix}@code{_isempty()}::
+* @emph{prefix}@code{_isfull()}::
+* @emph{prefix}@code{_check()}::
+@end menu
+
+@node @emph{prefix}@code{_init()}
+@subsection @emph{prefix}@code{_init()}
+@c filename sss_prefix_init_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{gpct_error_t} @emph{prefix}@code{_init(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function initializes the container @samp{root} object.
+
+@subsubheading Locking
+
+This function initializes the container object internal lock.
+
+@page
+@node @emph{prefix}@code{_destroy()}
+@subsection @emph{prefix}@code{_destroy()}
+@c filename sss_prefix_destroy_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_destroy(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function frees all resources allocated by the matching
+@emph{prefix}@code{_init()} function.
+
+@subsubheading Locking
+
+This function destroys the container object internal lock.
+
+@subsubheading Reference counting
+
+Items are not touched here, the container must be empty before calling
+this function.
+
+@page
+@node @emph{prefix}@code{_clear()}
+@subsection @emph{prefix}@code{_clear()}
+@c filename sss_prefix_clear_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_clear(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function removes all items from the container @samp{root}.
+
+@subsubheading Locking
+
+The container object is write locked while processing.
+
+@subsubheading Reference counting
+
+This function drop all references to removed items.
+
+@subsubheading Orphan checking
+
+All Items present in container are marked as being orphan.
+
+@page
+@node @emph{prefix}@code{_count()}
+@subsection @emph{prefix}@code{_count()}
+@c filename sss_prefix_count_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_count(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function returns the current item count present in the container
+@samp{root}.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@page
+@node @emph{prefix}@code{_size()}
+@subsection @emph{prefix}@code{_size()}
+@c filename sss_prefix_size_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{size_t} @emph{prefix}@code{_size(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function returns the total container item slot count
+for array based containers. This function may return @code{(size_t)-1}
+for pointer based containers.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@page
+@node @emph{prefix}@code{_resize()}
+@subsection @emph{prefix}@code{_resize()}
+@c filename sss_prefix_resize_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{gpct_error_t} @emph{prefix}@code{_resize(}@emph{name}@code{_root_t *root, size_t size);}
+
+@subsubheading Description
+
+This function changes the total container item slot count. It is
+implemented only for dynamically reallocatable array based containers.
+
+@subsubheading Locking
+
+The container is write locked while processing.
+
+@page
+@node @emph{prefix}@code{_isempty()}
+@subsection @emph{prefix}@code{_isempty()}
+@c filename sss_prefix_isempty_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{gpct_bool_t} @emph{prefix}@code{_isempty(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function returns true if the container @samp{root} contains no
+item. This function may be faster than the
+@emph{prefix}@code{_count()} function to check for container empty
+state.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@page
+@node @emph{prefix}@code{_isfull()}
+@subsection @emph{prefix}@code{_isfull()}
+@c filename sss_prefix_isfull_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{gpct_bool_t} @emph{prefix}@code{_isfull(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function returns true if the container @samp{root} can not
+contain more items.
+
+@subsubheading Locking
+
+The container object may be read locked while processing.
+
+@page
+@node @emph{prefix}@code{_check()}
+@subsection @emph{prefix}@code{_check()}
+@c filename sss_prefix_check_
+@c parent section is Container object access
+
+@subsubheading Function prototype
+
+@code{gpct_error_t} @emph{prefix}@code{_check(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function checks container @samp{root} consistency. It can be used
+to detect and resolve memory corruption while debugging gpct based
+programs.
+
+@subsubheading Locking
+
+The container object is read locked while processing.
+
+@setfilename s_items_operations.texi
+
+@setfilename s_items_operations.info
+

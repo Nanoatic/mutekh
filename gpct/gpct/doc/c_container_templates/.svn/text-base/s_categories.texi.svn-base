@@ -1,0 +1,33 @@
+@page
+@node Container categories
+@section Container categories
+@c filename categories
+@c parent chapter is Container templates
+
+
+All GPCT container algorithms fall in one of the following
+categories:
+
+@itemize @bullet
+@item
+@strong{pointer based containers} are able to store references to user
+structures by linking them together using pointers. They require the
+addition of a special field in the user structure to store link
+pointers. Linked lists and trees based containers fall in this
+category. Container root only contains a few field.
+
+@item
+@strong{Array based containers} can be used to store scalar data. This
+means it can store buffer of char, int, ... or pointers to user
+structure. Container root contains the whole array.
+
+@item
+@strong{Bitmap based containers} can be used to perform bit operations
+on arbitrary large bitmaps. Container root contains the whole bitmap.
+
+@end itemize
+
+@setfilename s_preprocessor_tests.texi
+
+@setfilename s_preprocessor_tests.info
+

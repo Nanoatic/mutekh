@@ -1,0 +1,12 @@
+
+%config CONFIG_DRIVER_FB_VGA
+  desc enable vga frame buffer device support
+  depend CONFIG_ARCH_IBMPC
+  provide CONFIG_DRIVER_FB
+  parent CONFIG_DEVICE
+
+# based on code from svgalib
+  provide CONFIG_LICENSE_USE_BSD
+
+%config end
+

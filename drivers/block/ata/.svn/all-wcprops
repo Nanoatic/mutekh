@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1443/trunk/mutekh/drivers/block/ata
+END
+block-ata.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1440/trunk/mutekh/drivers/block/ata/block-ata.config
+END
+block-ata.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/ata/block-ata.h
+END
+controller-ata.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1443/trunk/mutekh/drivers/block/ata/controller-ata.c
+END
+block-ata-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/ata/block-ata-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/ata/Makefile
+END
+drive-ata.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/ata/drive-ata.c
+END

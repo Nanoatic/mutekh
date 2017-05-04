@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1589/trunk/mutekh/drivers/input/mt5-f
+END
+mt5-f-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1589/trunk/mutekh/drivers/input/mt5-f/mt5-f-private.h
+END
+mt5-f.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1589/trunk/mutekh/drivers/input/mt5-f/mt5-f.c
+END
+mt5-f.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1388/trunk/mutekh/drivers/input/mt5-f/mt5-f.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1375/trunk/mutekh/drivers/input/mt5-f/Makefile
+END
+mt5-f.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/input/mt5-f/mt5-f.h
+END

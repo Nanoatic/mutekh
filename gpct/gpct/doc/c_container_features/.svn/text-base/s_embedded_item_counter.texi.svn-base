@@ -1,0 +1,24 @@
+@page
+@node Embedded item counter
+@section Embedded item counter
+@c filename embedded_item_counter
+@c parent chapter is Container features
+
+
+There are two ways to get the current container item count. The
+default behavior in gpct is to traverse the whole container counting
+each item and returning the result.
+
+Some containers can be configured to keep an item counter field up to
+date. This add a small counter update overhead to some operations and
+need an extra field in the container object but provides fast item count
+access through the @emph{prefix}@code{_count()} function.
+
+This feature can be enabled for a given container by defining the
+@code{CONTAINER_COUNTER_}@emph{name} macro before invocation of the associated
+@code{CONTAINER_TYPE} macro.
+
+@setfilename s_orphan_checking.texi
+
+@setfilename s_orphan_checking.info
+

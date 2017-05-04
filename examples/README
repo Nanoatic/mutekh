@@ -1,0 +1,36 @@
+
+
+Required tools
+==============
+
+See: https://www.mutekh.org/trac/mutekh/wiki/BuildingExamples
+
+
+Building examples
+=================
+
+See: https://www.mutekh.org/trac/mutekh/wiki/BuildingExamples
+
+
+Some available examples
+=======================
+
+ - hello: Multithread Hello world example.
+
+ - getline: libtermui readline feature demo
+
+ - libtermui_liblua: libtermui readline with lua script interpreter demo
+
+ - capsule: libcapsule distributed quick sort algorithm demo
+
+ - malloc_stress: Memory allocator stress test.
+
+ - hello_het: Multithread Hello world example for classical and
+   heterogeneous platforms.
+
+ - mjpeg_het: Pipelined multithread Mjpeg decoder test for classical
+   and heterogeneous platforms.
+
+ - splash_radix_het: Distributed multithread radix sort based on
+   splash2 benchmarks, for classical and heterogeneous platforms.
+

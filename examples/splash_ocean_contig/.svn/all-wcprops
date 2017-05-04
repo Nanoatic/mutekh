@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1429/trunk/mutekh/examples/splash_ocean_contig
+END
+jacobcalc.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/jacobcalc.c
+END
+linkup.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/linkup.c
+END
+decs.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1429/trunk/mutekh/examples/splash_ocean_contig/decs.h
+END
+jacobcalc2.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/jacobcalc2.c
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/config
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/main.c
+END
+main_wrapper.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/main_wrapper.c
+END
+subblock.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/subblock.c
+END
+multi.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/multi.c
+END
+slave1.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/slave1.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/Makefile
+END
+laplacalc.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/laplacalc.c
+END
+slave2.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1428/trunk/mutekh/examples/splash_ocean_contig/slave2.c
+END

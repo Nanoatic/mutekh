@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1454/trunk/mutekh/drivers/icu/apic
+END
+icu-apic.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/apic/icu-apic.h
+END
+apic.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/apic/apic.h
+END
+icu-apic-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1454/trunk/mutekh/drivers/icu/apic/icu-apic-private.h
+END
+icu-apic.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1454/trunk/mutekh/drivers/icu/apic/icu-apic.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/apic/Makefile
+END
+icu-apic.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/apic/icu-apic.config
+END

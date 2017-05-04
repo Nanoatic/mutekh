@@ -1,0 +1,11 @@
+@page
+@node Object managed container items
+@section Object managed container items
+@c filename object_managed
+@c parent chapter is Container features
+
+
+@setfilename c_container_algorithms.texi
+
+@setfilename c_container_algorithms.info
+

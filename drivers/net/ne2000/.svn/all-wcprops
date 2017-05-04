@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1556/trunk/mutekh/drivers/net/ne2000
+END
+ne2000.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/ne2000/ne2000.c
+END
+net-ne2000-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/ne2000/net-ne2000-private.h
+END
+net-ne2000.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1556/trunk/mutekh/drivers/net/ne2000/net-ne2000.c
+END
+ne2000.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/ne2000/ne2000.h
+END
+net-ne2000.config
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1440/trunk/mutekh/drivers/net/ne2000/net-ne2000.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/ne2000/Makefile
+END
+net-ne2000.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/net/ne2000/net-ne2000.h
+END

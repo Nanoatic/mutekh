@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1552/trunk/mutekh/examples/enum_demo
+END
+config_emu_darwin
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1375/trunk/mutekh/examples/enum_demo/config_emu_darwin
+END
+config_soclib
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1388/trunk/mutekh/examples/enum_demo/config_soclib
+END
+hello.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1552/trunk/mutekh/examples/enum_demo/hello.c
+END
+config_emu
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/examples/enum_demo/config_emu
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/900/trunk/mutekh/examples/enum_demo/Makefile
+END
+platform.dts
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1103/trunk/mutekh/examples/enum_demo/platform.dts
+END

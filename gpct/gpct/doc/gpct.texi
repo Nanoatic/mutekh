@@ -1,0 +1,73 @@
+\input texinfo   @c -*-texinfo-*-
+@setfilename gpct.info
+@settitle General purpose C templates v1.0
+
+@copying
+This manual is for GPCT, version 1.0.
+Copyright @copyright{} 2006 Alexandre Becoulet.
+
+@quotation
+Copyright (C) 2009 Alexandre Becoulet. Permission is granted to copy,
+distribute and/or modify this document under the terms of the GNU Free
+Documentation License, Version 1.3 or any later version published by
+the Free Software Foundation; with no Invariant Sections, no
+Front-Cover Texts, and no Back-Cover Texts. A copy of the license is
+included in the section entitled ``GNU Free Documentation License''.
+@end quotation
+@end copying
+
+@ifnottex
+@dircategory Development
+@direntry
+* gpct:                   General purpose C templates
+@end direntry
+@end ifnottex
+
+@titlepage
+@title General purpose C templates
+@c @subtitle
+@author Alexandre Becoulet
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@end titlepage
+
+@contents
+
+@page
+
+@paragraphindent none
+
+@macro gpctfunc {name}
+@emph{prefix}@code{_\name\()}
+@end macro
+
+@ifnottex
+@node Top
+@top Top
+@end ifnottex
+
+
+@setfilename c_introduction.texi
+
+
+@setfilename c_introduction.info
+
+@menu
+* Introduction::
+* Using GPCT::
+* Container templates::
+* Container operations::
+* Container features::
+* Container algorithms::
+* GNU Free Documentation License::
+@end menu
+
+@include c_introduction.texi
+@include c_using_gpct.texi
+@include c_container_templates.texi
+@include c_container_operations.texi
+@include c_container_features.texi
+@include c_container_algorithms.texi
+@include c_fdl.texi
+@bye

@@ -1,0 +1,8 @@
+
+%config CONFIG_DRIVER_INPUT_MT5F
+  desc Enable MT5F 4-way + button joystick
+  depend CONFIG_DRIVER_GPIO
+  provide CONFIG_DRIVER_INPUT
+  parent CONFIG_DEVICE
+%config end
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1586/trunk/mutekh/cpu/x86-emu
+END
+ldscript
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/381/trunk/mutekh/cpu/x86-emu/ldscript
+END
+emu.config
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1524/trunk/mutekh/cpu/x86-emu/emu.config
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1472/trunk/mutekh/cpu/x86-emu/config.mk
+END
+cpu_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1475/trunk/mutekh/cpu/x86-emu/cpu_init.c
+END
+cpu_context.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1526/trunk/mutekh/cpu/x86-emu/cpu_context.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/933/trunk/mutekh/cpu/x86-emu/Makefile
+END
+libelf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/933/trunk/mutekh/cpu/x86-emu/libelf
+END

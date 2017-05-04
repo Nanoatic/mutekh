@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1586/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo
+END
+local.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1388/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/local.h
+END
+atomic.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/380/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/atomic.h
+END
+interrupt.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1555/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/interrupt.h
+END
+endian.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/380/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/endian.h
+END
+iospace.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/380/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/iospace.h
+END
+context.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1586/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/context.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/380/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/types.h
+END
+cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1475/trunk/mutekh/cpu/x86-64-emu/include/cpu/hexo/cpu.h
+END

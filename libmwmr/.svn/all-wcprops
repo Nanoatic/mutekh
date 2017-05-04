@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/1565/trunk/mutekh/libmwmr
+END
+mwmr.config
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1440/trunk/mutekh/libmwmr/mwmr.config
+END
+mwmr_soclib_lockfree.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1565/trunk/mutekh/libmwmr/mwmr_soclib_lockfree.c
+END
+mwmr_pthread.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1032/trunk/mutekh/libmwmr/mwmr_pthread.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/716/trunk/mutekh/libmwmr/Makefile
+END
+mwmr_soclib.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1551/trunk/mutekh/libmwmr/mwmr_soclib.c
+END

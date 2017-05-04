@@ -1,0 +1,86 @@
+10
+
+dir
+1630
+https://www.mutekh.org/svn/trunk/mutekh/drivers/icu
+https://www.mutekh.org/svn
+
+
+
+2010-04-06T13:40:26.588914Z
+1589
+nipo
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+dc202132-5327-0410-a00c-f554aaf2e61a
+
+arm
+dir
+
+soclib-xicu
+dir
+
+ppc
+dir
+
+8259
+dir
+
+sam7
+dir
+
+mips
+dir
+
+soclib-icu
+dir
+
+apic
+dir
+
+Makefile
+file
+
+
+
+
+2010-05-12T12:14:43.000000Z
+0c7a6d7a5189bcb504ccccdfe296f3fc
+2010-03-16T00:00:49.015223Z
+1449
+becoulet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+546
+

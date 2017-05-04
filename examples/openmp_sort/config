@@ -1,0 +1,22 @@
+
+  %set OUTPUT_NAME openmp-sort
+
+  # New source code module to be compiled
+  %append MODULES $(OUTPUT_NAME):$(CONFIGPATH)
+
+  # Application license
+  CONFIG_LICENSE_APP_GPL3
+
+  # Libs
+  CONFIG_OPENMP
+  CONFIG_PTHREAD_MAIN
+  CONFIG_PTHREAD_STACK_SIZE 16384
+  CONFIG_MUTEK_SCHEDULER_TMP_STACK_SIZE 16384
+  CONFIG_HEXO_INTTYPES_DEPRECATED undefined
+  CONFIG_LIBC_FORMATTER_FLOAT
+
+%include ../common/build_options.conf
+%include ../common/platforms.conf
+
+  CONFIG_ARCH_EMU_UNLOCK_YIELD undefined
+

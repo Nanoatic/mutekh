@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1557/trunk/mutekh/arch/emu/include/arch/hexo
+END
+atomic.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/380/trunk/mutekh/arch/emu/include/arch/hexo/atomic.h
+END
+syscalls_args.def
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1475/trunk/mutekh/arch/emu/include/arch/hexo/syscalls_args.def
+END
+segment.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1388/trunk/mutekh/arch/emu/include/arch/hexo/segment.h
+END
+emu_syscalls.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1475/trunk/mutekh/arch/emu/include/arch/hexo/emu_syscalls.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/380/trunk/mutekh/arch/emu/include/arch/hexo/types.h
+END
+syscalls_nums.def
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1463/trunk/mutekh/arch/emu/include/arch/hexo/syscalls_nums.def
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/475/trunk/mutekh/arch/emu/include/arch/hexo/Makefile
+END
+lock.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1557/trunk/mutekh/arch/emu/include/arch/hexo/lock.h
+END

@@ -1,0 +1,4 @@
+
+objs = block-soclib.o
+
+

@@ -1,0 +1,39 @@
+
+%config CONFIG_ARCH_IBMPC
+  desc IBM PC platform support
+  parent CONFIG_ARCH_META
+  module arch Hexo
+  provide CONFIG_ARCH_NAME=ibmpc
+  provide CONFIG_ROM_ADDR=0x00100000
+  provide CONFIG_ROM_SIZE=0x00200000
+  provide CONFIG_RAM_ADDR=0x00300000
+  provide CONFIG_RAM_SIZE=0x00200000
+  depend CONFIG_ARCH_HW_INIT
+%config end
+
+%config CONFIG_ARCH_IBMPC_SMP
+  desc IBM PC platform with multiprocessor support
+  flags internal
+  parent CONFIG_ARCH_IBMPC
+  when CONFIG_ARCH_SMP
+  depend CONFIG_DRIVER_ICU_APIC
+  provide CONFIG_ARCH_SMP_CAPABLE
+%config end
+
+%config CONFIG_IBMPC_EARLY_CONSOLE_VGA
+  desc enable early vga text console before device initialization
+  provide CONFIG_MUTEK_EARLY_CONSOLE
+  parent CONFIG_ARCH_IBMPC
+%config end
+
+%config CONFIG_ARCH_IBMPC_MEMORY
+  desc Set the amount of ram memory. Ram size will be autodetected if this token is diabled.
+  flags value
+  parent CONFIG_ARCH_IBMPC
+%config end
+
+%config CONFIG_ARCH_IBMPC_DMA
+  desc Support 8237 dma controller found in IBM PCs
+  parent CONFIG_ARCH_IBMPC
+%config end
+

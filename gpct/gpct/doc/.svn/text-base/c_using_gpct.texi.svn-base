@@ -1,0 +1,26 @@
+@node Using GPCT
+@chapter Using GPCT
+@c filename using_gpct
+@c parent top is Top
+
+
+GPCT templates can be used with a few C macros invocation. Common GPCT
+macro invocation layout is presented in this chapter.
+
+
+@setfilename s_type_declaration.texi
+
+
+@setfilename s_type_declaration.info
+
+@menu
+* Type declaration::
+* Functions definition::
+* Functions prototypes::
+* GPCT configuration::
+@end menu
+
+@include c_using_gpct/s_type_declaration.texi
+@include c_using_gpct/s_functions_definition.texi
+@include c_using_gpct/s_functions_prototypes.texi
+@include c_using_gpct/s_gpct_configuration.texi

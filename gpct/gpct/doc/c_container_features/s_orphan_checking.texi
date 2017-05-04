@@ -1,0 +1,41 @@
+@page
+@node Orphan checking
+@section Orphan checking
+@c filename orphan_checking
+@c parent chapter is Container features
+
+
+Container items can be marked with an orphan mark when not being part
+of a container.
+
+This feature is available for @strong{pointer based containers} only
+and must be enabled by the programmer. When orphan checking is
+enabled, every item removed from a container will be marked as orphan
+and all access operations which remove items from a container will
+check the orphan mark and report an error status if the item as
+already been removed.
+
+The item orphan mark will be updated on container item insertion and
+removal. It can be set with the @emph{prefix}@code{_orphan()} function
+to initialize items that have never been part of any container.
+
+Orphan marks are checked only when trying to remove an item from a
+container with an explicit index (for instance no check is performed
+by the @code{_pop()} function). It is useful to avoid performing an
+invalid remove operation on an item which has already been
+removed. This condition is likely to happen in multi-threaded
+environment. When used with locking mechanisms, it provide a way to
+detect and solve item removal conflicts.
+
+This feature must be enabled with a macro definition before
+@code{CONTAINER_TYPE} and @code{CONTAINER_FUNC} invocation:
+
+@code{#define CONTAINER_ORPHAN_CHK_}@emph{name}
+
+@emph{name} is the name of the container as expected by the
+@code{CONTAINER_TYPE} and other macros.
+
+@setfilename s_object_managed.texi
+
+@setfilename s_object_managed.info
+

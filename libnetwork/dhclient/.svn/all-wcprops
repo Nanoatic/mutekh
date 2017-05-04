@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1388/trunk/mutekh/libnetwork/dhclient
+END
+dhclient.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1308/trunk/mutekh/libnetwork/dhclient/dhclient.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/318/trunk/mutekh/libnetwork/dhclient/Makefile
+END
+dhclient.config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1388/trunk/mutekh/libnetwork/dhclient/dhclient.config
+END

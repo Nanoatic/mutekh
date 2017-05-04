@@ -1,0 +1,15 @@
+
+  %set OUTPUT_NAME getline
+
+  # New source code module to be compiled
+  %append MODULES $(OUTPUT_NAME):$(CONFIGPATH)
+
+  # Application license
+  CONFIG_LICENSE_APP_GPL
+
+  # Libs
+  CONFIG_LIBTERMUI
+
+%include ../common/build_options.conf
+%include ../common/platforms.conf
+

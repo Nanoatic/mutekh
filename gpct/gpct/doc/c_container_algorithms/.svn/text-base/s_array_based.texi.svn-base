@@ -1,0 +1,204 @@
+@page
+@node Array based containers
+@section Array based containers
+@c filename array_based
+@c parent chapter is Container algorithms
+
+
+GPCT provides several array based containers. Simple arrays and
+circulars buffers with static and dynamic size are available.
+
+@menu
+* Fixed size array::
+* Dynamic array::
+* Ring buffer::
+* Dynamic ring buffer::
+@end menu
+
+@node Fixed size array
+@subsection Fixed size array
+@c filename fixed_size_array
+@c parent section is Array based containers
+
+
+Array container is a simple C array of items embedded in a GPCT
+container. The container object contains the fixed size items array and
+the number of valid items currently stored in the container.
+
+The following functions are available with this algorithm:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isvalid()}, @emph{prefix}@code{_isempty()}, @emph{prefix}@code{_isfull()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_prev()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()}, @emph{prefix}@code{_size()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_array.h>}
+
+Array container token name is @code{ARRAY}. The array size is
+required as extra parameter to the @code{CONTAINER_TYPE} macro.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_array.c
+
+@page
+@node Dynamic array
+@subsection Dynamic array
+@c filename dynamic_array
+@c parent section is Array based containers
+
+
+Dynamic array container is an reallocatable array of items. The
+container object contains a pointer to a dynamically allocated items
+array, the current size of the array and the number of valid items
+currently stored.
+
+No array space is allocated on container initialization. The specified
+minimum array size is allocated when an item is first added to the
+container with a push or insert operation. The array is reallocated
+with a double size when it's full, provided that the specified maximum
+array size is not reached. Pointers to items in the array are no more
+valid when a reallocation occur.
+
+The array may be resized with the @emph{prefix}@code{_resize()}
+function. It can not be shrunk below the currently stored item
+count. The array space is freed when resized to 0.
+
+The following functions are available with this algorithm:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isvalid()}, @emph{prefix}@code{_isempty()}, @emph{prefix}@code{_isfull()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_prev()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()}, @emph{prefix}@code{_size()}, @emph{prefix}@code{_resize()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_darray.h>}
+
+Dynamic array container token name is @code{DARRAY}. The array initial size and maximal array size are
+required as extra parameters to the @code{CONTAINER_TYPE} macro.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_darray.c
+
+@page
+@node Ring buffer
+@subsection Ring buffer
+@c filename ring_buffer
+@c parent section is Array based containers
+
+
+Ring buffer container is implemented as a FIFO. The container object
+contains the fixed size items array, an index to the head item and the
+number of items currently stored.
+
+When used with @code{char} or other integer types, this container
+can serve as a general purpose data FIFO with the pop and push back
+functions performing read and write operations on single byte or byte
+arrays.
+
+The ring size must be a power of 2.
+
+The following functions are available with this algorithm:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isvalid()}, @emph{prefix}@code{_isempty()}, @emph{prefix}@code{_isfull()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_prev()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()}, @emph{prefix}@code{_size()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_ring.h>}
+
+Ring buffer container token name is @code{RING}. The ring size is
+required as extra parameter to the @code{CONTAINER_TYPE} macro.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_ring.c
+
+@page
+@node Dynamic ring buffer
+@subsection Dynamic ring buffer
+@c filename dynamic_ring_buffer
+@c parent section is Array based containers
+
+
+Dynamic ring buffer container is implemented as a dynamically
+resizable FIFO. The container object contains a pointer to items ring
+space, an index to the head item, the size of the current ring and
+the number of items currently stored.
+
+No ring space is allocated on container initialization. The specified
+initial ring size is allocated when an item is first added to the
+container with a push or insert operation. The array is reallocated
+with a double size when it's full, provided that the specified maximum
+ring size is not reached. All overlapping data are moved properly when
+resizing the ring space. Pointers to items in the array are no more
+valid when a reallocation occur.
+
+When used with @code{char} or other integer types, this container
+can serve as a general purpose data FIFO with the pop and push back
+functions performing read and write operations on single byte or byte
+arrays.
+
+The ring initial and maximal sizes must be powers of 2.
+
+The following functions are available with this algorithm:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isvalid()}, @emph{prefix}@code{_isempty()}, @emph{prefix}@code{_isfull()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_next()}, @emph{prefix}@code{_prev()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()}, @emph{prefix}@code{_size()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_dring.h>}
+
+Ring buffer container token name is @code{DRING}. The ring initial an
+maximal size are required as extra parameters to the
+@code{CONTAINER_TYPE} macro.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_dring.c
+
+@setfilename s_bitmap.texi
+
+@setfilename s_bitmap.info
+

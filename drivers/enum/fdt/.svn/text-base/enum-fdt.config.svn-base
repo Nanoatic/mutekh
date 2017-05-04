@@ -1,0 +1,10 @@
+
+%config CONFIG_DRIVER_ENUM_FDT
+  desc Provide support for device enumeration from a Flat Device Tree
+  flags auto
+  provide CONFIG_DRIVER_ENUM
+  depend CONFIG_FDT
+  depend CONFIG_DEVICE_TREE
+  parent CONFIG_DEVICE
+%config end
+

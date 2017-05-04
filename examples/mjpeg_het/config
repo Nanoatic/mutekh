@@ -1,0 +1,22 @@
+
+  %set OUTPUT_NAME mjpeg_het
+
+# New source code module to be compiled
+  %append MODULES $(OUTPUT_NAME):$(CONFIGPATH)
+
+# Application license
+  CONFIG_LICENSE_APP_GPL
+
+# Mutek features
+  CONFIG_MUTEK_SMP_APP_START
+
+# Libs
+  CONFIG_PTHREAD
+  CONFIG_HEXO_INTTYPES_DEPRECATED undefined
+
+%include ../common/build_options.conf
+%include ../common/platforms.conf
+
+%section static
+  CONFIG_MUTEK_SCHEDULER_STATIC
+

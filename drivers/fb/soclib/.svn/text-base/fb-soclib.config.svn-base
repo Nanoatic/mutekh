@@ -1,0 +1,8 @@
+
+%config CONFIG_DRIVER_FB_SOCLIB
+  desc enable soclib frame buffer device support
+  depend CONFIG_ARCH_SOCLIB
+  provide CONFIG_DRIVER_FB
+  parent CONFIG_DEVICE
+%config end
+

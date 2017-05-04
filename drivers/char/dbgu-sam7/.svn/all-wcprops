@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/dbgu-sam7
+END
+dbgu-sam7.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/dbgu-sam7/dbgu-sam7.c
+END
+dbgu-sam7.config
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/dbgu-sam7/dbgu-sam7.config
+END
+dbgu-sam7.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/dbgu-sam7/dbgu-sam7.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/dbgu-sam7/Makefile
+END

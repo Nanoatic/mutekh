@@ -1,0 +1,106 @@
+
+%config CONFIG_ARCH_SMP
+  desc Support multi-processors systems
+  depend CONFIG_CPU_SMP_CAPABLE
+  depend CONFIG_ARCH_SMP_CAPABLE
+  parent CONFIG_ARCH_META
+  when CONFIG_CPU_MAXCOUNT>1
+  suggest CONFIG_CPU_MAXCOUNT>1
+%config end
+
+%config CONFIG_ARCH_CLUSTER
+  desc Support multi-clusters systems
+  parent CONFIG_ARCH_META
+  depend CONFIG_ARCH_SMP
+%config end
+
+######################################################################
+
+%config CONFIG_ARCH_META
+  desc meta configuration token used to impose requirements
+  flags	mandatory internal root
+  require CONFIG_ARCH_NAME
+  single CONFIG_ARCH_IBMPC CONFIG_ARCH_SOCLIB CONFIG_ARCH_EMU CONFIG_ARCH_SIMPLE
+  single CONFIG_ARCH_DEVICE_TREE CONFIG_ARCH_HW_INIT CONFIG_ARCH_HW_INIT_USER
+%config end
+
+%config CONFIG_ARCH_SMP_CAPABLE
+  parent CONFIG_CPU_META
+  desc Platform is designed to support multi-processor operation
+  flags meta
+%config end
+
+%config CONFIG_RAM_ADDR
+  desc RAM memory base address on this platform
+  parent CONFIG_ARCH_META
+  flags value
+%config end
+
+%config CONFIG_RAM_SIZE
+  desc RAM memory size in bytes on this platform
+  parent CONFIG_ARCH_META
+  flags value
+%config end
+
+%config CONFIG_ROM_ADDR
+  desc ROM memory base address on this platform
+  parent CONFIG_ARCH_META
+  flags value
+%config end
+
+%config CONFIG_ROM_SIZE
+  desc ROM memory size in bytes on this platform
+  parent CONFIG_ARCH_META
+  flags value
+%config end
+
+%config CONFIG_HETROM_ADDR
+  desc Heterogeneous code ROM memory base address on this platform
+  parent CONFIG_ARCH_META
+  flags value
+%config end
+
+%config CONFIG_HETROM_SIZE
+  desc Heterogeneous code ROM memory size in bytes on this platform
+  parent CONFIG_ARCH_META
+  flags value
+%config end
+
+%config CONFIG_DATA_FROM_ROM
+  desc Whether we have to copy .data from Rom/Flash to Ram before init
+  parent CONFIG_ARCH_META
+  default defined
+%config end
+
+%config CONFIG_ARCH_HW_INIT
+  desc Whether arch provides a arch_hw_init() function
+  flags harddep
+  parent CONFIG_ARCH_META
+  when CONFIG_ARCH_HW_INIT_USER! CONFIG_ARCH_DEVICE_TREE!
+%config end
+
+%config CONFIG_ARCH_HW_INIT_USER
+  desc Whether user provides a user_hw_init() function
+  flags harddep
+  parent CONFIG_ARCH_META
+%config end
+
+%config CONFIG_ARCH_DEVICE_TREE
+  desc Whether we use a fdt tree for devices enumeration
+  flags harddep
+  parent CONFIG_ARCH_META
+  depend CONFIG_DEVICE_TREE
+  depend CONFIG_DRIVER_ENUM_ROOT
+  depend CONFIG_DRIVER_ENUM_FDT
+  depend CONFIG_FDT
+%config end
+
+######################################################################
+# Provided token, not definable by user directly
+
+%config CONFIG_ARCH_NAME
+  desc	Platform name configuration token
+  parent CONFIG_ARCH_META
+  flags	internal value
+%config end
+

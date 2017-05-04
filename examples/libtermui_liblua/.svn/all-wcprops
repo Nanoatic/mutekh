@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/examples/libtermui_liblua
+END
+README.emu
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/620/trunk/mutekh/examples/libtermui_liblua/README.emu
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1375/trunk/mutekh/examples/libtermui_liblua/config
+END
+getline_lua.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1026/trunk/mutekh/examples/libtermui_liblua/getline_lua.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1368/trunk/mutekh/examples/libtermui_liblua/Makefile
+END

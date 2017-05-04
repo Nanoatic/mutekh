@@ -1,0 +1,22 @@
+
+%config CONFIG_LIBDSRL
+  desc Lua API for dynamic SRL
+  module libdsrl
+  depend CONFIG_MUTEK_SCHEDULER
+  exclude CONFIG_MUTEK_SCHEDULER_MIGRATION
+  depend CONFIG_ARCH_SOCLIB
+#depend CONFIG_MWMR
+#depend CONFIG_MWMR_SOCLIB
+  depend CONFIG_LIBLUA
+  depend CONFIG_VFS
+  depend CONFIG_LIBELF_RTLD
+#exclude CONFIG_MUTEK_MAIN
+  exclude CONFIG_ARCH_SOCLIB_RAMLOCK
+%config end
+
+%config CONFIG_LIBDSRL_DEBUG
+  desc Enable DSRL lib debug information
+  parent CONFIG_LIBDSRL
+%config end
+
+# vim: filetype=conf

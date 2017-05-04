@@ -1,0 +1,26 @@
+@page
+@node Container algorithms
+@chapter Container algorithms
+@c filename container_algorithms
+@c parent top is Top
+
+
+
+@setfilename s_linked_lists.texi
+
+
+@setfilename s_linked_lists.info
+
+@menu
+* Linked lists containers::
+* Hashed containers::
+* Trees Containers::
+* Array based containers::
+* Bitmap containers::
+@end menu
+
+@include c_container_algorithms/s_linked_lists.texi
+@include c_container_algorithms/s_hashed.texi
+@include c_container_algorithms/s_trees.texi
+@include c_container_algorithms/s_array_based.texi
+@include c_container_algorithms/s_bitmap.texi

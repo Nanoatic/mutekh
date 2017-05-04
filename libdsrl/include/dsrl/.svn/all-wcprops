@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/935/trunk/mutekh/libdsrl/include/dsrl
+END
+dsrl-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/935/trunk/mutekh/libdsrl/include/dsrl/dsrl-private.h
+END
+dsrl-lua.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/935/trunk/mutekh/libdsrl/include/dsrl/dsrl-lua.h
+END
+dsrl.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/935/trunk/mutekh/libdsrl/include/dsrl/dsrl.h
+END
+dsrl-types.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/935/trunk/mutekh/libdsrl/include/dsrl/dsrl-types.h
+END

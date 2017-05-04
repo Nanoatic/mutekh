@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/soclib-icu
+END
+icu-soclib.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/soclib-icu/icu-soclib.h
+END
+icu-soclib-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/soclib-icu/icu-soclib-private.h
+END
+icu-soclib.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/soclib-icu/icu-soclib.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/soclib-icu/Makefile
+END
+icu-soclib.config
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/soclib-icu/icu-soclib.config
+END

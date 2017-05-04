@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1427/trunk/mutekh/examples/splash_fft
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1427/trunk/mutekh/examples/splash_fft/config
+END
+main_wrapper.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1407/trunk/mutekh/examples/splash_fft/main_wrapper.c
+END
+fft_pthread.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1407/trunk/mutekh/examples/splash_fft/fft_pthread.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1407/trunk/mutekh/examples/splash_fft/Makefile
+END

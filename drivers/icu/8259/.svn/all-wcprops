@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/8259
+END
+icu-8259-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/8259/icu-8259-private.h
+END
+icu-8259.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/8259/icu-8259.c
+END
+icu-8259.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/8259/icu-8259.config
+END
+icu-8259.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/8259/icu-8259.h
+END
+8259.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/8259/8259.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/8259/Makefile
+END

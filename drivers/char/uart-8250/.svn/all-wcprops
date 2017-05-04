@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/uart-8250
+END
+8250.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/uart-8250/8250.h
+END
+uart-8250-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/uart-8250/uart-8250-private.h
+END
+uart-8250.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1443/trunk/mutekh/drivers/char/uart-8250/uart-8250.c
+END
+uart-8250.config
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/uart-8250/uart-8250.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/uart-8250/Makefile
+END
+uart-8250.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/uart-8250/uart-8250.h
+END

@@ -1,0 +1,102 @@
+
+%config CONFIG_DEVICE
+  desc MutekH device drivers
+  module drivers Device drivers
+  flags mandatory
+%config end
+
+%config CONFIG_DEVICE_TREE
+  parent CONFIG_DEVICE
+  desc Have all device nodes sorted in a tree form
+  default defined
+%config end
+
+%config CONFIG_DRIVER_CHAR
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one character device driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_NET
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one network device driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_TIMER
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one timer device driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_ICU
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one interrupt control device driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_ICU_IPI
+  parent CONFIG_DEVICE
+  flags meta
+  desc The ICU driver supports inter processor interrupts
+%config end
+
+%config CONFIG_DRIVER_FB
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one frame buffer device driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_INPUT
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one input keyborad driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_SOUND
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one sound driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_BLOCK
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one block device driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_SPI
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one SPI driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_ENUM
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one ENUM driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_LCD
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one LCD driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_GPIO
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one GPIO driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_I2C
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one I2C driver must be enabled to have it defined
+%config end
+
+%config CONFIG_DRIVER_MEM
+  parent CONFIG_DEVICE
+  flags meta
+  desc At least one MEM driver must be enabled to have it defined
+%config end

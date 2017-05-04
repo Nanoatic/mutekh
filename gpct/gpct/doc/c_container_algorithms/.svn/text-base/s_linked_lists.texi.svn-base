@@ -1,0 +1,232 @@
+@page
+@node Linked lists containers
+@section Linked lists containers
+@c filename linked_lists
+@c parent chapter is Container algorithms
+
+
+GPCT provides several kinds of linked list containers. Each list
+container algorithm has its pros and cons. Algorithm studies is beyond
+the scope of this manual and is well covered elsewhere.
+
+All linked list containers are obviously pointer based, @pxref{Container categories}.
+
+@menu
+* Singly linked list::
+* Singly linked list with deletion back pointer::
+* Doubly linked list::
+* Circularly linked list::
+@end menu
+
+@node Singly linked list
+@subsection Singly linked list
+@c filename singly_linked_list
+@c parent section is Linked lists containers
+
+
+Singly linked list container use a single pointer link to the next
+item for each item in the container. The container object contains a
+pointer to the first item in the list. List is @code{NULL} terminated.
+
+The following operations are available:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_orphan()}, @emph{prefix}@code{_isorphan()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isempty()}, @emph{prefix}@code{_isfull()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_prev()}, @emph{prefix}@code{_next()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @emph{prefix}@code{_sort_*scend()}, @emph{prefix}@code{_sort_stable_*scend()}, @emph{prefix}@code{_merge_*scend()}, @emph{prefix}@code{_insert_*scend()}, @emph{prefix}@code{_issorted_*scend()}
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+The following operations are suboptimal and deprecated:
+@itemize
+@item @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_prev()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_insert_pre()},
+@item @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_popback()}, @emph{prefix}@code{_popback_array()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_pushback_array()},
+@item @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_prev()},
+@item @code{CONTAINER_FOREACH_REVERSE() and friends}
+@end itemize
+
+Forward iteration with @code{CONTAINER_FOREACH} macro and friends
+allows deletion of current item.
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_slist.h>}
+
+Singly linked list token name is @code{SLIST}. The anchor field name
+in item structure (@pxref{Item entry field}) is required as extra
+parameters to the @code{CONTAINER_TYPE} macro.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_slist.c
+
+@page
+@node Singly linked list with deletion back pointer
+@subsection Singly linked list with deletion back pointer
+@c filename singly_linked_list_with_deletion_back_pointer
+@c parent section is Linked lists containers
+
+
+This linked list container use a pointer link to the next item for
+each item in the container and an additional double pointer back
+link. This additional back link is used to access the pointer to the
+current item which may be the list head or the previous item next
+link.
+
+The container object contains a pointer to the first item in the
+list. List is @code{NULL} terminated.
+
+This container is equivalent to standard singly linked list and
+provide fast basic operations. The additional back pointer allows
+efficient deletion, replacement and before insertion without doubly
+linked list pointer manipulation overhead.
+
+The following operations are available:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_orphan()}, @emph{prefix}@code{_isorphan()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isempty()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_prev()}, @emph{prefix}@code{_next()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @emph{prefix}@code{_sort_*scend()}, @emph{prefix}@code{_sort_stable_*scend()}, @emph{prefix}@code{_merge_*scend()}, @emph{prefix}@code{_insert_*scend()}, @emph{prefix}@code{_issorted_*scend()}
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+The following operations are suboptimal and deprecated:
+@itemize
+@item @emph{prefix}@code{_prev()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_popback()}, @emph{prefix}@code{_popback_array()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_pushback_array()},
+@item @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_prev()},
+@item @code{CONTAINER_FOREACH_REVERSE() and friends}
+@end itemize
+
+Forward iteration with @code{CONTAINER_FOREACH} macro and friends
+allows deletion of current item.
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_blist.h>}
+
+Related algorithm token name is @code{BLIST}. The anchor field name
+in item structure (@pxref{Item entry field}) is required as extra
+parameters to the @code{CONTAINER_TYPE} macro.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_blist.c
+
+@page
+@node Doubly linked list
+@subsection Doubly linked list
+@c filename doubly_linked_list
+@c parent section is Linked lists containers
+
+
+Doubly linked list container use two pointer links to the next and
+previous item for each item in the container. The container object
+contains two pointers to the first and last items in the list. List is
+@code{NULL} terminated.
+
+The following operations are available:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_orphan()}, @emph{prefix}@code{_isorphan()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isempty()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_prev()}, @emph{prefix}@code{_next()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @emph{prefix}@code{_sort_*scend()}, @emph{prefix}@code{_sort_stable_*scend()}, @emph{prefix}@code{_merge_*scend()}, @emph{prefix}@code{_insert_*scend()}, @emph{prefix}@code{_issorted_*scend()}
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+Forward iteration with @code{CONTAINER_FOREACH} macro and friends
+allows deletion of current item.
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_dlist.h>}
+
+Doubly linked list token name is @code{DLIST}. The anchor field name
+in item structure (@pxref{Item entry field}) is required as extra
+parameters to the @code{CONTAINER_TYPE} macro.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_dlist.c
+
+@page
+@node Circularly linked list
+@subsection Circularly linked list
+@c filename circularly_linked_list
+@c parent section is Linked lists containers
+
+
+Circularly linked list container use two pointer links to the next and
+previous item for each item in the container. The container object is a
+special persistent list element. The first and last item in the list
+are linked to the special root element, this simplify some pointer
+manipulation code by eliminating list termination cases.
+
+The following operations are available:
+@itemize
+@item @emph{prefix}@code{_init()}, @emph{prefix}@code{_destroy()}, @emph{prefix}@code{_check()},
+@item @emph{prefix}@code{_orphan()}, @emph{prefix}@code{_isorphan()},
+@item @emph{prefix}@code{_isnull()}, @emph{prefix}@code{_isempty()},
+@item @emph{prefix}@code{_get()}, @emph{prefix}@code{_getptr()}, @emph{prefix}@code{_getindex()}, @emph{prefix}@code{_set()},
+@item @emph{prefix}@code{_prev()}, @emph{prefix}@code{_next()}, @emph{prefix}@code{_head()}, @emph{prefix}@code{_tail()},
+@item @emph{prefix}@code{_count()},
+@item @emph{prefix}@code{_insert_pre()}, @emph{prefix}@code{_insert_post()},
+@item @emph{prefix}@code{_clear()}, @emph{prefix}@code{_remove()},
+@item @emph{prefix}@code{_push()}, @emph{prefix}@code{_pop()}, @emph{prefix}@code{_pushback()}, @emph{prefix}@code{_popback()}, @emph{prefix}@code{_push_array()}, @emph{prefix}@code{_pop_array()}, @emph{prefix}@code{_pushback_array()}, @emph{prefix}@code{_popback_array()},
+@item @emph{prefix}@code{_foreach()}, @emph{prefix}@code{_foreach_reverse()},
+@item @emph{prefix}@code{_lookup()}, @emph{prefix}@code{_lookup_last()}, @emph{prefix}@code{_lookup_next()}, @emph{prefix}@code{_lookup_prev()},
+@item @emph{prefix}@code{_sort_*scend()}, @emph{prefix}@code{_sort_stable_*scend()}, @emph{prefix}@code{_merge_*scend()}, @emph{prefix}@code{_insert_*scend()}, @emph{prefix}@code{_issorted_*scend()}
+@item @code{CONTAINER_FOREACH()} family macros
+@end itemize
+
+Forward iteration with @code{CONTAINER_FOREACH} macro and friends
+allows deletion of current item.
+
+@subsubheading Usage
+
+@code{#include <gpct/cont_clist.h>}
+
+Circularly linked list token name is @code{CLIST}. The anchor field
+name in item structure (@pxref{Item entry field}) is required as extra
+parameters to the @code{CONTAINER_TYPE} macro.
+
+The @code{CONTAINER_ROOT_INITIALIZER} macro is not available here,
+@code{CONTAINER_ROOT_DECLARATOR} must be used instead.
+
+@subsubheading Example
+
+@verbatiminclude ../examples/example_clist.c
+
+@setfilename s_hashed.texi
+
+@setfilename s_hashed.info
+

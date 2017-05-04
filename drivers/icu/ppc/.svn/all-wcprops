@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/ppc
+END
+icu-ppc.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/ppc/icu-ppc.c
+END
+icu-ppc.config
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1388/trunk/mutekh/drivers/icu/ppc/icu-ppc.config
+END
+icu-ppc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/ppc/icu-ppc.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/ppc/Makefile
+END
+icu-ppc-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/ppc/icu-ppc-private.h
+END

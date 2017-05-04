@@ -1,0 +1,3 @@
+objs += ping.o
+
+

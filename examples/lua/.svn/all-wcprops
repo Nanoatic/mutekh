@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1388/trunk/mutekh/examples/lua
+END
+config_soclib
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1388/trunk/mutekh/examples/lua/config_soclib
+END
+luatest.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/860/trunk/mutekh/examples/lua/luatest.c
+END
+config_x86
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1388/trunk/mutekh/examples/lua/config_x86
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/613/trunk/mutekh/examples/lua/Makefile
+END

@@ -1,0 +1,17 @@
+#CONTAINER_TYPE(name, algo, type, ...) /** @hidden */ typedef void* name##_entry_t; /** @hidden */ typedef void* name##_root_t; typedef type name##_item_t;
+#CONTAINER_KEY_TYPE(name, testalgo, keyfield, ...)
+#CONTAINER_KEY_FUNC(name, algo, attr, prefix, ...)
+#CONTAINER_ENTRY_TYPE(algo)
+#CONTAINER_FUNC_NOLOCK(name, algo, attr, prefix, ...)
+#CONTAINER_FUNC_LOCK(name, algo, attr, prefix, lockname, ...)
+#CONTAINER_FUNC(name, algo, attr, prefix, ...)
+#CONTAINER_PROTOTYPE(name, attr, prefix)
+#CONTAINER_ROOT_INITIALIZER(name, algo)
+#CONTAINER_ROOT_DECLARATOR(name, algo, symbol)
+#CONTAINER_DEF(algo, test)
+#OBJECT_TYPE(name, algo, type) typedef type name##_object_t;
+#OBJECT_FUNC(name, algo, attr, prefix, ...)
+#OBJECT_INITIALIZER(name, algo)
+#OBJECT_PROTOTYPE(name, attr, prefix)
+#OBJECT_CONSTRUCTOR(name) gpct_error_t name##_constructor(name##_object_t obj, va_list ap)
+#OBJECT_DESTRUCTOR(name) void name##_destructor(name##_object_t obj)

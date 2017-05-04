@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/1630/trunk/mutekh/libvfs
+END
+vfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1371/trunk/mutekh/libvfs/vfs.c
+END
+file.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1419/trunk/mutekh/libvfs/file.c
+END
+vfs.config
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1442/trunk/mutekh/libvfs/vfs.config
+END
+helpers.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1254/trunk/mutekh/libvfs/helpers.c
+END
+globals.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1254/trunk/mutekh/libvfs/globals.c
+END
+node.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1254/trunk/mutekh/libvfs/node.c
+END
+fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1254/trunk/mutekh/libvfs/fs.c
+END
+vfs-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1308/trunk/mutekh/libvfs/vfs-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1375/trunk/mutekh/libvfs/Makefile
+END

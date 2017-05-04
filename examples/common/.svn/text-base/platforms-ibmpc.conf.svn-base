@@ -1,0 +1,28 @@
+# IBMPC
+
+%section ibmpc-*
+  %types architecture
+
+  CONFIG_ARCH_IBMPC
+  CONFIG_CPU_MAXCOUNT 8
+
+  CONFIG_ARCH_HW_INIT
+
+  CONFIG_IBMPC_EARLY_CONSOLE_VGA
+  CONFIG_MUTEK_PRINTK_KEEP_EARLY
+
+  CONFIG_DRIVER_CHAR_VGATTY
+  CONFIG_DRIVER_ICU_8259
+  CONFIG_COMPILE_SOFTFLOAT undefined
+
+  CONFIG_CPU_RESET_HANDLER
+
+  %subsection ibmpc-x86
+    %types cpu
+  
+    CONFIG_CPU_X86
+    %set BUILD_NAME ibmpc-x86
+  %end
+
+  %requiretypes cpu
+

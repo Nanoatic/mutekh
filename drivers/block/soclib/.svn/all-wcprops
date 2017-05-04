@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1443/trunk/mutekh/drivers/block/soclib
+END
+block-soclib-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/soclib/block-soclib-private.h
+END
+block-soclib.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1443/trunk/mutekh/drivers/block/soclib/block-soclib.c
+END
+block-soclib.config
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1440/trunk/mutekh/drivers/block/soclib/block-soclib.config
+END
+block-soclib.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/soclib/block-soclib.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/soclib/Makefile
+END

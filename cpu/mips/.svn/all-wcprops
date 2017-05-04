@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/1589/trunk/mutekh/cpu/mips
+END
+interrupts.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1421/trunk/mutekh/cpu/mips/interrupts.c
+END
+boot.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1526/trunk/mutekh/cpu/mips/boot.c
+END
+ldscript
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/398/trunk/mutekh/cpu/mips/ldscript
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/710/trunk/mutekh/cpu/mips/config.mk
+END
+cpu_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1449/trunk/mutekh/cpu/mips/cpu_init.c
+END
+cpu_context.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1526/trunk/mutekh/cpu/mips/cpu_context.c
+END
+mips.config
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1524/trunk/mutekh/cpu/mips/mips.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/932/trunk/mutekh/cpu/mips/Makefile
+END

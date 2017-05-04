@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/135/trunk/doc/c_using_gpct
+END
+s_type_declaration.texi
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/135/trunk/doc/c_using_gpct/s_type_declaration.texi
+END
+s_functions_prototypes.texi
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/135/trunk/doc/c_using_gpct/s_functions_prototypes.texi
+END
+s_functions_definition.texi
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/135/trunk/doc/c_using_gpct/s_functions_definition.texi
+END
+s_gpct_configuration.texi
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/135/trunk/doc/c_using_gpct/s_gpct_configuration.texi
+END

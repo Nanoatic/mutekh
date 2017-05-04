@@ -1,0 +1,497 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/1592/trunk/mutekh/libm
+END
+e_exp.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_exp.c
+END
+s_finite.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_finite.c
+END
+e_acosh.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_acosh.c
+END
+s_floor.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_floor.c
+END
+e_sinh.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_sinh.c
+END
+libm.config
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1558/trunk/mutekh/libm/libm.config
+END
+e_atan2.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_atan2.c
+END
+w_fmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/871/trunk/mutekh/libm/w_fmod.c
+END
+s_expm1.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_expm1.c
+END
+e_j0.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_j0.c
+END
+s_copysign.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_copysign.c
+END
+w_exp.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/871/trunk/mutekh/libm/w_exp.c
+END
+s_nextafter.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_nextafter.c
+END
+w_acosh.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/871/trunk/mutekh/libm/w_acosh.c
+END
+e_log10.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_log10.c
+END
+k_rem_pio2.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1558/trunk/mutekh/libm/k_rem_pio2.c
+END
+w_atan2.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/871/trunk/mutekh/libm/w_atan2.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1531/trunk/mutekh/libm/Makefile
+END
+e_sqrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_sqrt.c
+END
+w_jn.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1558/trunk/mutekh/libm/w_jn.c
+END
+w_j1.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/871/trunk/mutekh/libm/w_j1.c
+END
+e_lgamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_lgamma.c
+END
+s_atan.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_atan.c
+END
+w_lgamma_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1558/trunk/mutekh/libm/w_lgamma_r.c
+END
+s_frexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_frexp.c
+END
+s_signgam.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_signgam.c
+END
+e_hypot.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_hypot.c
+END
+w_log10.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/871/trunk/mutekh/libm/w_log10.c
+END
+w_acos.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/871/trunk/mutekh/libm/w_acos.c
+END
+s_ilogb.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_ilogb.c
+END
+w_asin.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/871/trunk/mutekh/libm/w_asin.c
+END
+w_cosh.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/871/trunk/mutekh/libm/w_cosh.c
+END
+s_asinh.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_asinh.c
+END
+s_scalbn.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_scalbn.c
+END
+e_gamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_gamma.c
+END
+w_hypot.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/871/trunk/mutekh/libm/w_hypot.c
+END
+e_fmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_fmod.c
+END
+s_erf.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_erf.c
+END
+s_rint.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_rint.c
+END
+e_atanh.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_atanh.c
+END
+s_significand.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/870/trunk/mutekh/libm/s_significand.c
+END
+s_logb.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_logb.c
+END
+s_modf.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_modf.c
+END
+w_gamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/w_gamma.c
+END
+k_standard.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1558/trunk/mutekh/libm/k_standard.c
+END
+e_remainder.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_remainder.c
+END
+e_jn.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_jn.c
+END
+s_cbrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_cbrt.c
+END
+e_j1.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_j1.c
+END
+e_rem_pio2.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_rem_pio2.c
+END
+w_atanh.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/871/trunk/mutekh/libm/w_atanh.c
+END
+e_lgamma_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_lgamma_r.c
+END
+s_matherr.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_matherr.c
+END
+e_log.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_log.c
+END
+w_sinh.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/871/trunk/mutekh/libm/w_sinh.c
+END
+e_scalb.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_scalb.c
+END
+e_acos.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_acos.c
+END
+s_isnan.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_isnan.c
+END
+w_remainder.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/871/trunk/mutekh/libm/w_remainder.c
+END
+k_tan.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/k_tan.c
+END
+s_fabs.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_fabs.c
+END
+s_ldexp.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_ldexp.c
+END
+e_asin.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_asin.c
+END
+s_ceil.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_ceil.c
+END
+k_cos.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/k_cos.c
+END
+w_j0.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/871/trunk/mutekh/libm/w_j0.c
+END
+e_cosh.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_cosh.c
+END
+k_sin.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/k_sin.c
+END
+s_tan.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_tan.c
+END
+s_log1p.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_log1p.c
+END
+s_cos.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_cos.c
+END
+e_gamma_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_gamma_r.c
+END
+w_log.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/871/trunk/mutekh/libm/w_log.c
+END
+e_pow.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/e_pow.c
+END
+w_scalb.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/1558/trunk/mutekh/libm/w_scalb.c
+END
+s_sin.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_sin.c
+END
+s_tanh.c
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/1558/trunk/mutekh/libm/s_tanh.c
+END
+w_sqrt.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/871/trunk/mutekh/libm/w_sqrt.c
+END
+w_lgamma.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/1558/trunk/mutekh/libm/w_lgamma.c
+END
+w_gamma_r.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1558/trunk/mutekh/libm/w_gamma_r.c
+END
+w_pow.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1558/trunk/mutekh/libm/w_pow.c
+END
+s_lib_version.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/870/trunk/mutekh/libm/s_lib_version.c
+END

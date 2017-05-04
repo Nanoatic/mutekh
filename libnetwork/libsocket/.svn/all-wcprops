@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1388/trunk/mutekh/libnetwork/libsocket
+END
+socket_tcp.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1040/trunk/mutekh/libnetwork/libsocket/socket_tcp.c
+END
+inet.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/365/trunk/mutekh/libnetwork/libsocket/inet.c
+END
+socket_packet.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1308/trunk/mutekh/libnetwork/libsocket/socket_packet.c
+END
+socket_udp.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1308/trunk/mutekh/libnetwork/libsocket/socket_udp.c
+END
+socket_raw.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1308/trunk/mutekh/libnetwork/libsocket/socket_raw.c
+END
+socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1308/trunk/mutekh/libnetwork/libsocket/socket.c
+END
+socket.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1388/trunk/mutekh/libnetwork/libsocket/socket.config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/365/trunk/mutekh/libnetwork/libsocket/Makefile
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/1570/trunk/mutekh/arch/ibmpc
+END
+early_console.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1566/trunk/mutekh/arch/ibmpc/early_console.c
+END
+arch_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/1454/trunk/mutekh/arch/ibmpc/arch_init.c
+END
+hw_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1570/trunk/mutekh/arch/ibmpc/hw_init.c
+END
+mem_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1530/trunk/mutekh/arch/ibmpc/mem_init.c
+END
+dma-8237.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/371/trunk/mutekh/arch/ibmpc/dma-8237.c
+END
+multiboot.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/67/trunk/mutekh/arch/ibmpc/multiboot.h
+END
+ldscript.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1003/trunk/mutekh/arch/ibmpc/ldscript.cpp
+END
+config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/262/trunk/mutekh/arch/ibmpc/config.mk
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1446/trunk/mutekh/arch/ibmpc/Makefile
+END
+ibmpc.config
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/1449/trunk/mutekh/arch/ibmpc/ibmpc.config
+END

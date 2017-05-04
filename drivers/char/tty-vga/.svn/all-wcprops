@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/tty-vga
+END
+tty-vga.config
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/tty-vga/tty-vga.config
+END
+tty-vga-i8042.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-vga/tty-vga-i8042.c
+END
+tty-vga.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-vga/tty-vga.h
+END
+tty-vga-ansi.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-vga/tty-vga-ansi.c
+END
+tty-vga-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-vga/tty-vga-private.h
+END
+tty-vga.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/1530/trunk/mutekh/drivers/char/tty-vga/tty-vga.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/tty-vga/Makefile
+END

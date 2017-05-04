@@ -1,0 +1,20 @@
+  %set OUTPUT_NAME splash_fft
+
+  # New source code module to be compiled
+  %append MODULES $(OUTPUT_NAME):$(CONFIGPATH)
+
+  # Application license
+  CONFIG_LICENSE_APP_BSD
+
+  CONFIG_COMPILE_SOFTFLOAT
+  # Mutek features
+  CONFIG_HEXO_INTTYPES_DEPRECATED undefined
+  CONFIG_LIBC_STREAM_STD
+  CONFIG_LIBM
+
+  # Libs
+  CONFIG_PTHREAD
+
+%include ../common/build_options.conf
+%include ../common/platforms.conf
+

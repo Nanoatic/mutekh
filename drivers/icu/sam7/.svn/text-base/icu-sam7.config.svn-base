@@ -1,0 +1,10 @@
+
+%config CONFIG_DRIVER_ICU_SAM7
+  desc Enable SAM7 AIC support
+  depend CONFIG_ARCH_SIMPLE_SAM7
+  depend CONFIG_CPU_ARM_CUSTOM_IRQ_HANDLER
+  depend CONFIG_HEXO_IRQ
+  provide CONFIG_DRIVER_ICU
+  parent CONFIG_DEVICE
+%config end
+

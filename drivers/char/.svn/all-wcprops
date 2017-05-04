@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/1573/trunk/mutekh/drivers/char
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/Makefile
+END
+device_char.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1566/trunk/mutekh/drivers/char/device_char.c
+END

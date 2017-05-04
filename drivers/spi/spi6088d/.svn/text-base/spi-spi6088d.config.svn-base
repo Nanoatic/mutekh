@@ -1,0 +1,7 @@
+
+%config CONFIG_DRIVER_SPI_SPI6088D
+  desc Enable Atmel API 6088D device support (SAMx, ...)
+  provide CONFIG_DRIVER_SPI
+  parent CONFIG_DEVICE
+%config end
+

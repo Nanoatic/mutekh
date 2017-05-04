@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/1568/trunk/mutekh/drivers/spi
+END
+device_spi.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1566/trunk/mutekh/drivers/spi/device_spi.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1568/trunk/mutekh/drivers/spi/Makefile
+END

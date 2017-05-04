@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/135/trunk/doc/c_container_operations
+END
+s_container_object.texi
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/135/trunk/doc/c_container_operations/s_container_object.texi
+END
+s_container_locking.texi
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/135/trunk/doc/c_container_operations/s_container_locking.texi
+END
+s_iteration.texi
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/135/trunk/doc/c_container_operations/s_iteration.texi
+END
+s_lookup_and_sorting.texi
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/135/trunk/doc/c_container_operations/s_lookup_and_sorting.texi
+END
+s_items_operations.texi
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/135/trunk/doc/c_container_operations/s_items_operations.texi
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/933/trunk/mutekh/cpu/x86/libelf
+END
+reloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/933/trunk/mutekh/cpu/x86/libelf/reloc.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/933/trunk/mutekh/cpu/x86/libelf/Makefile
+END

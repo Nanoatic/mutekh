@@ -1,0 +1,275 @@
+@page
+@node Lookup and sorting
+@section Lookup and sorting
+@c filename lookup_and_sorting
+@c parent chapter is Container operations
+
+
+This section describes functions defined with the
+@code{CONTAINER_KEY_FUNC} macro. More detailed informations can be found
+in the container specific section if special behavior exists.
+
+@menu
+* Item lookup functions::
+* Container sorting functions::
+@end menu
+
+@node Item lookup functions
+@subsection Item lookup functions
+@c filename item_lookup_functions
+@c parent section is Lookup and sorting
+
+
+@menu
+* @emph{prefix}@code{_lookup()}::
+* @emph{prefix}@code{_lookup_last()}::
+* @emph{prefix}@code{_lookup_next()}::
+* @emph{prefix}@code{_lookup_prev()}::
+@end menu
+
+@node @emph{prefix}@code{_lookup()}
+@subsubsection @emph{prefix}@code{_lookup()}
+@c filename sss_prefix_lookup_
+@c parent subsection is Item lookup functions
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_lookup(}@emph{name}@code{_root_t *root, }@emph{keyfield type}@code{ value);}
+
+@subsubheading Description
+
+This function returns the index of the first item in the container
+@samp{root} with key field matching the given @samp{value}.
+
+@subsubheading Locking
+
+This function locks the container object for reading.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the returned item if any.
+
+@page
+@node @emph{prefix}@code{_lookup_last()}
+@subsubsection @emph{prefix}@code{_lookup_last()}
+@c filename sss_prefix_lookup_last_
+@c parent subsection is Item lookup functions
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_lookup_last(}@emph{name}@code{_root_t *root, }@emph{keyfield type}@code{ value);}
+
+@subsubheading Description
+
+This function returns the index of the last item in the container
+@samp{root} with key field matching the given @samp{value}.
+
+This function may act like the @emph{prefix}@code{_lookup()} function
+when no order is kept in the container.
+
+@subsubheading Locking
+
+This function locks the container object for reading.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the returned item if any.
+
+@page
+@node @emph{prefix}@code{_lookup_next()}
+@subsubsection @emph{prefix}@code{_lookup_next()}
+@c filename sss_prefix_lookup_next_
+@c parent subsection is Item lookup functions
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_lookup_next(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index, }@emph{keyfield type}@code{ value);}
+
+@subsubheading Description
+
+This function returns the index of the next item in the container
+@samp{root} with key field matching the given @samp{value}. Search
+starts from the given @samp{index} next item.
+
+Depending on container algorithm in use, the @samp{value} argument may
+have to match the one passed to previous lookup function calls. This
+is true for containers where order is not significant like hash based
+containers.
+
+@subsubheading Locking
+
+This function locks the container object for reading.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the returned item if any.
+
+@subsubheading Orphan checking
+
+This function fails if the item pointed to by @samp{index} is marked
+as being orphan.
+
+@page
+@node @emph{prefix}@code{_lookup_prev()}
+@subsubsection @emph{prefix}@code{_lookup_prev()}
+@c filename sss_prefix_lookup_prev_
+@c parent subsection is Item lookup functions
+
+@subsubheading Function prototype
+
+@emph{name}@code{_index_t} @emph{prefix}@code{_lookup_prev(}@emph{name}@code{_root_t *root, }@emph{name}@code{_index_t index, }@emph{keyfield type}@code{ value);}
+
+@subsubheading Description
+
+This function returns the index the of previous item in the container
+@samp{root} with key field matching the given @samp{value}. Search
+starts from the given @samp{index} previous item.
+
+Depending on container algorithm in use, the @samp{value} argument may
+have to match the one passed to previous lookup function calls. This
+is true for containers where order is not significant like hash based
+containers.
+
+@subsubheading Locking
+
+This function locks the container object for reading.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the returned item if any.
+
+@subsubheading Orphan checking
+
+This function fails if the item pointed to by @samp{index}
+is marked as being orphan.
+
+@page
+@node Container sorting functions
+@subsection Container sorting functions
+@c filename container_sorting_functions
+@c parent section is Lookup and sorting
+
+
+@menu
+* @emph{prefix}@code{_sort_*scend()}::
+* @emph{prefix}@code{_sort_stable_*scend()}::
+* @emph{prefix}@code{_insert_*scend()}::
+* @emph{prefix}@code{_merge_*scend()}::
+* @emph{prefix}@code{_issorted_*scend()}::
+@end menu
+
+@node @emph{prefix}@code{_sort_*scend()}
+@subsubsection @emph{prefix}@code{_sort_*scend()}
+@c filename sss_prefix_sort__scend_
+@c parent subsection is Container sorting functions
+
+@subsubheading Function prototypes
+
+@code{void} @emph{prefix}@code{_sort_ascend(}@emph{name}@code{_root_t *root);}
+
+@code{void} @emph{prefix}@code{_sort_descend(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+These functions sort the container in ascending and descending order.
+The sort algorithm used is optimal but may not be stable.
+
+Algorithm with bad worth case performance (quadratic) are not used.
+
+@subsubheading Locking
+
+This function locks the container object for writing.
+
+@page
+@node @emph{prefix}@code{_sort_stable_*scend()}
+@subsubsection @emph{prefix}@code{_sort_stable_*scend()}
+@c filename sss_prefix_sort_stable__scend_
+@c parent subsection is Container sorting functions
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_sort_stable_ascend(}@emph{name}@code{_root_t *root);}
+
+@code{void} @emph{prefix}@code{_sort_stable_descend(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+This function sort the container in ascending or descending  order.
+The sort algorithm used is guaranted to be stable.
+
+@subsubheading Locking
+
+This function locks the container object for writing.
+
+@page
+@node @emph{prefix}@code{_insert_*scend()}
+@subsubsection @emph{prefix}@code{_insert_*scend()}
+@c filename sss_prefix_insert__scend_
+@c parent subsection is Container sorting functions
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_insert_ascend(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t item);}
+
+@code{void} @emph{prefix}@code{_insert_descend(}@emph{name}@code{_root_t *root, }@emph{name}@code{_item_t item);}
+
+@subsubheading Description
+
+These functions insert an item in an already sorted the container in ascending or descending order.
+
+@subsubheading Locking
+
+This function locks the container object for writing.
+
+@subsubheading Reference counting
+
+This function gets a new reference to the inserted item.
+
+@page
+@node @emph{prefix}@code{_merge_*scend()}
+@subsubsection @emph{prefix}@code{_merge_*scend()}
+@c filename sss_prefix_merge__scend_
+@c parent subsection is Container sorting functions
+
+@subsubheading Function prototype
+
+@code{void} @emph{prefix}@code{_merge_ascend(}@emph{name}@code{_root_t *dest, }@emph{name}@code{_root_t *src);}
+
+@code{void} @emph{prefix}@code{_merge_descend(}@emph{name}@code{_root_t *dest, }@emph{name}@code{_root_t *src);}
+
+@subsubheading Description
+
+These functions merge to already sorted containers in ascending or descending order.
+The destination container receives all items and the source container become empty.
+
+@subsubheading Locking
+
+This function locks the container object for writing.
+
+@page
+@node @emph{prefix}@code{_issorted_*scend()}
+@subsubsection @emph{prefix}@code{_issorted_*scend()}
+@c filename sss_prefix_issorted__scend_
+@c parent subsection is Container sorting functions
+
+@subsubheading Function prototypes
+
+@code{gpct_bool_t} @emph{prefix}@code{_issorted_ascend(}@emph{name}@code{_root_t *root);}
+
+@code{gpct_bool_t} @emph{prefix}@code{_issorted_descend(}@emph{name}@code{_root_t *root);}
+
+@subsubheading Description
+
+These functions return true if the container is sorted in ascending or descending order.
+
+@subsubheading Locking
+
+This function locks the container object for reading.
+
+
+@page
+
+@setfilename c_container_features.texi
+
+@setfilename c_container_features.info
+

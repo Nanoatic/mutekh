@@ -1,0 +1,89 @@
+@page
+@node Preprocessor tests and configuration
+@section Preprocessor tests and configuration
+@c filename preprocessor_tests
+@c parent chapter is Container templates
+
+
+@menu
+* Container configuration::
+* Container features test::
+@end menu
+
+@node Container configuration
+@subsection Container configuration
+@c filename container_configuration
+@c parent section is Preprocessor tests and configuration
+
+
+Some global features and behaviors of GPCT can be configured through
+specific macros. For a complete list of configuration options
+@pxref{GPCT configuration}. Here is a list of container related
+configuration macros:
+
+@itemize @bullet
+@item
+The @code{GPCT_CONFIG_ORPHAN} macro enables the orphan checking feature when defined.
+@end itemize
+
+Those macros must be defined before GPCT header inclusion.
+
+@node Container features test
+@subsection Container features test
+@c filename container_features_test
+@c parent section is Preprocessor tests and configuration
+
+
+The @code{CONTAINER_DEF} macro offers a way to query some informations
+about a container algorithm. This macro can be used in C expression
+and with the @code{#if} preprocessor keyword:
+
+@example
+
+CONTAINER_DEF(@samp{algorithm}, @samp{info})
+
+@end example
+
+The following parameters must be present:
+
+@itemize @bullet
+@item
+@samp{algorithm} is the container algorithm identifier.
+
+@item
+@samp{info} is the information token name to query.
+@end itemize
+
+Here is a list of basic informations availables for every container
+algorithm:
+
+@itemize @bullet
+@item
+@code{ARRAY_BASED} is non zero if the container algorithm is array
+based.
+
+@item
+@code{POINTER_BASED} is non zero if the container algorithm is pointer
+based.
+
+@item
+@code{ORDERED} is non zero if the container algorithm keep items order.
+
+@end itemize
+
+@subsubheading Example
+
+@verbatim
+
+#if CONTAINER_DEF(TESTCONT, ARRAY_BASED)
+  list_set(root, 0, obj2);
+#else
+  list_set(root, obj, obj2);
+#endif
+
+@end verbatim
+
+@setfilename s_types_definition.texi
+
+@setfilename s_types_definition.info
+

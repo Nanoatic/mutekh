@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1566/trunk/mutekh/drivers/lcd/pcf8833
+END
+pcf8833.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1566/trunk/mutekh/drivers/lcd/pcf8833/pcf8833.c
+END
+pcf8833.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1388/trunk/mutekh/drivers/lcd/pcf8833/pcf8833.config
+END
+pcf8833.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/lcd/pcf8833/pcf8833.h
+END
+pcf8833-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1375/trunk/mutekh/drivers/lcd/pcf8833/pcf8833-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1375/trunk/mutekh/drivers/lcd/pcf8833/Makefile
+END

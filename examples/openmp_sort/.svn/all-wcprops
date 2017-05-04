@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1502/trunk/mutekh/examples/openmp_sort
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1502/trunk/mutekh/examples/openmp_sort/config
+END
+sort.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1502/trunk/mutekh/examples/openmp_sort/sort.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1502/trunk/mutekh/examples/openmp_sort/Makefile
+END

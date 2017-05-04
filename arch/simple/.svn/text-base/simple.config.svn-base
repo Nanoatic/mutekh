@@ -1,0 +1,41 @@
+
+######################################################################
+# User definable tokens
+
+%config CONFIG_ARCH_SIMPLE_SAM7
+  desc Atmel SAM7 ARM based microcontroller
+  provide CONFIG_ARCH_SIMPLE_RESET_ADDR=0
+#  provide CONFIG_ARCH_SIMPLE_HW_INIT
+  parent CONFIG_ARCH_SIMPLE
+%config end
+
+######################################################################
+# Provided token, not definable by user directly
+
+%config CONFIG_ARCH_SIMPLE
+  desc Simple platform support
+  module arch Hexo
+  flags internal
+  parent CONFIG_ARCH_META
+
+  when CONFIG_ARCH_SIMPLE_SAM7
+
+  provide CONFIG_ARCH_NAME=simple
+  require CONFIG_ARCH_SIMPLE_RESET_ADDR
+  exclude CONFIG_ARCH_SMP CONFIG_ARCH_CLUSTER
+  depend CONFIG_DATA_FROM_ROM
+  depend CONFIG_ARCH_HW_INIT
+%config end
+
+%config CONFIG_ARCH_SIMPLE_RESET_ADDR
+  desc Set the reset vector address
+  flags value internal
+  parent CONFIG_ARCH_SIMPLE
+  default CONFIG_CPU_RESET_ADDR
+%config end
+
+%config CONFIG_ARCH_SIMPLE_HW_INIT
+  parent CONFIG_ARCH_SIMPLE
+  flags value internal
+  desc Whether we have an hardware-specific initialization routine
+%config end

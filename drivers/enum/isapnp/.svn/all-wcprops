@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1440/trunk/mutekh/drivers/enum/isapnp
+END
+enum-isapnp.config
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1440/trunk/mutekh/drivers/enum/isapnp/enum-isapnp.config
+END
+enum-isapnp.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/isapnp/enum-isapnp.h
+END
+enum-isapnp-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/isapnp/enum-isapnp-private.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/isapnp/Makefile
+END
+enum-isapnp.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/1375/trunk/mutekh/drivers/enum/isapnp/enum-isapnp.c
+END

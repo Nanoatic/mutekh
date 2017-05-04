@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/1375/trunk/mutekh/examples/hello_het
+END
+hello.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1368/trunk/mutekh/examples/hello_het/hello.c
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/examples/hello_het/config
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1342/trunk/mutekh/examples/hello_het/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1342/trunk/mutekh/examples/hello_het/README
+END
+platform-mips+arm.dts
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1342/trunk/mutekh/examples/hello_het/platform-mips+arm.dts
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/zero
+END
+zero.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/zero/zero.c
+END
+zero.config
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1570/trunk/mutekh/drivers/char/zero/zero.config
+END
+zero.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/zero/zero.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/drivers/char/zero/Makefile
+END

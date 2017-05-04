@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1573/trunk/mutekh/drivers/block/sd-mmc
+END
+sd-mmc.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1573/trunk/mutekh/drivers/block/sd-mmc/sd-mmc.c
+END
+sd-mmc.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1388/trunk/mutekh/drivers/block/sd-mmc/sd-mmc.config
+END
+sd-mmc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/sd-mmc/sd-mmc.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/block/sd-mmc/Makefile
+END
+sd-mmc-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1573/trunk/mutekh/drivers/block/sd-mmc/sd-mmc-private.h
+END

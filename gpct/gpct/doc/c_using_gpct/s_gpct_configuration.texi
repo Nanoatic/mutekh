@@ -1,0 +1,39 @@
+@node GPCT configuration
+@section GPCT configuration
+@c filename gpct_configuration
+@c parent chapter is Using GPCT
+
+Some global features and behaviors of GPCT can be configured through
+specific macros. Here is a list of configuration macros:
+
+@itemize @bullet
+
+@item
+The @code{GPCT_CONFIG_NOWARNING} macro definition prevents GPCT
+from emitting compiler warning using the @code{#warning} directive
+for advertising user of potential issue.
+
+@item
+The @code{GPCT_CONFIG_NOASSERT} macro definition disable @code{assert}
+macro use in GPCT code.
+
+@item
+The @code{GPCT_CONFIG_NODEPRECATED} macro definition prevents GPCT
+from using the @code{deprecated} attribute for advertising use of a
+suboptimal functions with a particular algorithm.
+
+@item
+The @code{GPCT_CONFIG_NOPLATFORM} macro definition prevents GPCT from
+including the default platform specific internal header file. When
+defined, an alternative user provided platform header must define all
+symbols and macros needed by GPCT.
+
+@end itemize
+
+Those macros must be defined before GPCT header inclusion. They can be
+used project wide or an a per source file basis.
+
+@setfilename c_container_templates.texi
+
+@setfilename c_container_templates.info
+

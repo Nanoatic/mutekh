@@ -1,0 +1,216 @@
+@page
+@node Container types definition
+@section Container types definition
+@c filename types_definition
+@c parent chapter is Container templates
+
+
+@menu
+* Types definition::
+* Defined C types names::
+* Root object variable initialization::
+* Item entry field::
+@end menu
+
+@node Types definition
+@subsection Types definition
+@c filename types_definition
+@c parent section is Container types definition
+
+
+Container types must be defined first. The @code{CONTAINER_TYPE} macro
+must be used to define all types associated with a container:
+
+@example
+
+CONTAINER_TYPE(@samp{name}, @samp{algorithm}, @samp{type}, ...);
+
+@end example
+
+The following mandatory parameters must be present:
+
+@itemize @bullet
+@item
+@samp{name} is the new container name defined by this macro. the same
+value must be used with all other macro dealing with the same
+container.
+
+@item
+@samp{algorithm} is the container algorithm identifier. The associated
+GPCT header file must be included to use a container
+algorithm. For header file names @pxref{Container algorithms}.
+
+@item
+@samp{type} is the user defined C type of the item handled by the
+container. This type must be defined before @code{CONTAINER_TYPE}
+invocation.
+
+@end itemize
+
+More parameters may be requested depending on container algorithm
+used, @pxref{Container algorithms} for details.
+
+@subsubheading Example
+
+This example illustrates type definition syntax for linked list container.
+
+@verbatim
+
+struct myitem
+{
+  CONTAINER_ENTRY_TYPE(SLIST)   list_entry;
+  const char                    *data;
+};
+
+CONTAINER_TYPE(mylist, SLIST, struct myitem, list_entry);
+
+@end verbatim
+
+We first need to define a new structure type which will be used as
+list item. This structure must contains a special anchor field to be
+part of the list container, @pxref{Item entry field}.
+
+Container types declaration then takes place. The new container type
+@code{mylist} is declared to be a simple linked list @code{SLIST}
+which is able to store @code{struct myitem} type items. The anchor
+field in the structure is named @code{list_entry}.
+
+@node Defined C types names
+@subsection Defined C types names
+@c filename defined_c_types_names
+@c parent section is Container types definition
+
+
+This section describes all C types defined by the
+@code{CONTAINER_TYPE} macro. All types use the user provided
+@samp{name} parameter as type name prefix.
+
+The following types are defined by the @code{CONTAINER_TYPE} macro:
+
+@itemize @bullet
+@item
+@emph{name}@code{_itembase_t} type always matches the user provided item type.
+
+@item
+@emph{name}@code{_item_t} is the type used to carry a container item. It
+matches @emph{name}@code{_itembase_t} for array based containers. It's
+defined as a pointer to @emph{name}@code{_itembase_t} for pointer
+based containers.
+
+@item
+@emph{name}@code{_index_t} is the type used to point to an item. It is
+defined as an integer type for array based containers. It matches the
+@emph{name}@code{_item_t} type for pointer based containers. This
+introduce some minor differences between array based and pointer based
+containers when using functions dealing with indices.
+
+@item
+@emph{name}@code{_root_t} must be used to declare container object
+object variables and fields.
+
+@item
+@emph{name}@code{_entry_t} must be used to declare an additional field
+in item the structure if the container is pointer based. This field
+will hold pointers to other items.
+
+@end itemize
+
+The @code{CONTAINER_KEY_TYPE} macro defines more internal types used
+by hash and compare functions, @pxref{Item key types definition} for details.
+
+@node Root object variable initialization
+@subsection Root object variable initialization
+@c filename root_object_variable_initialization
+@c parent section is Container types definition
+
+
+Container root objects can be initialized directly on variable
+declaration with the @code{CONTAINER_ROOT_INITIALIZER} or
+@code{CONTAINER_ROOT_DECLARATOR} macros:
+
+@example
+
+name_root_t foo = CONTAINER_ROOT_INITIALIZER(@samp{name}, @samp{algorithm});
+
+CONTAINER_ROOT_DECLARATOR(@samp{name}, @samp{algorithm}, bar);
+
+@end example
+
+@emph{name} and @emph{algorithm} parameters are the same as for other
+container macros.
+
+The @code{CONTAINER_ROOT_INITIALIZER} macro may not be available for
+every container algorithm.
+
+@subsubheading Example
+
+@verbatim
+
+mylist_root_t list = CONTAINER_ROOT_INITIALIZER(mylist, SLIST);
+
+@end verbatim
+
+@node Item entry field
+@subsection Item entry field
+@c filename item_entry_field
+@c parent section is Container types definition
+
+
+Pointer based containers are designed to store pointer to structure
+based items. They rely on the addition of a special field in the user
+structure.
+
+The name of this additional field must be passed to the
+@code{CONTAINER_TYPE} macro invocation as an extra parameters.
+
+There are 3 ways to properly define an item structure with its
+associated entry field declaration. As the structure item type must be
+defined before @code{CONTAINER_TYPE} macro invocation, the
+@emph{name}@code{_entry_t} type name is not suitable in item structure
+pre-definition.
+
+Every container algorithm provides its entry type through the
+@code{gpct_}@emph{algorithm}@code{_entry_t} type name. The
+@code{CONTAINER_ENTRY_TYPE(}@samp{algorithm}@code{)} macro can also be
+used to refer to this type.
+
+An other way to define the entry field is to use the
+@emph{name}@code{_entry_t} type name with item structure definition
+nested into the @code{CONTAINER_TYPE} macro @samp{type} argument.
+
+The examples below shows different ways to define an item structure
+for pointer based containers.
+
+@subsubheading Example 1
+
+@verbatim
+
+struct myitem
+{
+  CONTAINER_ENTRY_TYPE(DLIST)   list_entry;
+  int                           mydata;
+  ...
+};
+
+CONTAINER_TYPE(mylist, DLIST, struct myitem, list_entry);
+
+@end verbatim
+
+@subsubheading Example 2
+
+@verbatim
+
+CONTAINER_TYPE(mylist, DLIST, struct myitem
+{
+  mylist_entry_t list_entry;
+  int            mydata;
+  ...
+
+}, list_entry);
+
+@end verbatim
+
+@setfilename s_functions_definitions.texi
+
+@setfilename s_functions_definitions.info
+

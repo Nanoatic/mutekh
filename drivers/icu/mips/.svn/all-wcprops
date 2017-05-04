@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/mips
+END
+icu-mips-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/mips/icu-mips-private.h
+END
+icu-mips.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1449/trunk/mutekh/drivers/icu/mips/icu-mips.c
+END
+icu-mips.config
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/1388/trunk/mutekh/drivers/icu/mips/icu-mips.config
+END
+icu-mips.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/mips/icu-mips.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/1375/trunk/mutekh/drivers/icu/mips/Makefile
+END

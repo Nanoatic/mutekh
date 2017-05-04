@@ -1,0 +1,20 @@
+
+  %set OUTPUT_NAME capsule
+
+  # New source code module to be compiled
+  %append MODULES $(OUTPUT_NAME):$(CONFIGPATH)
+
+  # Application license
+  CONFIG_LICENSE_APP_LGPL
+
+  CONFIG_LIBC_STREAM
+  CONFIG_LIBC_STREAM_STD
+  CONFIG_MUTEK_SCHEDULER_STATIC
+  # Libs
+  CONFIG_CAPSULE
+
+%common
+
+%include ../common/platforms.conf
+%include ../common/build_options.conf
+

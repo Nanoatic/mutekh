@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/1589/trunk/mutekh/drivers/timer/soclib
+END
+timer-soclib.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1375/trunk/mutekh/drivers/timer/soclib/timer-soclib.h
+END
+timer-soclib-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1375/trunk/mutekh/drivers/timer/soclib/timer-soclib-private.h
+END
+timer-soclib.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/1589/trunk/mutekh/drivers/timer/soclib/timer-soclib.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/timer/soclib/Makefile
+END
+timer-soclib.config
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1440/trunk/mutekh/drivers/timer/soclib/timer-soclib.config
+END

@@ -1,0 +1,127 @@
+
+# Default SoCLib platform
+
+%section soclib-*
+  %types architecture
+
+  CONFIG_ARCH_SOCLIB
+  CONFIG_CPU_MAXCOUNT 4
+
+  CONFIG_CPU_RESET_HANDLER
+
+  CONFIG_FDT
+  CONFIG_ARCH_DEVICE_TREE
+
+  #################################################
+  # CPUs
+
+  %subsection soclib-mipsel soclib-mips
+    %warning -mipsel, -mipseb ans -mips are deprecated, use soclib-mips32el or soclib-mips32eb instead
+  %end
+
+  %subsection soclib-mips32el soclib-mipsel soclib-mips
+    %types cpu
+
+    CONFIG_CPU_MIPS32EL_SOCLIB
+    %set BUILD_NAME soclib-mips32el
+  %end
+
+  %subsection soclib-mips32eb soclib-mipseb
+    %types cpu
+
+    CONFIG_CPU_MIPS32EB_SOCLIB
+    %set BUILD_NAME soclib-mips32eb
+  %end
+
+  %subsection soclib-arm
+    %types cpu
+  
+    CONFIG_CPU_ARM_SOCLIB
+    %set BUILD_NAME soclib-arm
+  %end
+
+  %subsection soclib-powerpc
+    %warning soclib-powerpc is deprecated, use soclib-ppc instead
+  %end
+
+  %subsection soclib-ppc soclib-powerpc
+    %types cpu
+  
+    CONFIG_CPU_PPC_SOCLIB
+    %set BUILD_NAME soclib-ppc
+  %end
+
+  #################################################
+  # platforms
+
+  %subsection pf_soclib_tutorial pf_kernel_tutorial
+    %die $(CONFIGSUBSECTION) has been renamed, please use to pf-tutorial instead
+  %end
+  
+  %subsection pf-tutorial
+    %types platform
+  
+    %notice Targetting mutekh_soclib_tutorial and mutekh_kernel_tutorial SoCLib platforms
+  
+    # Memory layout
+    CONFIG_RAM_ADDR 0x7f000000
+    CONFIG_RAM_SIZE 0x01000000
+    CONFIG_ROM_ADDR 0x60000000
+    CONFIG_ROM_SIZE 0x00100000
+
+    CONFIG_MUTEK_PRINTK_KEEP_EARLY
+    CONFIG_SOCLIB_EARLY_CONSOLE
+    CONFIG_SOCLIB_EARLY_CONSOLE_ADDR 0xd0200000
+    %append MODULES pf_def:$(CONFIGPATH)
+    %set platform_name pf_soclib_tutorial
+
+    # Device and drivers
+    CONFIG_DRIVER_CHAR_SOCLIBTTY
+    CONFIG_DRIVER_ICU_SOCLIB
+    CONFIG_DRIVER_ICU_SOCLIB_XICU
+    CONFIG_DRIVER_BLOCK_SOCLIB
+    CONFIG_DRIVER_TIMER_SOCLIB
+  %end
+
+  # Heterogeneous SoCLib platform
+
+  %subsection pf-het
+    %types platform
+
+    %notice Targetting mutekh_kernel_tutorial SoCLib platforms with processor heterogeneity
+
+    CONFIG_HET_BUILD
+
+    # Memory layout
+    CONFIG_HEXO_IRQ undefined
+    CONFIG_RAM_ADDR 0x7f000000
+    CONFIG_RAM_SIZE 0x01000000
+    CONFIG_ROM_SIZE 0x00100000
+    CONFIG_HETROM_ADDR 0x60000000
+    CONFIG_HETROM_SIZE 0x00100000
+
+    CONFIG_SOCLIB_EARLY_CONSOLE
+    CONFIG_SOCLIB_EARLY_CONSOLE_ADDR 0xd0200000
+    # Device and drivers
+    CONFIG_DRIVER_CHAR_SOCLIBTTY
+
+    %set platform_name kernel_tutorial
+
+    %subsection soclib-arm
+      %types supported_het_cpu
+      CONFIG_ROM_ADDR 0x80100000
+      CONFIG_DRIVER_ICU_ARM undefined
+      %set BUILD_NAME soclib-het/arm
+    %end
+
+    %subsection soclib-mips32el
+      %types supported_het_cpu
+      CONFIG_ROM_ADDR 0x80000000
+      CONFIG_DRIVER_ICU_MIPS undefined
+      %set BUILD_NAME soclib-het/mips32el
+    %end
+
+    %requiretypes supported_het_cpu
+  %end
+
+  %requiretypes platform cpu

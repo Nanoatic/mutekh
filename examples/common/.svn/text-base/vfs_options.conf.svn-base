@@ -1,0 +1,29 @@
+
+%section vfs
+  CONFIG_VFS
+  CONFIG_VFS_GLOBAL_ROOT
+  CONFIG_VFS_GLOBAL_CWD
+
+%section vfs-stats
+  CONFIG_VFS_STATS
+
+%section vfs-verbose
+  CONFIG_VFS_VERBOSE
+
+%section devfs
+  CONFIG_DRIVER_FS_DEVFS
+
+%section ramfs
+  CONFIG_DRIVER_FS_RAMFS
+
+%section iso9660
+  CONFIG_DRIVER_FS_ISO9660
+
+%section fat-*
+  CONFIG_DRIVER_FS_FAT
+
+%section fat-16
+  CONFIG_DRIVER_FS_FAT16
+
+%section fat-32
+  CONFIG_DRIVER_FS_FAT32

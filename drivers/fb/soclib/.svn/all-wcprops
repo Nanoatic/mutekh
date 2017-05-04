@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/1440/trunk/mutekh/drivers/fb/soclib
+END
+fb-soclib.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1386/trunk/mutekh/drivers/fb/soclib/fb-soclib.c
+END
+fb-soclib.config
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/1440/trunk/mutekh/drivers/fb/soclib/fb-soclib.config
+END
+fb-soclib.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/1375/trunk/mutekh/drivers/fb/soclib/fb-soclib.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/1375/trunk/mutekh/drivers/fb/soclib/Makefile
+END
+fb-soclib-private.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1375/trunk/mutekh/drivers/fb/soclib/fb-soclib-private.h
+END

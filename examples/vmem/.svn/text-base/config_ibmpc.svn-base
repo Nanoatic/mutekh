@@ -1,0 +1,40 @@
+# Application license
+  CONFIG_LICENSE_APP_LGPL
+
+# Platform types
+  CONFIG_ARCH_IBMPC
+  CONFIG_ARCH_IBMPC_MEMORY 0x1000000
+  
+# Processor types, Mips little endian with multiprocessor support up to 4 cpus
+  CONFIG_CPU_X86
+
+# Processor
+  CONFIG_DEBUG undefined
+  CONFIG_COMPILE_DEBUG undefined
+
+# Code generation
+  CONFIG_DEBUG undefined
+  CONFIG_COMPILE_DEBUG undefined
+
+# Mutek features
+  CONFIG_VMEM
+  CONFIG_HEXO_CPU_MMU
+  CONFIG_MUTEK_CONSOLE
+  CONFIG_PTHREAD
+  CONFIG_PTHREAD_ATTRIBUTES
+  CONFIG_PTHREAD_STACK_SIZE 15000
+  CONFIG_LIBC_STREAM
+  CONFIG_LIBC_ASSERT
+
+# Device drivers
+  CONFIG_DRIVER_CHAR_VGATTY
+  CONFIG_DRIVER_ICU_8259
+  CONFIG_DRIVER_BLOCK_ATA
+  CONFIG_DRIVER_TIMER_8253
+  CONFIG_MUTEK_TIMERMS
+  CONFIG_DRIVER_CHAR_NULL
+  CONFIG_DRIVER_CHAR_ZERO
+  CONFIG_DRIVER_CHAR_RANDOM
+
+# New source code module to be compiled
+  %append MODULES examples/vmem:$(CONFIGPATH)

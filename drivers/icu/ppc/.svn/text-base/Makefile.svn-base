@@ -1,0 +1,4 @@
+
+objs = icu-ppc.o
+
+

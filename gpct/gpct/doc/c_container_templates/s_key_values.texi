@@ -1,0 +1,212 @@
+@page
+@node Container key values
+@section Container key values
+@c filename key_values
+@c parent chapter is Container templates
+
+
+Some container operations like item lookup and sorting work on a key
+value stored in items. Items may contains multiple keys. These
+advanced use of container need definition of more types and
+function. This can be done using the @code{CONTAINER_KEY_TYPE} and
+@code{CONTAINER_KEY_FUNC} macros.
+
+@menu
+* Item key types definition::
+* Item key functions definition::
+* key value access method::
+* key value test mechanisms::
+@end menu
+
+@node Item key types definition
+@subsection Item key types definition
+@c filename item_key_types_definition
+@c parent section is Container key values
+
+
+Extra types definitions must occur before key value based functions
+definition (using the @code{CONTAINER_KEY_FUNC} macro) typically used
+for sort and lookup operations. This is only needed when those
+functions will be defined or when using a container with built-in
+lookup mechanism (hash based, tree based, ...).
+
+A key value type definition must be present for each item field used
+as a key value. The @code{CONTAINER_KEY_TYPE} macro must be used to
+define these types.
+
+@example
+
+CONTAINER_KEY_TYPE(@samp{name}, @samp{access}, @samp{test},
+                   access extra parameters ... ,
+                   test extra parameters ...);
+
+@end example
+
+@itemize
+
+@item
+@samp{name} must be the same value as the one passed to the main types
+definition macro.
+
+@item
+@samp{access} is used to define key value access method. Available
+choices are: @code{PTR}, @code{MEMBER}, @code{DIRECT} and
+@code{CUSTOM}. This instructs how to extract the key value from the
+item, @pxref{key value access method}.
+
+@item
+@samp{test} is used to define hash and compare mechanisms. This
+instruct how the key value must be interpreted. Several choices
+may be available depending on key value type, @pxref{key value test
+mechanisms} for details.
+
+@item
+@code{...} are extra parameters requested by chosen @samp{access} and
+@samp{test} mechanisms.
+
+@end itemize
+
+@subsubheading Example
+
+This example illustrates use of a @code{const char *} string field as
+a key value. The @code{data} structure field must be accessed with the
+@code{PTR} access method, using @code{STRING} compare and hash
+mechanism on items of a @code{SLIST} singly linked list container:
+
+@verbatim
+
+struct myitem
+@{
+  CONTAINER_ENTRY_TYPE(SLIST)   list_entry;
+  const char                    *data;
+@};
+
+CONTAINER_TYPE(mylist, SLIST, struct myitem, list_entry);
+CONTAINER_KEY_TYPE(mylist, PTR, STRING, data);
+
+@end verbatim
+
+We first need to define the user structure and container type as
+described before. An extra type declaration can then occur to allow
+container to handle the @code{data} field present in the structure.
+
+@node Item key functions definition
+@subsection Item key functions definition
+@c filename item_key_functions_definition
+@c parent section is Container key values
+
+
+The @code{CONTAINER_KEY_FUNC} macro defines key value based functions
+(typically used to perform lookup and sorting operations). These
+functions depend on a specific item key value and should be used with
+structure @strong{pointer based items} only (container may be pointer
+based or not).
+
+@example
+
+CONTAINER_KEY_FUNC(@samp{name}, @samp{algorithm}, @samp{attributes}, @samp{prefix}, ...);
+
+@end example
+
+Parameters are the same as the @code{CONTAINER_FUNC}
+macros. @xref{Container functions definitions}.
+
+As for the @code{CONTAINER_KEY_TYPE} macro, additional parameters may
+be required. For more details on a specific algorithm @pxref{Lookup
+and sorting}.
+
+More parameters may be needed depending on container algorithm
+used. For optional parameters details @pxref{Container algorithms}.
+
+@subheading Function prototypes
+
+Functions prototypes can be declared with macros shown here:
+
+@example
+
+CONTAINER_KEY_PROTOTYPE(@samp{name}, @samp{attributes}, @samp{prefix}, ...);
+
+@end example
+
+Parameters meaning are the same as for functions definition macros.
+
+@subsubheading Example
+
+This example illustrates function definition and usage for linked list container lookup:
+
+@verbatiminclude ../examples/example_funcdef_key.c
+
+Here, lookup functions related to the @code{mylist} container and
+associated with the @code{data} structure field are defined with the
+@code{static} attribute. Lookup functions names are prefixed by
+@code{myfunc_data}.
+
+The example code uses the @code{myfunc_data_lookup} function to
+perform 2 lookup operations on the container.
+
+@node key value access method
+@subsection key value access method
+@c filename key_value_access_method
+@c parent section is Container key values
+
+
+Access method specifies how the key value is extracted from the
+container item. Several methods are available and may require some
+extra parameters to the @code{CONTAINER_KEY_TYPE} macro:
+
+@itemize
+ @item @code{DIRECT} specifies use of the item itself as key value.
+This is useful for array based containers which contain values as
+array elements. The access mode does not require extra parameter.
+
+ @item @code{MEMBER} specifies use of a struct member as key value.
+This is useful for array based containers which have structures as
+items. This access mode require an extra parameter being the name of
+the struct field to use as key value.
+
+ @item @code{PTR} specifies use of a pointed struct member as key
+value.  This is useful for array based containers containing pointers
+to structures and for pointer based containers. This access mode
+requires an extra parameter being the name of the struct field to use
+as key value.
+
+ @item @code{CUSTOM} specifies use of a custom expression as key
+value.  Two extra parameters are expected here: the custom expression
+and an unique identifier for this key value. The custom expression can
+refer to the container item associated with the requested key value
+using the @emph{name}@code{_item} token.
+
+@end itemize
+
+@subsubheading Examples
+
+This example illustrates use of the @code{DIRECT} access method with an array container:
+
+@verbatiminclude ../examples/example_array_lookup.c
+
+This example illustrates use of the @code{MEMBER} access method with an array container:
+
+@verbatiminclude ../examples/example_array_member.c
+
+This example illustrates use of the @code{PTR} access method with an array container:
+
+@verbatiminclude ../examples/example_array_ptr.c
+
+This example illustrates use of the @code{CUSTOM} access method with an pointer based container:
+
+@verbatiminclude ../examples/example_custom_access.c
+
+@node key value test mechanisms
+@subsection key value test mechanisms
+@c filename key_value_test_mechanisms
+@c parent section is Container key values
+
+
+
+
+, Container algorithms, operations, Top
+
+@setfilename c_container_operations.texi
+
+@setfilename c_container_operations.info
+

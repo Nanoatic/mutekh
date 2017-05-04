@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 46
+gpct    http://gpct.googlecode.com/svn/trunk/
+
+END

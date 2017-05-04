@@ -1,0 +1,13 @@
+
+%config CONFIG_DRIVER_BLOCK_CACHE
+  desc enable cache block device support
+  require CONFIG_DRIVER_BLOCK_CACHE_SIZE
+  parent CONFIG_DEVICE
+%config end
+
+%config CONFIG_DRIVER_BLOCK_CACHE_SIZE
+  parent CONFIG_DRIVER_BLOCK_CACHE
+  flags value
+  desc number of blocks per device in cache
+%config end
+

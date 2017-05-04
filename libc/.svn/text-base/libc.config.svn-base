@@ -1,0 +1,81 @@
+
+%config CONFIG_LIBC
+  desc Standard C library
+  flags mandatory
+  module libc C library
+%config end
+
+%config CONFIG_LIBC_ASSERT
+  desc Enable assert() support
+  when CONFIG_DEBUG
+  default defined
+  parent CONFIG_LIBC
+%config end
+
+%config CONFIG_LIBC_SEMAPHORE
+  desc libc semaphore feature enabled
+  flags auto
+  depend CONFIG_MUTEK_SEMAPHORE
+  parent CONFIG_LIBC
+%config end
+
+%config CONFIG_LIBC_STREAM
+  desc enable C library file streaming functions (fopen, fclose, ...)
+  require CONFIG_LIBC_STREAM_BUFFER_SIZE
+  default defined
+  parent CONFIG_LIBC
+%config end
+
+%config CONFIG_LIBC_STREAM_BUFFER_SIZE
+  desc C library default buffer size for streams
+  flags value
+  parent CONFIG_LIBC_STREAM
+  default 256
+%config end
+
+%config CONFIG_LIBC_MAX_FD
+  desc C library maximal file descriptors count
+  flags value
+  parent CONFIG_LIBC
+  default 32
+%config end
+
+%config CONFIG_LIBC_STREAM_STD
+  desc Enable support for stdin, stdout and stderr through tty device
+  parent CONFIG_LIBC_STREAM
+  depend CONFIG_MUTEK_CONSOLE
+%config end
+
+%config CONFIG_LIBC_FORMATTER_PRINTF
+  parent CONFIG_LIBC
+  flags mandatory
+  desc Printf string formater algorithm
+%config end
+
+%config CONFIG_LIBC_FORMATTER_SIMPLE
+  parent CONFIG_LIBC
+  desc Reduce formater algorithm features to bare minimum
+%config end
+
+%config CONFIG_LIBC_FORMATTER_FLOAT
+  desc Provide floats support for printf related functions
+  parent CONFIG_LIBC
+  provide CONFIG_LICENSE_USE_GPL
+  suggest_when CONFIG_LIBM
+%config end
+
+%config CONFIG_LIBC_FORMATTER_HEXDUMP
+  parent CONFIG_LIBC
+  flags auto
+  desc Enable smart hexadecimal dump formater algorithm
+%config end
+
+######################################################################
+# Provided tokens, not definable by user directly
+
+%config CONFIG_LIBC_STRING_ASM
+  desc A processor specific libc string.h header is available
+  flags internal value
+  parent CONFIG_LIBC
+%config end
+
